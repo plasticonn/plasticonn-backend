@@ -38,3 +38,8 @@
 {"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-08T16:51:56.867Z"}
 {"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-08T16:51:56.885Z"}
 {"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-08T16:51:56.886Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-08T16:52:04.072Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-08T16:52:04.088Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-08T16:52:04.089Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2025-12-08T16:52:52.749Z"}
+{"context":"AdminService","level":"info","message":"Updating admin profile","timestamp":"2025-12-08T16:53:22.844Z"}

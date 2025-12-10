@@ -5,6 +5,7 @@ import { HttpStatus } from "../../../common/enum/http-status.enum";
 import { Logger } from "../../../common/logger/logger";
 import { HttpError } from "../../../common/utils/HttpError";
 import { verifyToken } from "../../../common/middleware/auth.middleware";
+import { checkRole } from "../../../common/middleware/role.middleware";
 
 /**
  * @swagger
@@ -114,22 +115,29 @@ AdminController.post("/login", async (req, res) => {
  *       200:
  *         description: Profile retrieved successfully
  */
-AdminController.get("/profile/:id", verifyToken, async (req, res) => {
-  const { id } = req.params;
-  try {
-    const result = await AdminService.getProfile(id);
-    return res
-      .status(HttpStatus.OK)
-      .json(ApiResponse(HttpStatus.OK, "Profile returned", result));
-  } catch (err: any) {
-    log.error(err.message);
-    if (err instanceof HttpError) {
-      return res.status(err.status).json(ApiResponse(err.status, err.message));
-    }
+AdminController.get(
+  "/profile/:id",
+  verifyToken,
+  checkRole(["admin", "super_admin"]),
+  async (req, res) => {
+    const { id } = req.params;
+    try {
+      const result = await AdminService.getProfile(id);
+      return res
+        .status(HttpStatus.OK)
+        .json(ApiResponse(HttpStatus.OK, "Profile returned", result));
+    } catch (err: any) {
+      log.error(err.message);
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
 
-    return res.status(500).json(ApiResponse(500, "Internal server error"));
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
   }
-});
+);
 
 /**
  * @swagger
@@ -163,20 +171,27 @@ AdminController.get("/profile/:id", verifyToken, async (req, res) => {
  *       200:
  *         description: Successfully updated profile
  */
-AdminController.put("/profile/:id", verifyToken, async (req, res) => {
-  const { id } = req.params;
-  const payload = req.body;
-  try {
-    const result = await AdminService.updateProfile(id, payload);
-    return res
-      .status(HttpStatus.OK)
-      .json(ApiResponse(HttpStatus.OK, "Profile updated", result));
-  } catch (err: any) {
-    log.error(err.message);
-    if (err instanceof HttpError) {
-      return res.status(err.status).json(ApiResponse(err.status, err.message));
-    }
+AdminController.put(
+  "/profile/:id",
+  verifyToken,
+  checkRole(["admin", "super_admin"]),
+  async (req, res) => {
+    const { id } = req.params;
+    const payload = req.body;
+    try {
+      const result = await AdminService.updateProfile(id, payload);
+      return res
+        .status(HttpStatus.OK)
+        .json(ApiResponse(HttpStatus.OK, "Profile updated", result));
+    } catch (err: any) {
+      log.error(err.message);
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
 
-    return res.status(500).json(ApiResponse(500, "Internal server error"));
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
   }
-});
+);

@@ -61,4 +61,28 @@ const login = async (centerId: string, password: string) => {
   return { center: safeCenter, token };
 };
 
-export const CenterService = { register, login };
+const getProfile = async (centerId: string) => {
+  log.info("Fetching center profile");
+
+  const center = await CenterModel.findById(centerId).select("-password");
+
+  if (!center) throw new HttpError(404, "Center not found");
+
+  return { center };
+};
+
+const updateProfile = async (adminId: string, payload: any) => {
+  log.info("Updating center profile");
+
+  const center = await CenterModel.findById(adminId);
+
+  if (!center) throw new HttpError(404, "Center not found");
+
+  Object.assign(center, payload);
+
+  await center.save();
+
+  return { center };
+};
+
+export const CenterService = { register, login, getProfile, updateProfile };
