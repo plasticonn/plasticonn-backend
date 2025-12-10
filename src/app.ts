@@ -1,0 +1,27 @@
+import express from "express";
+import helmet from "helmet";
+import cors from "cors";
+import { AuthController } from "./modules/auth/auth.controller";
+import { setupSwagger } from "./config/swagger";
+import { CollectorController } from "./modules/collectors/collectors.controller";
+import { AdminController } from "./modules/admin/controllers/admin.controller";
+import { CenterController } from "./modules/centers/centers.controller";
+
+export const createApp = () => {
+  const app = express();
+  app.use(express.json());
+  app.use(helmet());
+  app.use(cors());
+
+  // Swagger UI
+  setupSwagger(app);
+
+  // Routes
+  app.use("/api/auth", AuthController);
+  app.use("/api/admin", AdminController);
+  app.use("/api/collector", CollectorController);
+  app.use("/api/center", CenterController);
+  app.get("/health", (req, res) => res.json({ status: "ok" }));
+
+  return app;
+};
