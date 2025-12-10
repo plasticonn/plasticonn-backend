@@ -4,11 +4,16 @@ import { CollectorsModel } from "./collectors.model";
 import { config } from "../../config";
 import { Logger } from "../../common/logger/logger";
 import { Roles } from "../../common/enum/roles.enum";
+import { HttpError } from "../../common/utils/HttpError";
 
 const log = new Logger("CollectorsService");
 
 export const register = async (payload: any) => {
   log.info("Registering collector");
+
+  const collector = await CollectorsModel.findOne({ email: payload.email });
+
+  if (collector) throw new HttpError(404, "Collector already exists");
 
   const hashed = await bcrypt.hash(payload.password, 10);
 
@@ -33,11 +38,11 @@ export const login = async (email: string, password: string) => {
 
   const user = await CollectorsModel.findOne({ email });
 
-  if (!user) throw new Error("Collector does not exist");
+  if (!user) throw new HttpError(404, "Collector does not exist");
 
   const match = await bcrypt.compare(password, String(user.password));
 
-  if (!match) throw new Error("Invalid password");
+  if (!match) throw new HttpError(401, "Invalid password");
 
   const token = jwt.sign(
     { sub: user._id, role: Roles.COLLECTOR },
@@ -50,7 +55,34 @@ export const login = async (email: string, password: string) => {
   return { user, token };
 };
 
+const getProfile = async (collectorId: string) => {
+  log.info("Fetching collector profile");
+
+  const collector =
+    await CollectorsModel.findById(collectorId).select("-password");
+
+  if (!collector) throw new HttpError(404, "Collector not found");
+
+  return { collector };
+};
+
+const updateProfile = async (collectorId: string, payload: any) => {
+  log.info("Updating collector profile");
+
+  const collector = await CollectorsModel.findById(collectorId);
+
+  if (!collector) throw new HttpError(404, "Collector not found");
+
+  Object.assign(collector, payload);
+
+  await collector.save();
+
+  return { collector };
+};
+
 export const CollectorsService = {
   register,
   login,
+  getProfile,
+  updateProfile,
 };
