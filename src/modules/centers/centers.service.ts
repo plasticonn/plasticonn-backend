@@ -36,7 +36,7 @@ const login = async (centerId: string, password: string) => {
 
   const center = await CenterModel.findOne({ centerId });
 
-  if (!center) throw new HttpError(401, "Invalid credentials");
+  if (!center) throw new HttpError(401, "Center not found");
 
   if (!center.verified) throw new HttpError(401, "Center not verified");
   if (center.status === "suspended")

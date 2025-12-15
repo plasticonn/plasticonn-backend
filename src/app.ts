@@ -6,6 +6,7 @@ import { setupSwagger } from "./config/swagger";
 import { CollectorController } from "./modules/collectors/collectors.controller";
 import { AdminController } from "./modules/admin/controllers/admin.controller";
 import { CenterController } from "./modules/centers/centers.controller";
+import { DropController } from "./modules/drops/drops.controller";
 
 export const createApp = () => {
   const app = express();
@@ -21,7 +22,7 @@ export const createApp = () => {
   app.use("/api/admin", AdminController);
   app.use("/api/collector", CollectorController);
   app.use("/api/center", CenterController);
-  app.use("/api/drop", CenterController);
+  app.use("/api/drop", DropController);
   app.get("/health", (req, res) => res.json({ status: "ok" }));
 
   return app;

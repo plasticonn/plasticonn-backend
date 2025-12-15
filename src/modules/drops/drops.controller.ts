@@ -69,7 +69,7 @@ DropController.post(
 /**
  * @swagger
  * /api/drop/get:
- *   post:
+ *   get:
  *     summary: Gets list of drop offs for user
  *     tags: [Drops]
  *     security:
@@ -174,8 +174,10 @@ DropController.put(
   async (req, res) => {
     const { id } = req.params;
 
+    const user_id = (req as any).user.id;
+
     try {
-      const result = await DropsService.verifyDrop(id);
+      const result = await DropsService.verifyDrop(id, user_id);
 
       return res
         .status(HttpStatus.OK)

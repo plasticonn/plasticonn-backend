@@ -190,3 +190,27 @@
 {"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-15T17:18:30.381Z"}
 {"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-15T17:18:30.411Z"}
 {"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-15T17:18:30.412Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2025-12-15T17:21:09.798Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-15T17:23:33.158Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-15T17:23:33.191Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-15T17:23:33.192Z"}
+{"context":"DropsService","level":"info","message":"Adding a drop offs","timestamp":"2025-12-15T17:23:41.792Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-15T17:25:14.730Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-15T17:25:14.746Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-15T17:25:14.747Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2025-12-15T17:25:41.829Z"}
+{"context":"AdminService","level":"info","message":"Logging in center","timestamp":"2025-12-15T17:26:34.717Z"}
+{"context":"CenterController","level":"error","message":"Invalid credentials","timestamp":"2025-12-15T17:26:34.993Z"}
+{"context":"Mongoose","level":"error","message":"querySrv ECONNREFUSED _mongodb._tcp.cluster0.uyr1rdy.mongodb.net","timestamp":"2025-12-15T17:27:23.282Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-15T17:27:46.171Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-15T17:27:46.189Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-15T17:27:46.190Z"}
+{"context":"AdminService","level":"info","message":"Logging in center","timestamp":"2025-12-15T17:30:17.569Z"}
+{"context":"CenterController","level":"error","message":"Center not found","timestamp":"2025-12-15T17:30:17.913Z"}
+{"context":"AdminService","level":"info","message":"Logging in center","timestamp":"2025-12-15T17:30:51.094Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-15T17:34:42.377Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-15T17:34:42.407Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-15T17:34:42.410Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-15T17:35:12.390Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-15T17:35:12.415Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-15T17:35:12.417Z"}

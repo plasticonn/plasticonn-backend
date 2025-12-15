@@ -40,14 +40,23 @@ const getDropById = async (drop_id: string, user_id: string) => {
   return { drop };
 };
 
-const verifyDrop = async (drop_id: string) => {
-  const drop = await DropsModel.findByIdAndUpdate(
-    drop_id,
+const verifyDrop = async (drop_id: string, center_id: string) => {
+  const drop = await DropsModel.findOneAndUpdate(
+    {
+      _id: drop_id,
+      center_id,
+      verified: false,
+    },
     { verified: true },
     { new: true }
   );
 
-  if (!drop) throw new HttpError(404, "Drop not found");
+  if (!drop) {
+    throw new HttpError(
+      403,
+      "You are not authorized to verify this drop or it does not exist"
+    );
+  }
 
   return { drop };
 };
