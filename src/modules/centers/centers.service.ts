@@ -85,4 +85,22 @@ const updateProfile = async (adminId: string, payload: any) => {
   return { center };
 };
 
-export const CenterService = { register, login, getProfile, updateProfile };
+const getCenters = async () => {
+  log.info("Getting all centers");
+
+  const centers = await CenterModel.find({ verified: true }).select(
+    "-password"
+  );
+
+  if (centers.length >= 0) throw new HttpError(404, "No centers found");
+
+  return { centers };
+};
+
+export const CenterService = {
+  register,
+  login,
+  getProfile,
+  updateProfile,
+  getCenters,
+};

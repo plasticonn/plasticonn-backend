@@ -140,7 +140,7 @@ CenterController.post("/login", async (req, res) => {
 CenterController.get(
   "/profile/:id",
   verifyToken,
-  checkRole(["center"]),
+  checkRole(["center", "collector"]),
   async (req, res) => {
     const { id } = req.params;
     try {

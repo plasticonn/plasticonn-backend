@@ -199,3 +199,38 @@
 {"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-10T19:19:17.050Z"}
 {"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2025-12-10T19:21:26.643Z"}
 {"context":"CollectorController","level":"error","message":"Collector does not exist","timestamp":"2025-12-10T19:21:26.928Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-10T19:22:59.622Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-10T19:22:59.644Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-10T19:22:59.646Z"}
+{"context":"CollectorsService","level":"info","message":"Registering collector","timestamp":"2025-12-10T19:23:17.182Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2025-12-10T19:23:33.749Z"}
+{"context":"CollectorController","level":"error","message":"Collector does not exist","timestamp":"2025-12-10T19:23:34.045Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2025-12-10T19:23:42.164Z"}
+{"context":"CollectorController","level":"error","message":"Invalid password","timestamp":"2025-12-10T19:23:42.647Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2025-12-10T19:24:07.890Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2025-12-10T19:24:24.210Z"}
+{"context":"AdminService","level":"info","message":"Logging in center","timestamp":"2025-12-10T19:24:40.781Z"}
+{"context":"CenterController","level":"error","message":"Invalid credentials","timestamp":"2025-12-10T19:24:41.079Z"}
+{"context":"AdminService","level":"info","message":"Logging in center","timestamp":"2025-12-10T19:24:53.164Z"}
+{"context":"CollectorsService","level":"info","message":"Updating collector profile","timestamp":"2025-12-10T19:25:14.064Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-10T19:39:40.313Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-10T19:39:40.343Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-10T19:39:40.345Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-10T19:40:57.130Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-10T19:40:57.191Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-10T19:40:57.193Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-10T19:41:22.113Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-10T19:41:22.145Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-10T19:41:22.147Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-10T19:41:45.471Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-10T19:41:45.505Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-10T19:41:45.506Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-10T19:42:33.409Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-10T19:42:33.461Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-10T19:42:33.463Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-10T19:43:55.400Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-10T19:43:55.450Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-10T19:43:55.452Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-10T19:44:26.054Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-10T19:44:26.095Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-10T19:44:26.097Z"}
