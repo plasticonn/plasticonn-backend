@@ -21,6 +21,7 @@ export const createApp = () => {
   app.use("/api/admin", AdminController);
   app.use("/api/collector", CollectorController);
   app.use("/api/center", CenterController);
+  app.use("/api/drop", CenterController);
   app.get("/health", (req, res) => res.json({ status: "ok" }));
 
   return app;

@@ -33,6 +33,7 @@ const options = {
     "./src/modules/admin/controllers/*.controller.ts",
     "./src/modules/collectors/*.controller.ts",
     "./src/modules/centers/*.controller.ts",
+    "./src/modules/drops/*.controller.ts",
   ],
 };
 
