@@ -6,7 +6,10 @@ const CenterSchema = new Schema(
     name: { type: String },
     address: { type: String },
     password: { type: String },
-    gps: { lat: Number, lng: Number },
+    gps: {
+      type: { type: String, enum: ["Point"], required: true },
+      coordinates: { type: [Number], required: true },
+    },
     contactPerson: { type: String },
     contactPhone: { type: String },
     contactEmail: { type: String },

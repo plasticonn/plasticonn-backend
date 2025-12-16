@@ -34,6 +34,10 @@ export const CenterController = Router();
  *                 type: string
  *               address:
  *                 type: string
+ *               lng:
+ *                 type: number
+ *               lat:
+ *                 type: number
  *               contactPhone:
  *                 type: string
  *               contactEmail:

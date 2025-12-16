@@ -20,10 +20,16 @@ const register = async (payload: any) => {
 
   const hashed = await passwordServices.hashPassword(payload.password);
 
+  const { lat, lng, password, ...rest } = payload;
+
   const center = await CenterModel.create({
-    ...payload,
+    ...rest,
     centerId,
     password: hashed,
+    gps: {
+      type: "Point",
+      coordinates: [lng, lat],
+    },
   });
 
   return { center };

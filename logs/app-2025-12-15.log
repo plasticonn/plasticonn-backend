@@ -214,3 +214,16 @@
 {"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-15T17:35:12.390Z"}
 {"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-15T17:35:12.415Z"}
 {"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-15T17:35:12.417Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-15T17:35:23.409Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-15T17:35:23.435Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-15T17:35:23.436Z"}
+{"context":"DropControllers","level":"error","message":"You are not authorized to verify this drop or it does not exist","timestamp":"2025-12-15T17:35:32.584Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-15T18:58:45.554Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-15T18:58:45.584Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-15T18:58:45.585Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-15T19:00:32.027Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-15T19:00:32.054Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-15T19:00:32.055Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-15T19:01:54.635Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-15T19:01:54.669Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-15T19:01:54.670Z"}
