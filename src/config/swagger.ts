@@ -34,6 +34,7 @@ const options = {
     "./src/modules/collectors/*.controller.ts",
     "./src/modules/centers/*.controller.ts",
     "./src/modules/drops/*.controller.ts",
+    "./src/modules/events/*.controller.ts",
   ],
 };
 

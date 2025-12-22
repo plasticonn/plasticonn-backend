@@ -6,6 +6,7 @@ import { Logger } from "../../common/logger/logger";
 import { verifyToken } from "../../common/middleware/auth.middleware";
 import { checkRole } from "../../common/middleware/role.middleware";
 import { HttpError } from "../../common/utils/HttpError";
+import { NotificationsService } from "../notifications/notifications.service";
 
 /**
  * @swagger
@@ -52,8 +53,21 @@ DropController.post(
   checkRole(["collector"]),
   async (req, res) => {
     try {
-      const user_id = (req as any).user.id;
+      const user_id = (req as any).user.sub;
+
       const result = await DropsService.addDrop(user_id, req.body);
+
+      const payload = {
+        title: "Confirmation Notification",
+        message: "Your drop-off request has been submitted successfully.",
+      };
+
+      await NotificationsService.sendNotification(
+        user_id,
+        payload,
+        "individual"
+      );
+
       return res
         .status(HttpStatus.CREATED)
         .json(ApiResponse(HttpStatus.CREATED, "Drop off successful", result));
@@ -84,7 +98,7 @@ DropController.get(
   checkRole(["collector", "center"]),
   async (req, res) => {
     try {
-      const userId = (req as any).user.id;
+      const userId = (req as any).user.sub;
 
       const result = await DropsService.getDropList(userId);
 
@@ -128,7 +142,7 @@ DropController.get(
     try {
       const { id } = req.params;
 
-      const user_id = (req as any).user.id;
+      const user_id = (req as any).user.sub;
 
       const result = await DropsService.getDropById(id, user_id);
 
@@ -150,9 +164,9 @@ DropController.get(
 
 /**
  * @swagger
- * /api/drop/verify/{id}:
+ * /api/drop/update/{id}:
  *   put:
- *     summary: Verifies drop off
+ *     summary: Updates drop off status
  *     tags: [Drops]
  *     security:
  *       - bearerAuth: []
@@ -162,26 +176,36 @@ DropController.get(
  *         required: true
  *         schema:
  *           type: string
- *         description: ID of the drop to verify
+ *         description: ID of the drop to update
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               status:
+ *                 type: string
  *     responses:
  *       200:
- *         description: Successfully verified drop off
+ *         description: Successfully updated drop off
  */
 DropController.put(
-  "/verify/:id",
+  "/update/:id",
   verifyToken,
   checkRole(["center"]),
   async (req, res) => {
     const { id } = req.params;
+    const { status } = req.body;
 
-    const user_id = (req as any).user.id;
+    const user_id = (req as any).user.sub;
 
     try {
-      const result = await DropsService.verifyDrop(id, user_id);
+      const result = await DropsService.updateDrop(id, user_id, status);
 
       return res
         .status(HttpStatus.OK)
-        .json(ApiResponse(HttpStatus.OK, "Drop off verified", result));
+        .json(ApiResponse(HttpStatus.OK, "Drop off updated", result));
     } catch (err: any) {
       log.error(err.message);
       if (err instanceof HttpError) {

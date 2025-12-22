@@ -1,0 +1,3 @@
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-16T15:06:15.558Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-16T15:06:15.600Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-16T15:06:15.601Z"}

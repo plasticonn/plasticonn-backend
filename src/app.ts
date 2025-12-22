@@ -7,6 +7,7 @@ import { CollectorController } from "./modules/collectors/collectors.controller"
 import { AdminController } from "./modules/admin/controllers/admin.controller";
 import { CenterController } from "./modules/centers/centers.controller";
 import { DropController } from "./modules/drops/drops.controller";
+import { EventsController } from "./modules/events/events.controller";
 
 export const createApp = () => {
   const app = express();
@@ -23,6 +24,7 @@ export const createApp = () => {
   app.use("/api/collector", CollectorController);
   app.use("/api/center", CenterController);
   app.use("/api/drop", DropController);
+  app.use("/api/events", EventsController);
   app.get("/health", (req, res) => res.json({ status: "ok" }));
 
   return app;

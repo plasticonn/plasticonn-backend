@@ -8,7 +8,7 @@ const DropsSchema = new Schema(
     types: { type: String },
     condition: { type: String },
     location: { type: String },
-    verified: { type: Boolean, default: false },
+    status: { type: String, default: "pending" },
   },
   { timestamps: true }
 );

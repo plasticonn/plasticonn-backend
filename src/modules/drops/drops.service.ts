@@ -1,6 +1,7 @@
 import { DropsModel } from "./drops.model";
 import { Logger } from "../../common/logger/logger";
 import { HttpError } from "../../common/utils/HttpError";
+import { NotificationsService } from "../notifications/notifications.service";
 
 const log = new Logger("DropsService");
 
@@ -11,6 +12,13 @@ const addDrop = async (user_id: string, payload: any) => {
     collector_id: user_id,
     ...payload,
   });
+
+  const message = {
+    title: "New drop off",
+    message: "You have a new drop-off request.",
+  };
+
+  await NotificationsService.sendNotification(payload.center_id, message);
 
   return { drop };
 };
@@ -40,14 +48,17 @@ const getDropById = async (drop_id: string, user_id: string) => {
   return { drop };
 };
 
-const verifyDrop = async (drop_id: string, center_id: string) => {
+const updateDrop = async (
+  drop_id: string,
+  center_id: string,
+  status: string
+) => {
   const drop = await DropsModel.findOneAndUpdate(
     {
       _id: drop_id,
       center_id,
-      verified: false,
     },
-    { verified: true },
+    { status: status },
     { new: true }
   );
 
@@ -58,6 +69,16 @@ const verifyDrop = async (drop_id: string, center_id: string) => {
     );
   }
 
+  const payload = {
+    title: "Status Update Notification",
+    message: `Your drop-off has been ${status}.`,
+  };
+
+  await NotificationsService.sendNotification(
+    String(drop?.collector_id),
+    payload
+  );
+
   return { drop };
 };
 
@@ -65,5 +86,5 @@ export const DropsService = {
   addDrop,
   getDropList,
   getDropById,
-  verifyDrop,
+  updateDrop,
 };
