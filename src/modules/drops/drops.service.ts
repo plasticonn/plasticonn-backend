@@ -18,7 +18,11 @@ const addDrop = async (user_id: string, payload: any) => {
     message: "You have a new drop-off request.",
   };
 
-  await NotificationsService.sendNotification(payload.center_id, message);
+  await NotificationsService.sendNotification(
+    payload.center_id,
+    message,
+    "individual"
+  );
 
   return { drop };
 };
@@ -76,7 +80,8 @@ const updateDrop = async (
 
   await NotificationsService.sendNotification(
     String(drop?.collector_id),
-    payload
+    payload,
+    "individual"
   );
 
   return { drop };
