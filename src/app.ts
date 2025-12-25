@@ -9,6 +9,7 @@ import { CenterController } from "./modules/centers/centers.controller";
 import { DropController } from "./modules/drops/drops.controller";
 import { EventsController } from "./modules/events/events.controller";
 import { CenterManagementController } from "./modules/admin/controllers/center.controller";
+import { CollectorManagementController } from "./modules/admin/controllers/collector.controller";
 
 export const createApp = () => {
   const app = express();
@@ -27,6 +28,7 @@ export const createApp = () => {
   app.use("/api/drop", DropController);
   app.use("/api/events", EventsController);
   app.use("/api/admin/center-mgt", CenterManagementController);
+  app.use("/api/admin/collector-mgt", CollectorManagementController);
   app.get("/health", (req, res) => res.json({ status: "ok" }));
 
   return app;
