@@ -65,6 +65,43 @@ CollectorManagementController.get(
 
 /**
  * @swagger
+ * /api/admin/collector-mgt/list:
+ *   get:
+ *     summary: Gets list of collectors
+ *     tags: [Collector Management]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Collectors list retrieved successfully
+ */
+CollectorManagementController.get(
+  "/list",
+  verifyToken,
+  checkRole(["admin", "super_admin"]),
+  async (req, res) => {
+    try {
+      const result = await CollectorServices.getCollectors();
+
+      return res
+        .status(HttpStatus.OK)
+        .json(ApiResponse(HttpStatus.OK, "List returned", result));
+    } catch (err: any) {
+      log.error(err.message);
+
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
+  }
+);
+
+/**
+ * @swagger
  * /api/admin/collector-mgt/update/{id}:
  *   put:
  *     summary: Update collector details
