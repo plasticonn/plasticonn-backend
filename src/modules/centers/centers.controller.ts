@@ -124,36 +124,32 @@ CenterController.post("/login", async (req, res) => {
 
 /**
  * @swagger
- * /api/center/profile/{id}:
+ * /api/center/profile:
  *   get:
  *     summary: Gets center profile
  *     tags: [Center]
  *     security:
  *       - bearerAuth: []
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: string
- *         description: ID of the center to return
  *     responses:
  *       200:
  *         description: Profile retrieved successfully
  */
 CenterController.get(
-  "/profile/:id",
+  "/profile",
   verifyToken,
   checkRole(["center", "collector"]),
   async (req, res) => {
-    const { id } = req.params;
+    const user_id = (req as any).user.sub;
+
     try {
-      const result = await CenterService.getProfile(id);
+      const result = await CenterService.getProfile(user_id);
+
       return res
         .status(HttpStatus.OK)
         .json(ApiResponse(HttpStatus.OK, "Profile returned", result));
     } catch (err: any) {
       log.error(err.message);
+
       if (err instanceof HttpError) {
         return res
           .status(err.status)
@@ -167,19 +163,12 @@ CenterController.get(
 
 /**
  * @swagger
- * /api/center/profile/{id}:
+ * /api/center/profile:
  *   put:
  *     summary: Update center profile
  *     tags: [Center]
  *     security:
  *       - bearerAuth: []
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: string
- *         description: ID of the center to update
  *     requestBody:
  *       required: true
  *       content:
@@ -210,19 +199,99 @@ CenterController.get(
  *         description: Successfully updated profile
  */
 CenterController.put(
-  "/profile/:id",
+  "/profile",
   verifyToken,
   checkRole(["center"]),
   async (req, res) => {
-    const { id } = req.params;
+    const user_id = (req as any).user.sub;
+
     const payload = req.body;
+
     try {
-      const result = await CenterService.updateProfile(id, payload);
+      const result = await CenterService.updateProfile(user_id, payload);
+
       return res
         .status(HttpStatus.OK)
         .json(ApiResponse(HttpStatus.OK, "Profile updated", result));
     } catch (err: any) {
       log.error(err.message);
+
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
+  }
+);
+
+/**
+ * @swagger
+ * /api/center/delete:
+ *   delete:
+ *     summary: Delete center account
+ *     tags: [Center]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Successfully deleted center
+ */
+CenterController.delete(
+  "/delete",
+  verifyToken,
+  checkRole(["center"]),
+  async (req, res) => {
+    const user_id = (req as any).user.sub;
+
+    try {
+      const result = await CenterService.deleteAccount(user_id);
+
+      return res
+        .status(HttpStatus.OK)
+        .json(ApiResponse(HttpStatus.OK, "Center deleted", result));
+    } catch (err: any) {
+      log.error(err.message);
+
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
+  }
+);
+
+/**
+ * @swagger
+ * /api/center/list:
+ *   get:
+ *     summary: Gets centers list
+ *     tags: [Center]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: List centers successfully
+ */
+CenterController.get(
+  "/list",
+  verifyToken,
+  checkRole(["collector", "admin", "super_admin"]),
+  async (req, res) => {
+    try {
+      const result = await CenterService.getCenters();
+
+      return res
+        .status(HttpStatus.OK)
+        .json(ApiResponse(HttpStatus.OK, "Centers List returned", result));
+    } catch (err: any) {
+      log.error(err.message);
+
       if (err instanceof HttpError) {
         return res
           .status(err.status)

@@ -77,10 +77,10 @@ const getProfile = async (centerId: string) => {
   return { center };
 };
 
-const updateProfile = async (adminId: string, payload: any) => {
+const updateProfile = async (centerId: string, payload: any) => {
   log.info("Updating center profile");
 
-  const center = await CenterModel.findById(adminId);
+  const center = await CenterModel.findById(centerId);
 
   if (!center) throw new HttpError(404, "Center not found");
 
@@ -91,14 +91,24 @@ const updateProfile = async (adminId: string, payload: any) => {
   return { center };
 };
 
+const deleteAccount = async (centerId: string) => {
+  log.info("Deleting center");
+
+  const center = await CenterModel.findByIdAndDelete(centerId);
+
+  if (!center) {
+    throw new HttpError(404, "Center not found");
+  }
+
+  return { message: "Center deleted successfully" };
+};
+
 const getCenters = async () => {
   log.info("Getting all centers");
 
-  const centers = await CenterModel.find({ verified: true }).select(
-    "-password"
-  );
+  const centers = await CenterModel.find().select("-password");
 
-  if (centers.length >= 0) throw new HttpError(404, "No centers found");
+  if (centers.length <= 0) throw new HttpError(404, "No centers found");
 
   return { centers };
 };
@@ -108,5 +118,6 @@ export const CenterService = {
   login,
   getProfile,
   updateProfile,
+  deleteAccount,
   getCenters,
 };
