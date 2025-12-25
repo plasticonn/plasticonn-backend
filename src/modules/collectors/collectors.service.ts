@@ -80,9 +80,22 @@ const updateProfile = async (collectorId: string, payload: any) => {
   return { collector };
 };
 
+const deleteAccount = async (collectorId: string) => {
+  log.info("Deleting collector");
+
+  const collector = await CollectorsModel.findByIdAndDelete(collectorId);
+
+  if (!collector) {
+    throw new HttpError(404, "Collector not found");
+  }
+
+  return { message: "Account deleted successfully" };
+};
+
 export const CollectorsService = {
   register,
   login,
   getProfile,
   updateProfile,
+  deleteAccount,
 };

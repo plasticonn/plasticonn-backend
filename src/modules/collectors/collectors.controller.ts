@@ -197,3 +197,42 @@ CollectorController.put(
     }
   }
 );
+
+/**
+ * @swagger
+ * /api/collector/delete:
+ *   delete:
+ *     summary: Delete collector account
+ *     tags: [Collector]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Successfully deleted account
+ */
+CollectorController.delete(
+  "/delete",
+  verifyToken,
+  checkRole(["collector"]),
+  async (req, res) => {
+    const user_id = (req as any).user.sub;
+
+    try {
+      const result = await CollectorsService.deleteAccount(user_id);
+
+      return res
+        .status(HttpStatus.OK)
+        .json(ApiResponse(HttpStatus.OK, "Account deleted", result));
+    } catch (err: any) {
+      log.error(err.message);
+
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
+  }
+);
