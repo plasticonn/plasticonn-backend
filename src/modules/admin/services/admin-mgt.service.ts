@@ -1,3 +1,5 @@
+import { EmailService } from "../../../common/email/email.service";
+import { adminInviteTemplate } from "../../../common/email/templates";
 import { Logger } from "../../../common/logger/logger";
 import { HttpError } from "../../../common/utils/HttpError";
 import { passwordServices } from "../../../common/utils/password";
@@ -17,6 +19,15 @@ const addAdmin = async (payload: any) => {
   const admin = await AdminModel.create({
     ...payload,
     password: hashed,
+  });
+
+  await EmailService.sendEmail({
+    to: payload.email,
+    subject: "Admin Invite",
+    html: adminInviteTemplate({
+      name: payload.name,
+      password: payload.password,
+    }),
   });
 
   return { admin };

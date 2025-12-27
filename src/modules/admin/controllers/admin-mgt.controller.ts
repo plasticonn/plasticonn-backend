@@ -19,7 +19,7 @@ export const AdminManagementController = Router();
 
 /**
  * @swagger
- * /api/admin/add:
+ * /api/admin/admin-mgt/add:
  *   post:
  *     summary: Add an admin
  *     tags: [Admin Management]
@@ -45,27 +45,21 @@ export const AdminManagementController = Router();
  *       200:
  *         description: Successfully registered
  */
-AdminManagementController.post(
-  "/add",
-  checkRole(["super_admin"]),
-  async (req, res) => {
-    try {
-      const result = await adminServices.addAdmin(req.body);
-      return res
-        .status(HttpStatus.CREATED)
-        .json(ApiResponse(HttpStatus.CREATED, "Admin added", result));
-    } catch (err: any) {
-      log.error(err.message);
-      if (err instanceof HttpError) {
-        return res
-          .status(err.status)
-          .json(ApiResponse(err.status, err.message));
-      }
-
-      return res.status(500).json(ApiResponse(500, "Internal server error"));
+AdminManagementController.post("/add", async (req, res) => {
+  try {
+    const result = await adminServices.addAdmin(req.body);
+    return res
+      .status(HttpStatus.CREATED)
+      .json(ApiResponse(HttpStatus.CREATED, "Admin added", result));
+  } catch (err: any) {
+    log.error(err.message);
+    if (err instanceof HttpError) {
+      return res.status(err.status).json(ApiResponse(err.status, err.message));
     }
+
+    return res.status(500).json(ApiResponse(500, "Internal server error"));
   }
-);
+});
 
 /**
  * @swagger
