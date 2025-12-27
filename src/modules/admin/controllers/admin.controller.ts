@@ -19,48 +19,6 @@ export const AdminController = Router();
 
 /**
  * @swagger
- * /api/admin/add:
- *   post:
- *     summary: Add an admin
- *     tags: [Admin]
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               name:
- *                 type: string
- *               phone:
- *                 type: string
- *               email:
- *                 type: string
- *               password:
- *                 type: string
- *
- *     responses:
- *       200:
- *         description: Successfully registered
- */
-AdminController.post("/add", async (req, res) => {
-  try {
-    const result = await AdminService.add(req.body);
-    return res
-      .status(HttpStatus.CREATED)
-      .json(ApiResponse(HttpStatus.CREATED, "Admin added", result));
-  } catch (err: any) {
-    log.error(err.message);
-    if (err instanceof HttpError) {
-      return res.status(err.status).json(ApiResponse(err.status, err.message));
-    }
-
-    return res.status(500).json(ApiResponse(500, "Internal server error"));
-  }
-});
-
-/**
- * @swagger
  * /api/admin/login:
  *   post:
  *     summary: Logs in an admin

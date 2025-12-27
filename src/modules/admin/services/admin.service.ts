@@ -36,23 +36,6 @@ export const loginSuperAdmin = async (email: string, password: string) => {
   return { admin, accessToken, refreshToken };
 };
 
-const add = async (payload: any) => {
-  log.info("Adding admin");
-
-  const adminExists = await AdminModel.findOne({ email: payload.email });
-
-  if (adminExists) throw new HttpError(409, "Admin already added");
-
-  const hashed = await passwordServices.hashPassword(payload.password);
-
-  const admin = await AdminModel.create({
-    ...payload,
-    password: hashed,
-  });
-
-  return { admin };
-};
-
 const login = async (email: string, password: string) => {
   log.info("logging in admin");
 
@@ -103,7 +86,6 @@ const updateProfile = async (adminId: string, payload: any) => {
 };
 
 export const AdminService = {
-  add,
   login,
   getProfile,
   updateProfile,
