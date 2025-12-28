@@ -1,115 +1,184 @@
 import { Router, Request, Response } from "express";
+import { AuthServices } from "./auth.service";
+import { ApiResponse } from "../../common/responses/api-response";
+import { HttpStatus } from "../../common/enum/http-status.enum";
+import { Logger } from "../../common/logger/logger";
+import { HttpError } from "../../common/utils/HttpError";
+import { verifyToken } from "../../common/middleware/auth.middleware";
 
+const log = new Logger("AuthController");
 export const AuthController = Router();
 
 /**
  * @swagger
- * tags:
- *   name: Auth
- *   description: Authentication endpoints
- */
-
-/**
- * @swagger
- * /api/auth/refresh-access:
- *   post:
- *     summary: Refreshes access token
- *     tags: [Auth]
- *     responses:
- *       200:
- *         description: Access token refreshed successfully
- */
-AuthController.post("/refresh-access", (req: Request, res: Response) => {
-  // your logic here
-  res.json({ message: "Access token refreshed" });
-});
-
-/**
- * @swagger
- * /v1/api/auth/verify-account:
- *   post:
- *     summary: Verifies user account according to type via OTP
- *     tags: [Auth]
- *     responses:
- *       200:
- *         description: User account verified successfully
- */
-AuthController.post("/verify-account", (req: Request, res: Response) => {
-  res.json({ message: "Account verified" });
-});
-
-/**
- * @swagger
- * /v1/api/auth/send-verification-email:
- *   post:
- *     summary: Sends verification OTP via email
- *     tags: [Auth]
- *     responses:
- *       200:
- *         description: OTP sent successfully
- */
-AuthController.post(
-  "/send-verification-email",
-  (req: Request, res: Response) => {
-    res.json({ message: "Verification email sent" });
-  }
-);
-
-/**
- * @swagger
- * /v1/api/auth/forget-password:
+ * /api/auth/forget-password:
  *   post:
  *     summary: Initiates password reset flow
  *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
  *     responses:
  *       200:
  *         description: Password reset initiated
  */
-AuthController.post("/forget-password", (req: Request, res: Response) => {
-  res.json({ message: "Password reset initiated" });
+AuthController.post("/forget-password", async (req: Request, res: Response) => {
+  try {
+    const { email } = req.body;
+
+    const result = await AuthServices.forgotPassword(email);
+
+    return res.status(HttpStatus.OK).json(ApiResponse(HttpStatus.OK, result));
+  } catch (err: any) {
+    log.error(err.message);
+
+    if (err instanceof HttpError) {
+      return res.status(err.status).json(ApiResponse(err.status, err.message));
+    }
+
+    return res.status(500).json(ApiResponse(500, "Internal server error"));
+  }
 });
 
 /**
  * @swagger
- * /v1/api/auth/confirm-password-reset:
+ * /api/auth/confirm-password-reset:
  *   post:
  *     summary: Confirms password reset operation via OTP
  *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *               otp_code:
+ *                 type: string
  *     responses:
  *       200:
  *         description: Password reset confirmed
  */
 AuthController.post(
   "/confirm-password-reset",
-  (req: Request, res: Response) => {
-    res.json({ message: "Password reset confirmed" });
+  async (req: Request, res: Response) => {
+    try {
+      const { email, otp_code } = req.body;
+
+      const result = await AuthServices.confirmPasswordReset(email, otp_code);
+
+      return res.status(HttpStatus.OK).json(ApiResponse(HttpStatus.OK, result));
+    } catch (err: any) {
+      log.error(err.message);
+
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
   }
 );
 
 /**
  * @swagger
- * /v1/api/auth/reset-password:
+ * /api/auth/reset-password:
  *   post:
  *     summary: Resets user password
  *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *               otp_code:
+ *                 type: string
+ *               password:
+ *                 type: string
  *     responses:
  *       200:
  *         description: Password reset successfully
  */
-AuthController.post("/reset-password", (req: Request, res: Response) => {
-  res.json({ message: "Password reset successfully" });
+AuthController.post("/reset-password", async (req: Request, res: Response) => {
+  try {
+    const { email, otp_code, password } = req.body;
+
+    const result = await AuthServices.resetPassword(email, otp_code, password);
+
+    return res.status(HttpStatus.OK).json(ApiResponse(HttpStatus.OK, result));
+  } catch (err: any) {
+    log.error(err.message);
+
+    if (err instanceof HttpError) {
+      return res.status(err.status).json(ApiResponse(err.status, err.message));
+    }
+
+    return res.status(500).json(ApiResponse(500, "Internal server error"));
+  }
 });
 
-/**
- * @swagger
- * /v1/api/auth/update-password:
- *   post:
- *     summary: Updates user password
- *     tags: [Auth]
- *     responses:
- *       200:
- *         description: Password updated successfully
- */
-AuthController.post("/update-password", (req: Request, res: Response) => {
-  res.json({ message: "Password updated successfully" });
-});
+// /**
+//  * @swagger
+//  * /api/auth/update-password:
+//  *   post:
+//  *     summary: Updates user password
+//  *     tags: [Auth]
+//  *     security:
+//  *       - bearerAuth: []
+//  *     requestBody:
+//  *       required: true
+//  *       content:
+//  *         application/json:
+//  *           schema:
+//  *             type: object
+//  *             properties:
+//  *               oldPassword:
+//  *                 type: string
+//  *               newPassword:
+//  *                 type: string
+//  *     responses:
+//  *       200:
+//  *         description: Password updated successfully
+//  */
+// AuthController.post(
+//   "/update-password",
+//   verifyToken,
+//   async (req: Request, res: Response) => {
+//     try {
+//       const user_id = (req as any).user.id;
+//       const { oldPassword, newPassword } = req.body;
+
+//       const result = await AuthServices.resetPassword(
+//         user_id,
+//         oldPassword,
+//         newPassword
+//       );
+
+//       return res.status(HttpStatus.OK).json(ApiResponse(HttpStatus.OK, result));
+//     } catch (err: any) {
+//       log.error(err.message);
+
+//       if (err instanceof HttpError) {
+//         return res
+//           .status(err.status)
+//           .json(ApiResponse(err.status, err.message));
+//       }
+
+//       return res.status(500).json(ApiResponse(500, "Internal server error"));
+//     }
+//   }
+// );
