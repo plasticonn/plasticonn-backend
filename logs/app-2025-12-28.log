@@ -169,3 +169,11 @@
 {"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-28T17:32:19.514Z"}
 {"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-28T17:32:19.536Z"}
 {"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-28T17:32:19.541Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-28T17:32:32.736Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-28T17:32:32.762Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-28T17:32:32.763Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2025-12-28T17:33:08.180Z"}
+{"context":"CollectorController","level":"error","message":"Invalid password","timestamp":"2025-12-28T17:33:08.456Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2025-12-28T17:33:14.805Z"}
+{"context":"CollectorController","level":"error","message":"Invalid password","timestamp":"2025-12-28T17:33:15.641Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2025-12-28T17:34:46.769Z"}

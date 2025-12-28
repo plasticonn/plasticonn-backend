@@ -1,3 +1,4 @@
+import bcrypt from "bcryptjs/umd/types";
 import { EmailService } from "../../common/email/email.service";
 import { HttpError } from "../../common/utils/HttpError";
 import { otpServices } from "../../common/utils/otp/otp";
@@ -55,7 +56,7 @@ const resetPassword = async (
     throw new HttpError(400, "OTP not verified");
   }
 
-  const hashedPass = await passwordServices.hashPassword(password);
+  const hashedPass = await bcrypt.hash(password, 10);
 
   const user = await CollectorsModel.findOneAndUpdate(
     { email },
