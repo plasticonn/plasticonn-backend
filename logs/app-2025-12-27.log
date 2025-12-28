@@ -120,3 +120,11 @@
 {"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-27T18:02:45.407Z"}
 {"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-27T18:02:45.423Z"}
 {"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-27T18:02:45.424Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-27T18:06:09.018Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-27T18:06:09.056Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-27T18:06:09.058Z"}
+{"context":"adminManagement","level":"info","message":"Adding admin","timestamp":"2025-12-27T18:06:18.607Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2025-12-27T18:06:20.785Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2025-12-27T18:58:42.539Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2025-12-27T18:58:42.568Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2025-12-27T18:58:42.570Z"}
