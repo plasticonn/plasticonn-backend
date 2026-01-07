@@ -1,4 +1,4 @@
-import bcrypt from "bcryptjs/umd/types";
+import bcrypt from "bcrypt";
 import { EmailService } from "../../common/email/email.service";
 import { HttpError } from "../../common/utils/HttpError";
 import { otpServices } from "../../common/utils/otp/otp";

@@ -11,12 +11,19 @@ import { EventsController } from "./modules/events/events.controller";
 import { CenterManagementController } from "./modules/admin/controllers/center.controller";
 import { CollectorManagementController } from "./modules/admin/controllers/collector.controller";
 import { AdminManagementController } from "./modules/admin/controllers/admin-mgt.controller";
+import cookieParser from "cookie-parser";
 
 export const createApp = () => {
   const app = express();
   app.use(express.json());
   app.use(helmet());
-  app.use(cors());
+  app.use(cookieParser());
+  app.use(
+    cors({
+      origin: "http://localhost:5173",
+      credentials: true,
+    })
+  );
 
   // Swagger UI
   setupSwagger(app);

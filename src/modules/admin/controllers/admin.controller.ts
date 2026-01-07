@@ -41,6 +41,13 @@ export const AdminController = Router();
 AdminController.post("/login", async (req, res) => {
   try {
     const result = await AdminService.login(req.body.email, req.body.password);
+
+    res.cookie("token", result.token, {
+      httpOnly: true,
+      secure: false, // true in prod
+      sameSite: "lax",
+    });
+
     return res
       .status(HttpStatus.CREATED)
       .json(ApiResponse(HttpStatus.CREATED, "Login successful", result));
@@ -56,31 +63,26 @@ AdminController.post("/login", async (req, res) => {
 
 /**
  * @swagger
- * /api/admin/profile/{id}:
+ * /api/admin/profile:
  *   get:
  *     summary: Gets admin profile
  *     tags: [Admin]
  *     security:
  *       - bearerAuth: []
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: string
- *         description: ID of the admin to return
  *     responses:
  *       200:
  *         description: Profile retrieved successfully
  */
 AdminController.get(
-  "/profile/:id",
+  "/profile",
   verifyToken,
   checkRole(["admin", "super_admin"]),
   async (req, res) => {
-    const { id } = req.params;
+    const user_id = (req as any).user.sub;
+
     try {
-      const result = await AdminService.getProfile(id);
+      const result = await AdminService.getProfile(user_id);
+
       return res
         .status(HttpStatus.OK)
         .json(ApiResponse(HttpStatus.OK, "Profile returned", result));

@@ -1,4 +1,4 @@
-import bcrypt from "bcryptjs";
+import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { CollectorsModel } from "./collectors.model";
 import { config } from "../../config";
