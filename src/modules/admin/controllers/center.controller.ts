@@ -7,6 +7,7 @@ import { Logger } from "../../../common/logger/logger";
 import { HttpError } from "../../../common/utils/HttpError";
 import { verifyToken } from "../../../common/middleware/auth.middleware";
 import { checkRole } from "../../../common/middleware/role.middleware";
+import { CenterService } from "../../centers/centers.service";
 
 /**
  * @swagger
@@ -296,6 +297,43 @@ CenterManagementController.delete(
         .json(ApiResponse(HttpStatus.OK, "Center deleted", result));
     } catch (err: any) {
       log.error(err.message);
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
+  }
+);
+
+/**
+ * @swagger
+ * /api/admin/center-mgt/list:
+ *   get:
+ *     summary: Gets list of centers
+ *     tags: [Center Management]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Centers list retrieved successfully
+ */
+CenterManagementController.get(
+  "/list",
+  verifyToken,
+  checkRole(["admin", "super_admin"]),
+  async (req, res) => {
+    try {
+      const result = await CenterService.getCenters();
+
+      return res
+        .status(HttpStatus.OK)
+        .json(ApiResponse(HttpStatus.OK, "List returned", result));
+    } catch (err: any) {
+      log.error(err.message);
+
       if (err instanceof HttpError) {
         return res
           .status(err.status)

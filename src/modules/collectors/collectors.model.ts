@@ -8,6 +8,7 @@ const CollectorsSchema = new Schema(
     email: { type: String },
     password: { type: String },
     co2Saved: { type: Number },
+    status: { type: String, default: "active", enum: ["active", "suspended"] },
   },
   { timestamps: true }
 );

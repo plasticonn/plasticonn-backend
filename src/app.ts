@@ -25,6 +25,14 @@ export const createApp = () => {
     })
   );
 
+  // app.options(
+  //   "*",
+  //   cors({
+  //     origin: "http://localhost:5173",
+  //     credentials: true,
+  //   })
+  // );
+
   // Swagger UI
   setupSwagger(app);
 

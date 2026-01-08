@@ -1,6 +1,18 @@
 import argon2 from "argon2";
 
-export const hashPassword = async (pin: string): Promise<string> => {
+const generatePassword = (length: number): string => {
+  const chars =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
+  let password = "";
+
+  for (let i = 0; i < length; i++) {
+    password += chars.charAt(Math.floor(Math.random() * chars.length));
+  }
+
+  return password;
+};
+
+const hashPassword = async (pin: string): Promise<string> => {
   try {
     const hashedPassword = await argon2.hash(pin);
     return hashedPassword;
@@ -10,7 +22,7 @@ export const hashPassword = async (pin: string): Promise<string> => {
   }
 };
 
-export const verifyPassword = async (
+const verifyPassword = async (
   pin: string,
   hashedPin: string
 ): Promise<boolean> => {
@@ -22,4 +34,8 @@ export const verifyPassword = async (
   }
 };
 
-export const passwordServices = { hashPassword, verifyPassword };
+export const passwordServices = {
+  hashPassword,
+  verifyPassword,
+  generatePassword,
+};

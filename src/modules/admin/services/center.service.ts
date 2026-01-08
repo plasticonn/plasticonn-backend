@@ -150,6 +150,16 @@ const deleteCenter = async (centerId: string) => {
   return { message: "Center deleted successfully" };
 };
 
+const getCenters = async () => {
+  log.info("Getting all centers");
+
+  const centers = await CenterModel.find().select("-password");
+
+  if (centers.length <= 0) throw new HttpError(404, "No centers found");
+
+  return { centers };
+};
+
 export const CenterManagement = {
   bulkAddCenters,
   getCenter,
