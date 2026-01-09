@@ -101,19 +101,12 @@ AdminController.get(
 
 /**
  * @swagger
- * /api/admin/profile/{id}:
+ * /api/admin/profile:
  *   put:
  *     summary: Update admin profile
  *     tags: [Admin]
  *     security:
  *       - bearerAuth: []
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: string
- *         description: ID of the admin to update
  *     requestBody:
  *       required: true
  *       content:
@@ -132,14 +125,15 @@ AdminController.get(
  *         description: Successfully updated profile
  */
 AdminController.put(
-  "/profile/:id",
+  "/profile",
   verifyToken,
   checkRole(["admin", "super_admin"]),
   async (req, res) => {
-    const { id } = req.params;
+    const user_id = (req as any).user.sub;
+
     const payload = req.body;
     try {
-      const result = await AdminService.updateProfile(id, payload);
+      const result = await AdminService.updateProfile(user_id, payload);
       return res
         .status(HttpStatus.OK)
         .json(ApiResponse(HttpStatus.OK, "Profile updated", result));

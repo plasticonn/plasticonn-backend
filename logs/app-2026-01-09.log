@@ -281,3 +281,13 @@
 {"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-01-09T18:41:25.051Z"}
 {"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-09T18:41:29.411Z"}
 {"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-09T18:41:29.665Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-09T19:01:05.332Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-09T19:01:05.356Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-09T19:01:05.357Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-09T19:06:55.030Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-09T19:06:55.319Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-09T19:13:42.558Z"}
+{"context":"AdminController","level":"error","message":"Failed to verify password.","timestamp":"2026-01-09T19:13:42.803Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-09T19:15:16.391Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-09T19:15:16.408Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-09T19:15:16.413Z"}
