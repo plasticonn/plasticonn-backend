@@ -12,6 +12,7 @@ import { CenterManagementController } from "./modules/admin/controllers/center.c
 import { CollectorManagementController } from "./modules/admin/controllers/collector.controller";
 import { AdminManagementController } from "./modules/admin/controllers/admin-mgt.controller";
 import cookieParser from "cookie-parser";
+import { DashboardController } from "./modules/dashboard/dashboard.controller";
 
 export const createApp = () => {
   const app = express();
@@ -39,6 +40,7 @@ export const createApp = () => {
   // Routes
   app.use("/api/auth", AuthController);
   app.use("/api/admin", AdminController);
+  app.use("/api/admin/dashboard", DashboardController);
   app.use("/api/collector", CollectorController);
   app.use("/api/center", CenterController);
   app.use("/api/drop", DropController);
