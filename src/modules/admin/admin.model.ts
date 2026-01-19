@@ -6,7 +6,7 @@ const AdminSchema = new Schema(
     phone: { type: String },
     email: { type: String },
     password: { type: String },
-    role: { type: String, enum: ["super admin", "admin"] },
+    role: { type: String, enum: ["super_admin", "admin"] },
     status: { type: String, enum: ["active", "suspended"], default: "active" },
   },
   { timestamps: true }

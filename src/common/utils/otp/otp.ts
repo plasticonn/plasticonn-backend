@@ -21,7 +21,8 @@ const storeOtp = async (email: string, otp_code: string) => {
 
 const verifyOtp = async (email: string, otp_code: string) => {
   const otpEntry = await OtpModel.findOne({
-    where: { email, otp_code },
+    email,
+    otp_code,
   });
 
   if (otpEntry?.used) {
@@ -36,7 +37,7 @@ const verifyOtp = async (email: string, otp_code: string) => {
     return { error: "Invalid OTP" };
   }
 
-  return { success: "Account verified" };
+  return { success: "OTP verified" };
 };
 
 export const otpServices = { generateOtp, storeOtp, verifyOtp };

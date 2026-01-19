@@ -149,3 +149,107 @@ AdminController.put(
     }
   }
 );
+
+/**
+ * @swagger
+ * /api/admin/update-password:
+ *   post:
+ *     summary: Update admin password
+ *     tags: [Admin]
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               curPassword:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Successfully initiated password update
+ */
+AdminController.post(
+  "/update-password",
+  verifyToken,
+  checkRole(["admin", "super_admin"]),
+  async (req, res) => {
+    const user_id = (req as any).user.sub;
+
+    const payload = req.body;
+    try {
+      const result = await AdminService.updatePassword(user_id, payload);
+      return res
+        .status(HttpStatus.OK)
+        .json(
+          ApiResponse(
+            HttpStatus.OK,
+            "Password update initiated. Check mail for OTP.",
+            result
+          )
+        );
+    } catch (err: any) {
+      log.error(err.message);
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
+  }
+);
+
+/**
+ * @swagger
+ * /api/admin/verify-password-update:
+ *   put:
+ *     summary: Verify password update
+ *     tags: [Admin]
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               newPassword:
+ *                 type: string
+ *               otp:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Successfully initiated password update
+ */
+AdminController.put(
+  "/verify-password-update",
+  verifyToken,
+  checkRole(["admin", "super_admin"]),
+  async (req, res) => {
+    const user_id = (req as any).user.sub;
+
+    const payload = req.body;
+    try {
+      const result = await AdminService.verifyPasswordUpdate(user_id, payload);
+      return res
+        .status(HttpStatus.OK)
+        .json(
+          ApiResponse(HttpStatus.OK, "Password updated successfully.", result)
+        );
+    } catch (err: any) {
+      log.error(err.message);
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
+  }
+);

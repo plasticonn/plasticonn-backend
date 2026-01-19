@@ -6,6 +6,9 @@ import { Roles } from "../../../common/enum/roles.enum";
 import { HttpError } from "../../../common/utils/HttpError";
 import { passwordServices } from "../../../common/utils/password";
 import { tokenService } from "../../../common/utils/token/token.service";
+import { otpServices } from "../../../common/utils/otp/otp";
+import { EmailService } from "../../../common/email/email.service";
+import { changePasswordTemplate } from "../../../common/email/templates";
 
 const log = new Logger("AdminService");
 
@@ -25,7 +28,7 @@ export const loginSuperAdmin = async (email: string, password: string) => {
 
   const accessToken = tokenService.generateAccessToken({
     userId: String(admin?._id),
-    role: Roles.SUPER_ADMIN,
+    role: String(admin?.role),
   });
 
   const refreshToken = await tokenService.generateRefreshToken({
@@ -51,7 +54,7 @@ const login = async (email: string, password: string) => {
   if (!match) throw new HttpError(401, "Invalid password");
 
   const token = jwt.sign(
-    { sub: admin._id, role: Roles.ADMIN },
+    { sub: admin._id, role: admin.role },
     config.jwtSecret,
     {
       expiresIn: "7d",
@@ -85,8 +88,57 @@ const updateProfile = async (adminId: string, payload: any) => {
   return { admin };
 };
 
+const updatePassword = async (adminId: string, payload: any) => {
+  log.info("Change password");
+
+  const admin = await AdminModel.findById(adminId);
+
+  if (!admin) throw new HttpError(404, "Admin not found");
+
+  const match = await passwordServices.verifyPassword(
+    payload.curPassword,
+    String(admin.password)
+  );
+
+  if (!match) throw new HttpError(401, "Invalid password");
+
+  const otp = otpServices.generateOtp();
+
+  await otpServices.storeOtp(String(admin.email), otp);
+
+  await EmailService.sendEmail({
+    to: String(admin.email),
+    subject: "Password Change Confirmation",
+    html: changePasswordTemplate({ name: String(admin.name), otp: otp }),
+  });
+};
+
+const verifyPasswordUpdate = async (adminId: string, payload: any) => {
+  log.info("Verify password change");
+
+  const admin = await AdminModel.findById(adminId);
+
+  if (!admin) throw new HttpError(404, "Admin not found");
+
+  const verify = await otpServices.verifyOtp(String(admin.email), payload.otp);
+
+  if (verify.error) {
+    throw new HttpError(400, verify.error);
+  }
+
+  const password = await passwordServices.hashPassword(payload.newPassword);
+
+  Object.assign(admin, password);
+
+  await admin.save();
+
+  return { admin };
+};
+
 export const AdminService = {
   login,
   getProfile,
   updateProfile,
+  updatePassword,
+  verifyPasswordUpdate,
 };

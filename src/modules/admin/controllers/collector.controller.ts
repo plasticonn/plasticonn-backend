@@ -180,7 +180,7 @@ CollectorManagementController.put(
  *                 type: string
  *     responses:
  *       200:
- *         description: Successfully updated collector status profile
+ *         description: Successfully updated collector status
  */
 CollectorManagementController.put(
   "/status/:id",
@@ -192,7 +192,7 @@ CollectorManagementController.put(
     const status = req.body;
 
     try {
-      const result = await CollectorServices.updateCollector(id, status);
+      const result = await CollectorServices.updateStatus(id, status);
 
       return res
         .status(HttpStatus.OK)

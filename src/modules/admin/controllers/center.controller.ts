@@ -194,7 +194,7 @@ CenterManagementController.put(
  *                 type: string
  *     responses:
  *       200:
- *         description: Successfully updated center status profile
+ *         description: Successfully updated center status
  */
 CenterManagementController.put(
   "/status/:id",
@@ -202,9 +202,11 @@ CenterManagementController.put(
   checkRole(["admin", "super_admin"]),
   async (req, res) => {
     const { id } = req.params;
-    const status = req.body;
+
+    const { status } = req.body;
+
     try {
-      const result = await CenterManagement.updateCenter(id, status);
+      const result = await CenterManagement.updateStatus(id, status);
       return res
         .status(HttpStatus.OK)
         .json(ApiResponse(HttpStatus.OK, "Status updated", result));

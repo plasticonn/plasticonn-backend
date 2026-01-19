@@ -9,7 +9,7 @@ dotenv.config();
 
 interface TokenPayload {
   userId: string;
-  role?: string;
+  role?: string | undefined;
 }
 
 const generateAccessToken = (payload: TokenPayload) => {

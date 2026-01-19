@@ -7,6 +7,12 @@ export const adminInviteTemplate = (data: {
   <p>Use this password: ${data.password} for initial login. Make sure to change from settings.</p>
 `;
 
+export const changePasswordTemplate = (data: { name: string; otp: string }) => `
+  <h2>Hello ${data.name}</h2>
+  <p>Use this OTP to confirm your password change ${data.otp}</p>
+  <p>Expires in 5 minutes</p>
+`;
+
 export const passwordResetTemplate = (link: string) => `
   <h3>Password Reset</h3>
   <p>Click the link below to reset your password:</p>

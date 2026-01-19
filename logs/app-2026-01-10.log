@@ -1,0 +1,275 @@
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T08:12:39.712Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T08:12:59.713Z"}
+{"context":"AdminController","level":"error","message":"getaddrinfo ENOTFOUND ac-f6lct0k-shard-00-02.uyr1rdy.mongodb.net","timestamp":"2026-01-10T08:13:09.727Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T08:13:10.473Z"}
+{"context":"AdminController","level":"error","message":"getaddrinfo ENOTFOUND ac-f6lct0k-shard-00-02.uyr1rdy.mongodb.net","timestamp":"2026-01-10T08:13:29.718Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T08:13:30.486Z"}
+{"context":"AdminManagementController","level":"error","message":"getaddrinfo ENOTFOUND ac-f6lct0k-shard-00-02.uyr1rdy.mongodb.net","timestamp":"2026-01-10T08:13:40.485Z"}
+{"context":"AdminManagementController","level":"error","message":"getaddrinfo ENOTFOUND ac-f6lct0k-shard-00-02.uyr1rdy.mongodb.net","timestamp":"2026-01-10T08:14:00.498Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T08:46:33.851Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T08:46:35.572Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T08:46:36.011Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T08:46:36.275Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T08:46:39.945Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T08:46:40.174Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T08:52:04.805Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T08:52:04.810Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T08:52:05.064Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T08:52:06.691Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-01-10T08:52:46.054Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-01-10T08:52:46.297Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T08:53:25.058Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T08:53:25.356Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T08:57:27.718Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T08:57:27.724Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T08:57:27.954Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T08:57:27.964Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:05:46.791Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:05:46.808Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:05:46.809Z"}
+{"context":"CollectorsService","level":"info","message":"Registering collector","timestamp":"2026-01-10T09:06:38.380Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T09:10:19.755Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T09:10:20.015Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T09:10:20.569Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T09:10:20.819Z"}
+{"context":"CollectorManagement","level":"info","message":"Updating collector status","timestamp":"2026-01-10T09:16:07.245Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T09:17:39.935Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T09:17:40.183Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T09:17:40.807Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T09:17:41.050Z"}
+{"context":"CollectorManagement","level":"info","message":"Updating collector status","timestamp":"2026-01-10T09:20:46.301Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T09:22:26.911Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T09:22:27.132Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T09:22:27.597Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T09:22:27.827Z"}
+{"context":"CollectorManagement","level":"info","message":"Updating collector status","timestamp":"2026-01-10T09:22:33.348Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T09:22:37.665Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T09:22:37.944Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T09:22:38.176Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T09:22:38.529Z"}
+{"context":"CollectorManagement","level":"info","message":"Updating collector status","timestamp":"2026-01-10T09:22:46.111Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T09:22:49.395Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T09:22:49.724Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T09:22:49.961Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T09:22:50.204Z"}
+{"context":"CollectorManagement","level":"info","message":"Updating collector status","timestamp":"2026-01-10T09:23:51.995Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T09:23:52.477Z"}
+{"context":"CollectorManagement","level":"info","message":"Updating collector status","timestamp":"2026-01-10T09:24:06.771Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T09:24:07.665Z"}
+{"context":"CollectorManagement","level":"info","message":"Updating collector status","timestamp":"2026-01-10T09:24:39.163Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T09:24:39.712Z"}
+{"context":"CollectorManagement","level":"info","message":"Updating collector status","timestamp":"2026-01-10T09:24:49.670Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T09:24:50.196Z"}
+{"context":"CollectorManagement","level":"info","message":"Deleting collector","timestamp":"2026-01-10T09:26:47.533Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T09:26:47.796Z"}
+{"context":"CollectorManagement","level":"info","message":"Updating collector status","timestamp":"2026-01-10T09:29:33.503Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T09:29:36.093Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T09:30:20.601Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T09:30:20.870Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-01-10T09:30:22.012Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-01-10T09:30:22.390Z"}
+{"context":"CenterManagement","level":"info","message":"Updating center profile","timestamp":"2026-01-10T09:35:02.753Z"}
+{"context":"CenterManagementController","level":"error","message":"Centers validation failed: centerId: Path `centerId` is required.","timestamp":"2026-01-10T09:35:03.034Z"}
+{"context":"CenterManagement","level":"info","message":"Updating center profile","timestamp":"2026-01-10T09:36:57.442Z"}
+{"context":"CenterManagementController","level":"error","message":"Centers validation failed: centerId: Path `centerId` is required.","timestamp":"2026-01-10T09:36:57.671Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:38:26.983Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:38:27.009Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:38:27.010Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:38:45.268Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:38:45.303Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:38:45.303Z"}
+{"context":"CenterManagement","level":"info","message":"Updating center status","timestamp":"2026-01-10T09:38:56.368Z"}
+{"context":"CenterManagementController","level":"error","message":"Centers validation failed: centerId: Path `centerId` is required.","timestamp":"2026-01-10T09:38:56.634Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:40:09.129Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:40:09.150Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:40:09.151Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:42:36.856Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:42:36.874Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:42:36.875Z"}
+{"context":"CenterManagement","level":"info","message":"Updating center status","timestamp":"2026-01-10T09:42:44.632Z"}
+{"context":"CenterManagementController","level":"error","message":"Centers validation failed: centerId: Path `centerId` is required.","timestamp":"2026-01-10T09:42:44.898Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:43:37.055Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:43:37.075Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:43:37.075Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:46:34.629Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:46:34.650Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:46:34.650Z"}
+{"context":"CenterManagement","level":"info","message":"Updating center status","timestamp":"2026-01-10T09:46:54.447Z"}
+{"context":"CenterManagementController","level":"error","message":"Centers validation failed: centerId: Path `centerId` is required.","timestamp":"2026-01-10T09:46:54.697Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:49:34.139Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:49:34.159Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:49:34.160Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:50:15.039Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:50:15.073Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:50:15.074Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:50:31.350Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:50:31.386Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:50:31.387Z"}
+{"context":"CenterManagement","level":"info","message":"Updating center status","timestamp":"2026-01-10T09:50:40.511Z"}
+{"context":"CenterManagementController","level":"error","message":"Centers validation failed: status: Cast to string failed for value \"{ status: 'suspended' }\" (type Object) at path \"status\", centerId: Path `centerId` is required.","timestamp":"2026-01-10T09:50:40.772Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:51:25.483Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:51:25.506Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:51:25.510Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:54:16.182Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:54:16.204Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:54:16.205Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:54:46.783Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:54:46.820Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:54:46.821Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:55:38.631Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:55:38.664Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:55:38.665Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:55:54.880Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:55:54.912Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:55:54.913Z"}
+{"context":"CenterManagement","level":"info","message":"Updating center status","timestamp":"2026-01-10T09:56:01.323Z"}
+{"context":"CenterManagementController","level":"error","message":"Centers validation failed: centerId: Path `centerId` is required.","timestamp":"2026-01-10T09:56:01.697Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:57:06.076Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:57:06.108Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:57:06.108Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:58:08.600Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:58:08.625Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:58:08.625Z"}
+{"context":"CenterManagement","level":"info","message":"Updating center status","timestamp":"2026-01-10T09:58:13.515Z"}
+{"context":"CenterManagementController","level":"error","message":"Centers validation failed: centerId: Path `centerId` is required.","timestamp":"2026-01-10T09:58:13.818Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:58:36.861Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:58:36.882Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:58:36.882Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T09:58:52.683Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T09:58:52.724Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T09:58:52.725Z"}
+{"context":"CenterManagement","level":"info","message":"Updating center status","timestamp":"2026-01-10T09:59:46.811Z"}
+{"context":"CenterManagementController","level":"error","message":"Centers validation failed: centerId: Path `centerId` is required.","timestamp":"2026-01-10T09:59:47.146Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T10:00:10.210Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T10:00:10.234Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T10:00:10.239Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T10:13:52.281Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T10:13:52.672Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T10:17:28.056Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T10:17:28.082Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T10:17:28.083Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T10:18:16.711Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T10:18:16.740Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T10:18:16.741Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T10:18:36.107Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T10:18:36.135Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T10:18:36.137Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-10T10:20:08.696Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-10T10:20:09.102Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-10T10:20:22.013Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-10T10:20:22.459Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-10T10:20:36.378Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T10:20:50.659Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T10:20:50.906Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-10T10:21:08.336Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T10:21:11.268Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-10T10:21:11.279Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T10:21:11.513Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T10:21:13.185Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-10T10:21:13.204Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T10:21:13.413Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T10:23:02.224Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T10:23:02.255Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T10:23:02.256Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T10:24:01.482Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T10:24:01.505Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T10:24:01.506Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T10:24:09.890Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T10:24:10.151Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-10T10:24:22.220Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T10:24:25.149Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-10T10:24:25.165Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T10:24:25.391Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-10T10:24:26.842Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T10:24:27.200Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T10:24:27.447Z"}
+{"context":"adminManagement","level":"info","message":"Updating admin status","timestamp":"2026-01-10T10:24:30.316Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T10:24:32.842Z"}
+{"context":"adminManagement","level":"info","message":"Deleting admin","timestamp":"2026-01-10T10:24:39.442Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T10:24:41.716Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-10T10:25:04.895Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-10T10:25:04.928Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-10T10:25:04.931Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T15:05:00.125Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T15:05:02.002Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T15:05:02.592Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T15:05:02.817Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T15:05:08.812Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T15:05:09.082Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-10T15:07:33.965Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-10T15:07:34.567Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T15:07:34.834Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T15:07:35.179Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-10T15:07:58.450Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-10T15:08:01.513Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:08:01.533Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:08:03.462Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-10T15:08:03.548Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T15:09:50.326Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T15:09:50.557Z"}
+{"context":"CollectorManagement","level":"info","message":"Updating collector status","timestamp":"2026-01-10T15:10:46.896Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T15:10:49.410Z"}
+{"context":"CollectorManagement","level":"info","message":"Updating collector status","timestamp":"2026-01-10T15:11:09.448Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T15:11:11.982Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-01-10T15:11:51.782Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-01-10T15:11:52.070Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-01-10T15:13:58.138Z"}
+{"context":"CenterManagement","level":"info","message":"Deleting center","timestamp":"2026-01-10T15:14:23.879Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-01-10T15:14:26.137Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:14:42.580Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:14:42.819Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:15:48.990Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-10T15:15:48.996Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:15:49.206Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-10T15:15:50.893Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:15:52.304Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:15:52.591Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T15:16:09.722Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T15:16:09.959Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:19:19.685Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-10T15:19:19.690Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:19:19.921Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-10T15:19:21.612Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T15:27:13.084Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T15:27:13.307Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-10T15:27:41.713Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-10T15:27:42.095Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T15:27:42.441Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T15:27:42.712Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-10T15:28:07.110Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:28:10.438Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-10T15:28:10.450Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:28:10.699Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-10T15:28:10.740Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T15:29:24.955Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T15:29:25.204Z"}
+{"context":"CollectorManagement","level":"info","message":"Updating collector status","timestamp":"2026-01-10T15:30:38.047Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T15:30:41.386Z"}
+{"context":"CollectorManagement","level":"info","message":"Updating collector status","timestamp":"2026-01-10T15:30:52.696Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-10T15:30:55.271Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-01-10T15:31:01.701Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-01-10T15:31:02.279Z"}
+{"context":"CenterManagement","level":"info","message":"Deleting center","timestamp":"2026-01-10T15:31:12.495Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-01-10T15:31:14.784Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:32:05.853Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:32:06.138Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T15:33:23.492Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-10T15:33:23.773Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:44:56.202Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-10T15:44:56.210Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:44:56.473Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-10T15:44:56.679Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:46:20.072Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T15:46:20.363Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T17:11:20.185Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T17:11:40.211Z"}
+{"context":"AdminController","level":"error","message":"getaddrinfo ENOTFOUND ac-f6lct0k-shard-00-00.uyr1rdy.mongodb.net","timestamp":"2026-01-10T17:11:50.201Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T17:11:50.766Z"}
+{"context":"AdminController","level":"error","message":"getaddrinfo ENOTFOUND ac-f6lct0k-shard-00-00.uyr1rdy.mongodb.net","timestamp":"2026-01-10T17:12:10.223Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T17:12:10.777Z"}
+{"context":"DashboardController","level":"error","message":"getaddrinfo ENOTFOUND ac-f6lct0k-shard-00-00.uyr1rdy.mongodb.net","timestamp":"2026-01-10T17:12:20.778Z"}
+{"context":"DashboardController","level":"error","message":"getaddrinfo ENOTFOUND ac-f6lct0k-shard-00-00.uyr1rdy.mongodb.net","timestamp":"2026-01-10T17:12:20.780Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T20:59:39.423Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-10T20:59:59.434Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T21:00:29.453Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-10T21:00:31.706Z"}
