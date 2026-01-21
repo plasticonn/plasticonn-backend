@@ -5,11 +5,13 @@ import { otpServices } from "../../common/utils/otp/otp";
 import { OtpModel } from "../../common/utils/otp/otp.model";
 import { passwordServices } from "../../common/utils/password";
 import { CollectorsModel } from "../collectors/collectors.model";
+import { findUserByEmail } from "../../common/utils/user-resolver";
 
 const forgotPassword = async (email: string) => {
-  const user = await CollectorsModel.findOne({ email });
+  const resolved = await findUserByEmail(email);
 
-  if (!user) {
+  // Prevent email enumeration
+  if (!resolved) {
     return "If the email exists, an OTP has been sent";
   }
 
@@ -44,7 +46,7 @@ const confirmPasswordReset = async (email: string, otp_code: string) => {
 const resetPassword = async (
   email: string,
   otp_code: string,
-  password: string
+  password: string,
 ) => {
   const otp = await OtpModel.findOne({
     email,
@@ -56,14 +58,15 @@ const resetPassword = async (
     throw new HttpError(400, "OTP not verified");
   }
 
+  const resolved = await findUserByEmail(email);
+
+  if (!resolved) {
+    throw new HttpError(404, "User not found");
+  }
+
   const hashedPass = await bcrypt.hash(password, 10);
 
-  const user = await CollectorsModel.findOneAndUpdate(
-    { email },
-    { password: hashedPass }
-  );
-
-  if (!user) throw new HttpError(404, "User not found");
+  await resolved.updatePassword(hashedPass);
 
   await OtpModel.deleteMany({ email });
 

@@ -59,3 +59,53 @@
 {"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-21T17:08:47.078Z"}
 {"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-21T17:08:47.107Z"}
 {"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-21T17:08:47.108Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-21T17:10:22.188Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-21T17:10:22.236Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-21T17:10:22.237Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-21T17:10:56.188Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-21T17:10:56.579Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-21T17:11:20.298Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-21T17:11:20.652Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-21T17:12:56.753Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-21T17:12:57.508Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-21T17:13:15.796Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-21T17:13:16.143Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-21T17:13:25.934Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-21T17:13:26.373Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-21T17:13:35.672Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-21T17:13:37.110Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-21T17:24:04.079Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-21T17:24:04.105Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-21T17:24:04.130Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-21T17:24:23.615Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-21T17:24:23.642Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-21T17:24:23.644Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-21T17:24:49.321Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-21T17:24:49.348Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-21T17:24:49.349Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-21T17:26:11.857Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-21T17:26:11.899Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-21T17:26:11.900Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-21T17:28:12.754Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-21T17:28:12.773Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-21T17:28:12.777Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-21T17:28:27.227Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-21T17:28:27.242Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-21T17:28:27.243Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-21T17:28:54.053Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-21T17:28:54.082Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-21T17:28:54.084Z"}
+{"context":"EmailService","level":"info","message":"Email sent to josiahelias11@gmail.com","timestamp":"2026-01-21T17:29:34.429Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-21T17:31:00.169Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-21T17:31:00.402Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-21T17:33:14.124Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-21T17:33:14.155Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-21T17:33:14.163Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-21T17:34:18.476Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-21T17:34:18.512Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-21T17:34:18.513Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-21T17:34:31.043Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-21T17:34:59.809Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-21T17:35:34.623Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-21T17:35:34.644Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-21T17:35:34.645Z"}

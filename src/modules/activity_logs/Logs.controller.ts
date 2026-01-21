@@ -39,7 +39,7 @@ LogsController.get(
 
       return res
         .status(HttpStatus.OK)
-        .json(ApiResponse(HttpStatus.OK, "Profile returned", result));
+        .json(ApiResponse(HttpStatus.OK, "Logs returned", result));
     } catch (err: any) {
       log.error(err.message);
 

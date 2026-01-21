@@ -9,6 +9,7 @@ import { tokenService } from "../../../common/utils/token/token.service";
 import { otpServices } from "../../../common/utils/otp/otp";
 import { EmailService } from "../../../common/email/email.service";
 import { changePasswordTemplate } from "../../../common/email/templates";
+import bcrypt from "bcrypt";
 
 const log = new Logger("AdminService");
 
@@ -21,7 +22,7 @@ export const loginSuperAdmin = async (email: string, password: string) => {
 
   const match = await passwordServices.verifyPassword(
     password,
-    String(admin.password)
+    String(admin.password),
   );
 
   if (!match) throw new HttpError(401, "Invalid password");
@@ -46,10 +47,7 @@ const login = async (email: string, password: string) => {
 
   if (!admin) throw new HttpError(404, "Admin does not exist");
 
-  const match = await passwordServices.verifyPassword(
-    password,
-    String(admin.password)
-  );
+  const match = await bcrypt.compare(password, String(admin.password));
 
   if (!match) throw new HttpError(401, "Invalid password");
 
@@ -58,7 +56,7 @@ const login = async (email: string, password: string) => {
     config.jwtSecret,
     {
       expiresIn: "7d",
-    }
+    },
   );
 
   return { admin, token };
@@ -97,7 +95,7 @@ const updatePassword = async (adminId: string, payload: any) => {
 
   const match = await passwordServices.verifyPassword(
     payload.curPassword,
-    String(admin.password)
+    String(admin.password),
   );
 
   if (!match) throw new HttpError(401, "Invalid password");
