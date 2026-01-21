@@ -18,6 +18,8 @@ export class EmailService {
     subject: string;
     html: string;
   }) {
+    console.log(process.env.BREVO_SENDER_EMAIL);
+
     try {
       await transactionalApi.sendTransacEmail({
         sender: {
@@ -33,6 +35,30 @@ export class EmailService {
     } catch (err: any) {
       log.error(err.message);
       throw err;
+    }
+  }
+
+  static async sendBulkEmail({
+    to,
+    subject,
+    html,
+  }: {
+    to: string[];
+    subject: string;
+    html: string;
+  }) {
+    try {
+      await transactionalApi.sendTransacEmail({
+        sender: {
+          email: process.env.BREVO_SENDER_EMAIL!,
+          name: process.env.BREVO_SENDER_NAME!,
+        },
+        to: to.map((email) => ({ email })),
+        subject,
+        htmlContent: html,
+      });
+    } catch (err: any) {
+      console.error("Brevo send error:", err.response?.text || err.message);
     }
   }
 }
