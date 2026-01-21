@@ -6,6 +6,7 @@ import { CenterModel } from "./centers.model";
 import { config } from "../../config";
 import jwt from "jsonwebtoken";
 import { generateCenterId } from "../../common/utils/generateCode";
+import { addLog } from "../activity_logs/Logs.service";
 
 const log = new Logger("AdminService");
 
@@ -32,6 +33,12 @@ const register = async (payload: any) => {
     },
   });
 
+  await addLog({
+    type: "User registration",
+    admin: null,
+    action: `A new center ${payload.email} just registered`,
+  });
+
   return { center };
 };
 
@@ -50,7 +57,7 @@ const login = async (centerId: string, password: string) => {
 
   const match = await passwordServices.verifyPassword(
     password,
-    String(center.password)
+    String(center.password),
   );
 
   if (!match) throw new HttpError(401, "Invalid Password");
@@ -58,7 +65,7 @@ const login = async (centerId: string, password: string) => {
   const token = jwt.sign(
     { sub: center._id, role: Roles.CENTER },
     config.jwtSecret,
-    { expiresIn: "7d" }
+    { expiresIn: "7d" },
   );
 
   // Sanitize response
@@ -99,6 +106,14 @@ const deleteAccount = async (centerId: string) => {
   if (!center) {
     throw new HttpError(404, "Center not found");
   }
+
+  await addLog({
+    type: "Account deletion",
+    admin: null,
+    action: "A center has deleted their account",
+    userId: centerId,
+    userType: "Centers",
+  });
 
   return { message: "Center deleted successfully" };
 };

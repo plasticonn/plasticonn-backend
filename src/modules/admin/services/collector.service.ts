@@ -1,5 +1,6 @@
 import { Logger } from "../../../common/logger/logger";
 import { HttpError } from "../../../common/utils/HttpError";
+import { addLog } from "../../activity_logs/Logs.service";
 import { CollectorsModel } from "../../collectors/collectors.model";
 
 const log = new Logger("CollectorManagement");
@@ -38,6 +39,14 @@ const updateStatus = async (collectorId: string, status: string) => {
 
   Object.assign(collector, status);
 
+  await addLog({
+    type: "Status update",
+    admin: "Super admin",
+    action: `Collector status has been updated to ${status}`,
+    userId: collectorId,
+    userType: "Collectors",
+  });
+
   await collector.save();
 
   return { collector };
@@ -51,6 +60,14 @@ const deleteCollector = async (collectorId: string) => {
   if (!collector) {
     throw new HttpError(404, "Collector not found");
   }
+
+  await addLog({
+    type: "Account deletion",
+    admin: "Admin",
+    action: `Collector account has been deleted by admin`,
+    userId: collectorId,
+    userType: "Collectors",
+  });
 
   return { message: "Collector deleted successfully" };
 };

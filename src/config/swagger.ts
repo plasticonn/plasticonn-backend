@@ -36,6 +36,7 @@ const options = {
     "./src/modules/drops/*.controller.ts",
     "./src/modules/events/*.controller.ts",
     "./src/modules/dashboard/*.controller.ts",
+    "./src/modules/activity_logs/*.controller.ts",
   ],
 };
 

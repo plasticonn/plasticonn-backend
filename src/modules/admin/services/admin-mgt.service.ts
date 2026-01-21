@@ -3,6 +3,7 @@ import { adminInviteTemplate } from "../../../common/email/templates";
 import { Logger } from "../../../common/logger/logger";
 import { HttpError } from "../../../common/utils/HttpError";
 import { passwordServices } from "../../../common/utils/password";
+import { addLog } from "../../activity_logs/Logs.service";
 import { AdminModel } from "../admin.model";
 
 const log = new Logger("adminManagement");
@@ -65,6 +66,14 @@ const updateStatus = async (adminId: string, status: string) => {
   const admin = await AdminModel.findById(adminId);
 
   if (!admin) throw new HttpError(404, "Admin not found");
+
+  await addLog({
+    type: "Status update",
+    admin: "Super admin",
+    action: `Admin status has been updated to ${status}`,
+    userId: adminId,
+    userType: "Admins",
+  });
 
   Object.assign(admin, status);
 

@@ -6,6 +6,7 @@ import { passwordServices } from "../../../common/utils/password";
 import { parse } from "csv-parse/sync";
 import { generateCenterId } from "../../../common/utils/generateCode";
 import { geocodeAddress } from "../../../common/utils/geocode";
+import { addLog } from "../../activity_logs/Logs.service";
 
 const log = new Logger("CenterManagement");
 
@@ -60,7 +61,7 @@ export const bulkAddCenters = async (file: Express.Multer.File) => {
         contactEmail: row.Email,
 
         materialsAccepted: row.Accepted_Plastic_Types?.split(",").map(
-          (m: string) => m.trim()
+          (m: string) => m.trim(),
         ),
 
         verified: true,
@@ -78,6 +79,12 @@ export const bulkAddCenters = async (file: Express.Multer.File) => {
       console.error("Skipped row:", row.Center_Name);
     }
   }
+
+  await addLog({
+    type: "CSV upload",
+    admin: "Admin",
+    action: `${inserted.length} centers have been uploaded and verified`,
+  });
 
   return {
     totalRows: records.length,
@@ -119,6 +126,13 @@ const updateStatus = async (centerId: string, status: string) => {
 
   Object.assign(center, status);
 
+  await addLog({
+    type: "Status update",
+    admin: "Super admin",
+    action: `Center status has been updated to ${status}`,
+    userId: centerId,
+  });
+
   await center.save();
 
   return { center };
@@ -133,6 +147,13 @@ const verifyCenter = async (centerId: string) => {
 
   Object.assign(center, { verified: true });
 
+  await addLog({
+    type: "Center Verified",
+    admin: "Super admin",
+    action: `A center has just been verified.`,
+    userId: centerId,
+  });
+
   await center.save();
 
   return { center };
@@ -146,6 +167,13 @@ const deleteCenter = async (centerId: string) => {
   if (!center) {
     throw new HttpError(404, "Center not found");
   }
+
+  await addLog({
+    type: "Account deletion",
+    admin: "Admin",
+    action: `Center account has been deleted by admin`,
+    userId: centerId,
+  });
 
   return { message: "Center deleted successfully" };
 };
