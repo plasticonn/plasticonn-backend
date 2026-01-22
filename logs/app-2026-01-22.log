@@ -80,3 +80,14 @@
 {"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-22T09:00:21.728Z"}
 {"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-22T09:00:21.745Z"}
 {"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-22T09:00:21.746Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-22T17:39:51.719Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-22T17:39:51.753Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-22T17:39:51.763Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T17:40:00.935Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T17:40:04.058Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T17:40:04.297Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-22T17:40:22.879Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-22T17:40:23.101Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-22T17:45:33.081Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-22T17:45:33.102Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-22T17:45:33.102Z"}

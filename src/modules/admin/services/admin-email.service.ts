@@ -17,12 +17,10 @@ export class AdminEmailService {
   }) {
     let emails: string[] = await this.getEmailsByAudience(audience);
 
-    // 🔹 Remove duplicates
     emails = emails.filter(
       (email, index, self) => self.indexOf(email) === index,
     );
 
-    // 🔹 Split valid & invalid emails
     const validEmails = emails.filter(isValidEmail);
     const invalidEmails = emails.filter((e) => !isValidEmail(e));
 
