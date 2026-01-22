@@ -1,0 +1,82 @@
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-22T08:11:34.769Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-22T08:11:34.807Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-22T08:11:34.808Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:12:48.752Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-22T08:12:51.010Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-22T08:12:51.661Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-22T08:13:19.566Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-22T08:13:21.873Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-01-22T08:14:08.899Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-01-22T08:14:11.565Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-22T08:14:17.633Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-22T08:14:18.807Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-22T08:14:23.245Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-22T08:14:23.264Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-22T08:14:25.256Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-22T08:14:27.950Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-22T08:18:40.642Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-22T08:18:40.649Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:18:40.669Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-22T08:18:41.115Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:18:41.922Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-22T08:18:44.127Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:21:25.452Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:21:25.841Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:25:07.179Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:25:08.352Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:28:13.197Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:28:14.184Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-22T08:31:50.164Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-22T08:32:42.168Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:33:51.344Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:33:52.004Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:33:52.356Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:33:52.632Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:34:19.914Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:34:20.621Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:34:21.200Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:34:21.704Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:34:33.704Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:34:34.092Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:34:34.606Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:34:34.875Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:35:17.561Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:35:17.838Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:35:18.358Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:35:18.707Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-22T08:36:15.574Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-22T08:36:15.793Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:36:21.281Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:36:21.797Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-01-22T08:39:51.056Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-01-22T08:39:51.705Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-22T08:39:53.827Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-01-22T08:39:54.052Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-22T08:39:56.557Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-22T08:39:56.809Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:39:58.800Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:39:59.317Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:43:14.158Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:43:14.474Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:43:32.306Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:43:32.541Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:43:34.025Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:43:34.260Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-22T08:43:44.920Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-22T08:43:45.142Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:44:32.408Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:44:32.624Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:54:51.242Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:54:51.248Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-22T08:54:51.462Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-22T08:54:51.468Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-22T08:58:09.915Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-22T08:59:49.304Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-22T08:59:49.319Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-22T08:59:49.320Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-22T09:00:08.634Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-22T09:00:08.668Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-22T09:00:08.671Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-22T09:00:21.728Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-22T09:00:21.745Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-22T09:00:21.746Z"}

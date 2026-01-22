@@ -9,11 +9,11 @@ export class AdminEmailService {
   static async sendBulkEmail({
     audience,
     subject,
-    html,
+    message,
   }: {
     audience: string;
     subject: string;
-    html: string;
+    message: string;
   }) {
     let emails: string[] = await this.getEmailsByAudience(audience);
 
@@ -35,7 +35,7 @@ export class AdminEmailService {
       await EmailService.sendBulkEmail({
         to: validEmails.slice(i, i + CHUNK_SIZE),
         subject,
-        html,
+        message,
       });
     }
 

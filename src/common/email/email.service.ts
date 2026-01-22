@@ -41,11 +41,11 @@ export class EmailService {
   static async sendBulkEmail({
     to,
     subject,
-    html,
+    message,
   }: {
     to: string[];
     subject: string;
-    html: string;
+    message: string;
   }) {
     try {
       await transactionalApi.sendTransacEmail({
@@ -55,7 +55,7 @@ export class EmailService {
         },
         to: to.map((email) => ({ email })),
         subject,
-        htmlContent: html,
+        htmlContent: message,
       });
     } catch (err: any) {
       console.error("Brevo send error:", err.response?.text || err.message);

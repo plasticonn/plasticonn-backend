@@ -24,14 +24,14 @@ export const AdminEmailController = Router();
  *         application/json:
  *           schema:
  *             type: object
- *             required: [audience, subject, html]
+ *             required: [audience, subject, message]
  *             properties:
  *               audience:
  *                 type: string
  *                 enum: [all, admins, collectors, centers]
  *               subject:
  *                 type: string
- *               html:
+ *               message:
  *                 type: string
  *     responses:
  *       200:
@@ -44,12 +44,12 @@ AdminEmailController.post(
   checkRole(["admin", "super_admin"]),
   async (req, res) => {
     try {
-      const { audience, subject, html } = req.body;
+      const { audience, subject, message } = req.body;
 
       const result = await AdminEmailService.sendBulkEmail({
         audience,
         subject,
-        html,
+        message,
       });
 
       return res
