@@ -58,15 +58,17 @@ const resetPassword = async (
     throw new HttpError(400, "OTP not verified");
   }
 
-  const resolved = await findUserByEmail(email);
+  const user = await findUserByEmail(email);
 
-  if (!resolved) {
+  if (!user) {
     throw new HttpError(404, "User not found");
   }
 
-  const hashedPass = await bcrypt.hash(password, 10);
+  const hashed = await passwordServices.hashPassword(password);
 
-  await resolved.updatePassword(hashedPass);
+  user.password = hashed;
+
+  user.save();
 
   await OtpModel.deleteMany({ email });
 

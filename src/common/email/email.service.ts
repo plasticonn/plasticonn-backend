@@ -18,8 +18,6 @@ export class EmailService {
     subject: string;
     html: string;
   }) {
-    console.log(process.env.BREVO_SENDER_EMAIL);
-
     try {
       await transactionalApi.sendTransacEmail({
         sender: {

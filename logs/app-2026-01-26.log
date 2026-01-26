@@ -1,0 +1,433 @@
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T17:11:28.006Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T17:11:28.023Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T17:11:28.026Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:14:50.445Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:14:50.736Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:26:25.524Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:26:25.805Z"}
+{"context":"AdminService","level":"info","message":"Change password","timestamp":"2026-01-26T17:36:48.200Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T17:36:48.460Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:36:48.866Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:36:49.123Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:36:58.944Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T17:37:02.297Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T17:37:02.312Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T17:37:02.543Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T17:37:04.721Z"}
+{"context":"AdminService","level":"info","message":"Change password","timestamp":"2026-01-26T17:37:11.360Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T17:37:11.611Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:37:12.190Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:37:12.996Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:38:02.826Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T17:38:06.824Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T17:38:06.854Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T17:38:07.105Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T17:38:09.023Z"}
+{"context":"AdminService","level":"info","message":"Change password","timestamp":"2026-01-26T17:38:16.822Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T17:38:17.073Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:38:17.857Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:38:18.331Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:39:00.778Z"}
+{"context":"AdminService","level":"info","message":"Change password","timestamp":"2026-01-26T17:39:17.652Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T17:39:17.893Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:42:53.873Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T17:42:56.871Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T17:42:56.883Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T17:42:57.137Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T17:42:57.179Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-26T17:43:04.469Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-26T17:43:04.737Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:43:25.802Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:43:26.056Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:43:34.729Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T17:43:34.981Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:43:35.171Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:43:35.430Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:43:46.689Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T17:43:46.942Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:43:47.134Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:43:47.391Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:44:10.282Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T17:44:11.372Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:44:11.567Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:44:12.737Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:44:28.957Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T17:44:29.203Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:44:29.414Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:44:29.666Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:45:34.506Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T17:45:37.810Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T17:45:37.823Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T17:45:38.152Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T17:45:38.202Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-26T17:45:39.706Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-26T17:45:40.471Z"}
+{"context":"adminManagement","level":"info","message":"Deleting admin","timestamp":"2026-01-26T17:45:44.537Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-26T17:45:47.581Z"}
+{"context":"adminManagement","level":"info","message":"Adding admin","timestamp":"2026-01-26T17:46:01.450Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T17:46:03.336Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-26T17:46:03.349Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:46:21.322Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:46:21.574Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:46:43.178Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T17:46:43.430Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:46:43.649Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:46:43.911Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T17:48:50.734Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T17:48:50.772Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T17:48:50.774Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T17:49:07.550Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T17:49:07.573Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T17:49:07.574Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:49:26.269Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T17:49:29.261Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T17:49:29.273Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T17:49:29.534Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T17:49:31.226Z"}
+{"context":"AdminService","level":"info","message":"Change password","timestamp":"2026-01-26T17:49:45.165Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T17:49:50.543Z"}
+{"context":"AdminService","level":"info","message":"Verify password change","timestamp":"2026-01-26T17:53:21.237Z"}
+{"context":"AdminController","level":"error","message":"Failed to hash password.","timestamp":"2026-01-26T17:53:21.761Z"}
+{"context":"AdminService","level":"info","message":"Verify password change","timestamp":"2026-01-26T17:54:08.997Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:58:18.762Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:58:19.018Z"}
+{"context":"AdminService","level":"info","message":"Change password","timestamp":"2026-01-26T17:58:23.829Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T17:58:24.230Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:58:24.442Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:58:24.707Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:58:31.951Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T17:58:32.322Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:58:32.512Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:58:32.781Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:58:39.096Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T17:58:39.450Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:58:39.636Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:58:39.895Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:58:51.644Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T17:58:52.105Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:58:52.282Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:58:52.537Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:59:05.002Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T17:59:05.360Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:59:05.542Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:59:05.805Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:59:17.445Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T17:59:17.803Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:59:17.966Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:59:18.218Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T17:59:28.464Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T17:59:28.714Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:59:28.887Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T17:59:29.194Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T18:01:43.835Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T18:01:43.886Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T18:01:43.888Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T18:02:00.073Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T18:02:00.354Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:02:00.820Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:02:01.133Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T18:02:24.699Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T18:02:25.074Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:02:25.276Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:02:25.537Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T18:03:12.666Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T18:03:12.704Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T18:03:12.705Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T18:03:22.042Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:03:25.063Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:03:25.077Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:03:25.336Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:03:26.963Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-26T18:03:27.198Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-26T18:03:27.554Z"}
+{"context":"adminManagement","level":"info","message":"Deleting admin","timestamp":"2026-01-26T18:03:38.853Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-26T18:03:41.145Z"}
+{"context":"adminManagement","level":"info","message":"Adding admin","timestamp":"2026-01-26T18:03:56.433Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T18:03:57.917Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-01-26T18:03:57.931Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:04:12.027Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:04:12.283Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T18:05:00.169Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T18:05:00.194Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T18:05:00.196Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T18:05:24.606Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T18:05:24.630Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T18:05:24.633Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T18:05:43.199Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:05:46.458Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:05:46.473Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:05:46.968Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:05:49.461Z"}
+{"context":"AdminService","level":"info","message":"Change password","timestamp":"2026-01-26T18:06:13.254Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T18:06:14.288Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:06:14.686Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:06:15.354Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T18:06:34.050Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:06:37.180Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:06:37.191Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:06:38.788Z"}
+{"context":"AdminService","level":"info","message":"Change password","timestamp":"2026-01-26T18:06:43.149Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:06:44.278Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T18:06:47.644Z"}
+{"context":"AdminService","level":"info","message":"Verify password change","timestamp":"2026-01-26T18:07:12.914Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:07:23.004Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:07:23.748Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T18:07:29.876Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T18:07:30.914Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:07:31.123Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:07:32.062Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T18:08:03.674Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:08:07.207Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:08:07.219Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:08:07.952Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:08:07.956Z"}
+{"context":"AdminService","level":"info","message":"Change password","timestamp":"2026-01-26T18:09:07.464Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T18:09:09.752Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T18:10:55.156Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T18:10:55.177Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T18:10:55.178Z"}
+{"context":"AdminService","level":"info","message":"Verify password change","timestamp":"2026-01-26T18:11:48.894Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:12:16.303Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:12:16.712Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T18:12:25.461Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T18:12:26.360Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:12:27.427Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:12:27.675Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T18:15:24.046Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T18:15:24.067Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T18:15:24.068Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T18:15:28.529Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:15:31.555Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:15:31.568Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:15:31.800Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:15:33.502Z"}
+{"context":"AdminService","level":"info","message":"Change password","timestamp":"2026-01-26T18:15:37.898Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T18:15:42.246Z"}
+{"context":"AdminService","level":"info","message":"Verify password change","timestamp":"2026-01-26T18:16:03.118Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:16:26.814Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:16:27.077Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T18:16:33.349Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:16:36.396Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:16:36.405Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:16:36.664Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:16:38.471Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-26T18:20:05.067Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-01-26T18:20:05.361Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T18:50:55.280Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:50:57.979Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:50:57.987Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:50:58.241Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:50:58.266Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:51:17.076Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:51:17.331Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T18:51:23.879Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:51:26.942Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:51:26.992Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:51:27.258Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:51:27.279Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:51:31.990Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:51:31.996Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:51:32.244Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:51:32.276Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:51:45.631Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:51:45.641Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T18:51:45.873Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T18:51:45.911Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:52:23.832Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:52:24.073Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:56:17.348Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T18:56:17.610Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:11:23.148Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:11:23.610Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:14:40.639Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:14:40.904Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:15:18.074Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:15:18.318Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T19:15:25.180Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:20:26.171Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:20:26.426Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T19:20:32.680Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T19:23:53.914Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T19:23:53.932Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T19:23:53.933Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:24:06.738Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:24:07.036Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T19:24:13.236Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:25:22.493Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:25:23.422Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T19:25:29.617Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:26:26.421Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:26:26.684Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T19:26:31.990Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:27:14.549Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:27:14.815Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T19:27:20.252Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:28:17.728Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:28:18.057Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T19:28:22.352Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:34:40.428Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:34:40.802Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T19:35:15.104Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T19:36:37.529Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T19:37:04.461Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T19:37:04.858Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:37:05.303Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:37:05.543Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T19:38:42.933Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T19:38:42.954Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T19:38:42.958Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:39:00.415Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:39:01.969Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:40:29.361Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:40:29.641Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T19:40:34.964Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T19:41:14.251Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T19:41:17.315Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T19:41:17.333Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T19:41:17.597Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T19:41:19.507Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:41:20.091Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:41:20.358Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T19:41:31.492Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T19:42:06.167Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T19:42:06.619Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:42:06.792Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:42:07.138Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T19:42:41.283Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T19:42:41.302Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T19:42:41.303Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T19:44:49.266Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T19:44:49.289Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T19:44:49.293Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T19:45:26.684Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T19:45:26.704Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T19:45:26.705Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T19:46:09.148Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T19:46:41.186Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T19:46:41.570Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:46:41.791Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:46:42.062Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T19:46:51.243Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T19:46:51.651Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:46:51.844Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:46:52.108Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T19:47:05.497Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T19:47:08.895Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T19:47:08.924Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T19:47:09.436Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:47:11.081Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:47:11.335Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T19:50:48.706Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T19:50:48.726Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T19:50:48.727Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T19:52:00.679Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T19:53:08.959Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T19:53:08.988Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T19:53:08.989Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T19:53:09.706Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T19:53:10.952Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:53:11.224Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:53:11.490Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T19:53:18.329Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T19:54:47.299Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T19:54:47.695Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:54:47.946Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:54:48.203Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T19:54:54.965Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T19:54:58.498Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T19:54:58.546Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-01-26T19:54:59.048Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-01-26T19:55:00.719Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T19:59:14.681Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T19:59:14.699Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T19:59:14.699Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:59:23.483Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T19:59:24.332Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T19:59:37.309Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T20:00:34.605Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T20:00:35.013Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T20:00:35.208Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T20:00:35.603Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T20:01:06.683Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T20:01:07.167Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T20:01:07.364Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T20:01:13.196Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:20:23.690Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:20:23.716Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:20:23.717Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:20:41.544Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:20:41.576Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:20:41.577Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T20:20:52.765Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T20:20:54.303Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T20:20:54.778Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T20:20:55.090Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:21:44.487Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:21:44.516Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:21:44.517Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:21:56.537Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:21:56.571Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:21:56.613Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:22:30.499Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:22:30.521Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:22:30.537Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:22:55.827Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:22:55.857Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:22:55.858Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:23:58.222Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:23:58.242Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:23:58.251Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:24:31.212Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:24:31.250Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:24:31.253Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:26:01.739Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:26:01.756Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:26:01.757Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T20:26:49.857Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:28:04.899Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:28:04.919Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:28:04.920Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-01-26T20:28:59.288Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-01-26T20:29:00.254Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T20:29:00.626Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T20:29:02.092Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:29:57.530Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:29:57.545Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:29:57.546Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T20:30:13.961Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:31:04.370Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:31:04.392Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:31:04.393Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T20:31:04.411Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T20:31:16.649Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:32:10.610Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:32:10.637Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:32:10.638Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:32:31.054Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:32:31.070Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:32:31.071Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T20:32:41.859Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T20:32:42.167Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T20:32:46.736Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:33:27.973Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:33:28.015Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:33:28.016Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T20:33:31.856Z"}
+{"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-01-26T20:33:32.120Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T20:33:37.035Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-01-26T20:35:07.758Z"}
+{"context":"CollectorController","level":"error","message":"Invalid password","timestamp":"2026-01-26T20:35:09.076Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-01-26T20:36:01.652Z"}
+{"context":"CollectorController","level":"error","message":"Invalid password","timestamp":"2026-01-26T20:36:01.924Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:36:57.668Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:36:57.684Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:36:57.685Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:37:44.621Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:37:44.642Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:37:44.644Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:38:32.055Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:38:32.080Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:38:32.082Z"}
+{"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T20:39:09.607Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-01-26T20:40:15.449Z"}
+{"context":"CollectorController","level":"error","message":"Invalid password","timestamp":"2026-01-26T20:40:15.703Z"}

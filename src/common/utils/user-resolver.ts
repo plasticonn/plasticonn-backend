@@ -4,34 +4,13 @@ import { AdminModel } from "../../modules/admin/admin.model";
 
 export const findUserByEmail = async (email: string) => {
   const collector = await CollectorsModel.findOne({ email });
-  if (collector) {
-    return {
-      user: collector,
-      updatePassword: (hashedPassword: string) =>
-        CollectorsModel.updateOne({ email }, { password: hashedPassword }),
-    };
-  }
+  if (collector) return collector;
 
   const center = await CenterModel.findOne({ contactEmail: email });
-  if (center) {
-    return {
-      user: center,
-      updatePassword: (hashedPassword: string) =>
-        CenterModel.updateOne(
-          { contactEmail: email },
-          { password: hashedPassword },
-        ),
-    };
-  }
+  if (center) return center;
 
   const admin = await AdminModel.findOne({ email });
-  if (admin) {
-    return {
-      user: admin,
-      updatePassword: (hashedPassword: string) =>
-        AdminModel.updateOne({ email }, { password: hashedPassword }),
-    };
-  }
+  if (admin) return admin;
 
   return null;
 };

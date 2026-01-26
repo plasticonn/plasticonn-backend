@@ -43,11 +43,16 @@ export const loginSuperAdmin = async (email: string, password: string) => {
 const login = async (email: string, password: string) => {
   log.info("logging in admin");
 
-  const admin = await AdminModel.findOne({ email });
+  const admin = await AdminModel.findOne({ email }).select("+password");
 
   if (!admin) throw new HttpError(404, "Admin does not exist");
 
-  const match = await bcrypt.compare(password, String(admin.password));
+  //const match = await bcrypt.compare(password, String(admin.password));
+
+  const match = await passwordServices.verifyPassword(
+    password,
+    String(admin.password),
+  );
 
   if (!match) throw new HttpError(401, "Invalid password");
 
@@ -124,9 +129,11 @@ const verifyPasswordUpdate = async (adminId: string, payload: any) => {
     throw new HttpError(400, verify.error);
   }
 
+  console.log(payload.newPassword);
+
   const password = await passwordServices.hashPassword(payload.newPassword);
 
-  Object.assign(admin, password);
+  admin.password = password;
 
   await admin.save();
 

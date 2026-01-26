@@ -6,6 +6,7 @@ import { Logger } from "../../common/logger/logger";
 import { Roles } from "../../common/enum/roles.enum";
 import { HttpError } from "../../common/utils/HttpError";
 import { addLog } from "../activity_logs/Logs.service";
+import { passwordServices } from "../../common/utils/password";
 
 const log = new Logger("CollectorsService");
 
@@ -47,7 +48,12 @@ export const login = async (email: string, password: string) => {
 
   if (!user) throw new HttpError(404, "Collector does not exist");
 
-  const match = await bcrypt.compare(password, String(user.password));
+  //const match = await bcrypt.compare(password, String(user.password));
+
+  const match = await passwordServices.verifyPassword(
+    password,
+    String(user.password),
+  );
 
   if (!match) throw new HttpError(401, "Invalid password");
 
