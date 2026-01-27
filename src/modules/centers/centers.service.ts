@@ -49,18 +49,18 @@ const login = async (centerId: string, password: string) => {
 
   const center = await CenterModel.findOne({ centerId });
 
-  if (!center) throw new HttpError(401, "Center not found");
+  if (!center) throw new HttpError(422, "Center not found");
 
-  if (!center.verified) throw new HttpError(401, "Center not verified");
+  if (!center.verified) throw new HttpError(403, "Center not verified");
   if (center.status === "suspended")
-    throw new HttpError(401, "Center is suspended");
+    throw new HttpError(403, "Center is suspended");
 
   const match = await passwordServices.verifyPassword(
     password,
     String(center.password),
   );
 
-  if (!match) throw new HttpError(401, "Invalid Password");
+  if (!match) throw new HttpError(422, "Invalid Password");
 
   const token = jwt.sign(
     { sub: center._id, role: Roles.CENTER },

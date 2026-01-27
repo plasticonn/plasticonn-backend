@@ -15,7 +15,7 @@ export const register = async (payload: any) => {
 
   const collector = await CollectorsModel.findOne({ email: payload.email });
 
-  if (collector) throw new HttpError(404, "Collector already exists");
+  if (collector) throw new HttpError(409, "Collector already exists");
 
   const hashed = await bcrypt.hash(payload.password, 10);
 
@@ -55,7 +55,7 @@ export const login = async (email: string, password: string) => {
     String(user.password),
   );
 
-  if (!match) throw new HttpError(401, "Invalid password");
+  if (!match) throw new HttpError(422, "Invalid password");
 
   const token = jwt.sign(
     { sub: user._id, role: Roles.COLLECTOR },

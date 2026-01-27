@@ -25,7 +25,7 @@ export const loginSuperAdmin = async (email: string, password: string) => {
     String(admin.password),
   );
 
-  if (!match) throw new HttpError(401, "Invalid password");
+  if (!match) throw new HttpError(422, "Invalid password");
 
   const accessToken = tokenService.generateAccessToken({
     userId: String(admin?._id),
@@ -54,7 +54,7 @@ const login = async (email: string, password: string) => {
     String(admin.password),
   );
 
-  if (!match) throw new HttpError(401, "Invalid password");
+  if (!match) throw new HttpError(422, "Invalid password");
 
   const token = jwt.sign(
     { sub: admin._id, role: admin.role },
@@ -103,7 +103,7 @@ const updatePassword = async (adminId: string, payload: any) => {
     String(admin.password),
   );
 
-  if (!match) throw new HttpError(401, "Invalid password");
+  if (!match) throw new HttpError(422, "Invalid password");
 
   const otp = otpServices.generateOtp();
 
