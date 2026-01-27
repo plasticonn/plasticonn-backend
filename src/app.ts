@@ -15,6 +15,7 @@ import cookieParser from "cookie-parser";
 import { DashboardController } from "./modules/dashboard/dashboard.controller";
 import { LogsController } from "./modules/activity_logs/Logs.controller";
 import { AdminEmailController } from "./modules/admin/controllers/admin-email.controller";
+import { AdminDownloadController } from "./modules/admin/controllers/download-report.controller";
 
 export const createApp = () => {
   const app = express();
@@ -52,6 +53,7 @@ export const createApp = () => {
   app.use("/api/admin/admin-mgt", AdminManagementController);
   app.use("/api/admin", LogsController);
   app.use("/api/admin", AdminEmailController);
+  app.use("/api/admin", AdminDownloadController);
   app.get("/health", (req, res) => res.json({ status: "ok" }));
 
   return app;

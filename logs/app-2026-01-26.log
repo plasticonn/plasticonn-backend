@@ -431,3 +431,7 @@
 {"context":"EmailService","level":"info","message":"Email sent to debacodes@gmail.com","timestamp":"2026-01-26T20:39:09.607Z"}
 {"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-01-26T20:40:15.449Z"}
 {"context":"CollectorController","level":"error","message":"Invalid password","timestamp":"2026-01-26T20:40:15.703Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-01-26T20:41:16.739Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-01-26T20:41:16.784Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-01-26T20:41:16.786Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-01-26T20:41:22.303Z"}
