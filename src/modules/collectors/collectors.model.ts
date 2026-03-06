@@ -8,9 +8,10 @@ const CollectorsSchema = new Schema(
     email: { type: String },
     password: { type: String },
     co2Saved: { type: Number },
+    role: { type: String, default: "collector" },
     status: { type: String, default: "active", enum: ["active", "suspended"] },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 export const CollectorsModel = model("Collectors", CollectorsSchema);

@@ -83,8 +83,15 @@ CollectorController.post("/login", async (req, res) => {
   try {
     const result = await CollectorsService.login(
       req.body.email,
-      req.body.password
+      req.body.password,
     );
+
+    res.cookie("token", result.token, {
+      httpOnly: true,
+      secure: false, // true in prod
+      sameSite: "lax",
+    });
+
     return res
       .status(HttpStatus.CREATED)
       .json(ApiResponse(HttpStatus.CREATED, "Login successful", result));
@@ -136,24 +143,17 @@ CollectorController.get(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
  * @swagger
- * /api/collector/profile/{id}:
+ * /api/collector/profile:
  *   put:
  *     summary: Update collector profile
  *     tags: [Collector]
  *     security:
  *       - bearerAuth: []
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: string
- *         description: ID of the collector to update
  *     requestBody:
  *       required: true
  *       content:
@@ -174,14 +174,16 @@ CollectorController.get(
  *         description: Successfully updated profile
  */
 CollectorController.put(
-  "/profile/:id",
+  "/profile",
   verifyToken,
   checkRole(["collector"]),
   async (req, res) => {
-    const { id } = req.params;
+    const user_id = (req as any).user.sub;
+
     const payload = req.body;
+
     try {
-      const result = await CollectorsService.updateProfile(id, payload);
+      const result = await CollectorsService.updateProfile(user_id, payload);
       return res
         .status(HttpStatus.OK)
         .json(ApiResponse(HttpStatus.OK, "Profile updated", result));
@@ -195,7 +197,7 @@ CollectorController.put(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -234,5 +236,5 @@ CollectorController.delete(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );

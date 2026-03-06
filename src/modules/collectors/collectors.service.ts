@@ -7,6 +7,7 @@ import { Roles } from "../../common/enum/roles.enum";
 import { HttpError } from "../../common/utils/HttpError";
 import { addLog } from "../activity_logs/Logs.service";
 import { passwordServices } from "../../common/utils/password";
+import { NotificationsModel } from "../notifications/notifications.model";
 
 const log = new Logger("CollectorsService");
 
@@ -17,7 +18,7 @@ export const register = async (payload: any) => {
 
   if (collector) throw new HttpError(409, "Collector already exists");
 
-  const hashed = await bcrypt.hash(payload.password, 10);
+  const hashed = await passwordServices.hashPassword(payload.password);
 
   const user = await CollectorsModel.create({
     ...payload,

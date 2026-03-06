@@ -7,7 +7,7 @@ const log = new Logger("NotificationService");
 const sendNotification = async (
   user_id: string | null,
   payload: any,
-  type: string | null
+  type: string | null,
 ) => {
   log.info("Sending a notification");
 
@@ -42,7 +42,19 @@ const readNotification = async (notification_id: string) => {
       _id: notification_id,
     },
     { read: true },
-    { new: true }
+    { new: true },
+  );
+
+  return { notification };
+};
+
+const readAllNotifications = async (user_id: string) => {
+  log.info("Mark all as read");
+
+  const notification = await NotificationsModel.findOneAndUpdate(
+    { user_id },
+    { read: true },
+    { new: true },
   );
 
   return { notification };
@@ -52,4 +64,5 @@ export const NotificationsService = {
   sendNotification,
   getNotifications,
   readNotification,
+  readAllNotifications,
 };

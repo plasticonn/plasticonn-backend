@@ -1,0 +1,214 @@
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-03-05T06:16:42.483Z"}
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-03-05T06:17:33.875Z"}
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-03-05T06:20:56.151Z"}
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-03-05T06:31:05.301Z"}
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-03-05T06:32:54.122Z"}
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-03-05T06:36:44.691Z"}
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-03-05T06:43:33.481Z"}
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-03-05T06:45:28.296Z"}
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-03-05T06:47:49.292Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-03-05T06:51:44.302Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-03-05T06:51:44.306Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-03-05T06:52:12.308Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-03-05T06:52:12.311Z"}
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-03-05T07:09:15.745Z"}
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-03-05T07:15:13.573Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-03-05T07:17:10.916Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-03-05T07:17:10.932Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-03-05T07:17:10.933Z"}
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-03-05T07:18:10.311Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-03-05T07:19:41.283Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-03-05T07:19:41.330Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-03-05T07:19:41.331Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-03-05T07:20:18.455Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-03-05T07:20:18.478Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-03-05T07:20:18.479Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-03-05T07:21:32.085Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-03-05T07:21:32.103Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-03-05T07:21:32.104Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T07:28:50.404Z"}
+{"context":"CollectorController","level":"error","message":"Invalid password","timestamp":"2026-03-05T07:28:50.785Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T07:29:02.474Z"}
+{"context":"CollectorController","level":"error","message":"Invalid password","timestamp":"2026-03-05T07:29:03.089Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T07:29:12.228Z"}
+{"context":"CollectorController","level":"error","message":"Invalid password","timestamp":"2026-03-05T07:29:12.596Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T07:29:25.924Z"}
+{"context":"CollectorController","level":"error","message":"Invalid password","timestamp":"2026-03-05T07:29:26.313Z"}
+{"context":"CollectorsService","level":"info","message":"Registering collector","timestamp":"2026-03-05T07:29:56.518Z"}
+{"context":"CollectorController","level":"error","message":"Collector already exists","timestamp":"2026-03-05T07:29:56.781Z"}
+{"context":"CollectorsService","level":"info","message":"Registering collector","timestamp":"2026-03-05T07:30:05.680Z"}
+{"context":"Logs service","level":"info","message":"Adding a new log","timestamp":"2026-03-05T07:30:08.470Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T07:30:30.994Z"}
+{"context":"CollectorController","level":"error","message":"Invalid password","timestamp":"2026-03-05T07:30:31.787Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-03-05T07:31:31.056Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-03-05T07:31:31.100Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-03-05T07:31:31.101Z"}
+{"context":"CollectorsService","level":"info","message":"Registering collector","timestamp":"2026-03-05T07:32:03.070Z"}
+{"context":"Logs service","level":"info","message":"Adding a new log","timestamp":"2026-03-05T07:32:03.765Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T07:32:26.542Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-03-05T07:36:46.678Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-03-05T07:36:46.701Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-03-05T07:36:46.702Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T07:37:20.389Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-03-05T07:47:00.005Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-03-05T07:47:00.037Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-03-05T07:47:00.038Z"}
+{"context":"CollectorsService","level":"info","message":"Registering collector","timestamp":"2026-03-05T07:47:27.656Z"}
+{"context":"CollectorController","level":"error","message":"Collector already exists","timestamp":"2026-03-05T07:47:27.965Z"}
+{"context":"CollectorsService","level":"info","message":"Registering collector","timestamp":"2026-03-05T07:47:51.755Z"}
+{"context":"Logs service","level":"info","message":"Adding a new log","timestamp":"2026-03-05T07:47:52.428Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T07:48:16.194Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T07:49:31.881Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T07:50:20.003Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T07:51:42.569Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T07:53:28.752Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T07:55:32.863Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T07:56:23.180Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T07:56:59.674Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T07:57:56.921Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T08:12:38.774Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T08:19:47.523Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T08:20:27.260Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T08:22:14.294Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T08:24:52.196Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T08:40:16.243Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:40:21.466Z"}
+{"context":"CollectorController","level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Collectors\"","timestamp":"2026-03-05T08:40:21.475Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:40:21.496Z"}
+{"context":"CollectorController","level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Collectors\"","timestamp":"2026-03-05T08:40:21.498Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T08:41:16.471Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:41:21.974Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:41:26.453Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T08:43:40.885Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:43:43.668Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:43:44.010Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T08:44:46.531Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:45:08.510Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:45:39.609Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:45:39.873Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T08:45:54.341Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:47:55.708Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T08:48:21.234Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:48:26.725Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:49:38.428Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T08:52:25.043Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:52:30.871Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:52:31.122Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T08:54:33.279Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:54:39.640Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:54:39.926Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:54:45.189Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:54:45.463Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:57:12.655Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T08:57:12.905Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:05.559Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:05.936Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:06.288Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:06.651Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:06.983Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:07.456Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:07.802Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:08.226Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:08.583Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:08.936Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:09.260Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:09.599Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:09.939Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:10.254Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:10.673Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:11.019Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:11.436Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:11.786Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:12.142Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:18.184Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:18.450Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:18.686Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:18.937Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:19.182Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:19.420Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:19.671Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:19.920Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:20.158Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:20.441Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:20.730Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:20.972Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:21.222Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:21.473Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:21.720Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:21.969Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:22.231Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:22.501Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:22.742Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:22.983Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:23.229Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:23.499Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:23.771Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:24.021Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:24.273Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:24.576Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:24.827Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:25.152Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:25.390Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:25.631Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:25.867Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:26.107Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:26.373Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:26.620Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:26.861Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:27.101Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:27.351Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:27.610Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:28.184Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:28.419Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:36.767Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:03:37.965Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:04:02.790Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:04:03.084Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:04:25.075Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:04:25.327Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T09:05:06.478Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:05:16.930Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:05:17.168Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T09:06:45.109Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:08:06.475Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:08:49.627Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:08:49.894Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:08:53.060Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:08:53.353Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:09:06.308Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:09:06.554Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T09:09:20.945Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:09:26.339Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:09:26.576Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:12:13.357Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:12:44.395Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:13:19.426Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:13:23.380Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:15:12.628Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:15:12.886Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T09:15:27.395Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:15:33.164Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:15:33.419Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:19:02.961Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:19:07.121Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T09:24:01.292Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:24:30.450Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:24:30.709Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:24:49.983Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:24:50.223Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T09:25:10.470Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:25:58.327Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:25:58.580Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T09:26:10.777Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:29:29.010Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:29:29.258Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T09:29:40.462Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:32:51.407Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:32:51.675Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T09:33:14.159Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:33:23.164Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:33:23.414Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T09:34:07.210Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:42:26.531Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-03-05T09:42:30.836Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-03-05T09:42:42.563Z"}

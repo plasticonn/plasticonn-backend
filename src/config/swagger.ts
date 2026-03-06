@@ -37,6 +37,7 @@ const options = {
     "./src/modules/events/*.controller.ts",
     "./src/modules/dashboard/*.controller.ts",
     "./src/modules/activity_logs/*.controller.ts",
+    "./src/modules/notifications/*.controller.ts",
   ],
 };
 
