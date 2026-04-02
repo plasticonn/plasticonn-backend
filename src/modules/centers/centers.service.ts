@@ -121,7 +121,30 @@ const deleteAccount = async (centerId: string) => {
 const getCenters = async () => {
   log.info("Getting all centers");
 
-  const centers = await CenterModel.find().select("-password");
+  const centers = await CenterModel.find({ verified: true }).select(
+    "-password",
+  );
+
+  if (centers.length <= 0) throw new HttpError(404, "No centers found");
+
+  return { centers };
+};
+
+const getClosestCenters = async (lat: number, lng: number, limit = 5) => {
+  log.info("Getting closest centers");
+
+  const centers = await CenterModel.find({
+    gps: {
+      $nearSphere: {
+        $geometry: {
+          type: "Point",
+          coordinates: [lng, lat],
+        },
+      },
+    },
+  })
+    .select("-password")
+    .limit(limit);
 
   if (centers.length <= 0) throw new HttpError(404, "No centers found");
 
@@ -135,4 +158,5 @@ export const CenterService = {
   updateProfile,
   deleteAccount,
   getCenters,
+  getClosestCenters,
 };

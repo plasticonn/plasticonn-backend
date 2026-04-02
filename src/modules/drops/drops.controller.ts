@@ -65,7 +65,7 @@ DropController.post(
       await NotificationsService.sendNotification(
         user_id,
         payload,
-        "individual"
+        "individual",
       );
 
       return res
@@ -77,7 +77,7 @@ DropController.post(
         .status(HttpStatus.BAD_REQUEST)
         .json(ApiResponse(HttpStatus.BAD_REQUEST, err.message));
     }
-  }
+  },
 );
 
 /**
@@ -112,7 +112,7 @@ DropController.get(
 
       return res.status(status).json(ApiResponse(status, err.message));
     }
-  }
+  },
 );
 
 /**
@@ -159,7 +159,7 @@ DropController.get(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -216,5 +216,5 @@ DropController.put(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );

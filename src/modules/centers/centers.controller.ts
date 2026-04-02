@@ -68,8 +68,8 @@ CenterController.post("/register", async (req, res) => {
         ApiResponse(
           HttpStatus.CREATED,
           "Center registered successfully",
-          result
-        )
+          result,
+        ),
       );
   } catch (err: any) {
     log.error(err.message);
@@ -107,7 +107,7 @@ CenterController.post("/login", async (req, res) => {
   try {
     const result = await CenterService.login(
       req.body.centerId,
-      req.body.password
+      req.body.password,
     );
     return res
       .status(HttpStatus.CREATED)
@@ -158,7 +158,7 @@ CenterController.get(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -224,7 +224,7 @@ CenterController.put(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -263,7 +263,7 @@ CenterController.delete(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -300,5 +300,67 @@ CenterController.get(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
+);
+
+/**
+ * @swagger
+ * /api/center/closest:
+ *   get:
+ *     summary: Gets closest centers list
+ *     tags: [Center]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: query
+ *         name: lat
+ *         schema:
+ *           type: number
+ *         required: true
+ *         description: Latitude of the user
+ *       - in: query
+ *         name: lng
+ *         schema:
+ *           type: number
+ *         required: true
+ *         description: Longitude of the user
+ *       - in: query
+ *         name: limit
+ *         schema:
+ *           type: number
+ *         required: false
+ *         description: Number of centers to return (default 5)
+ *     responses:
+ *       200:
+ *         description: List closest centers successfully
+ */
+CenterController.get(
+  "/closest",
+  verifyToken,
+  checkRole(["collector"]),
+  async (req, res) => {
+    const { lat, lng } = req.query;
+    try {
+      const result = await CenterService.getClosestCenters(
+        Number(lat),
+        Number(lng),
+      );
+
+      return res
+        .status(HttpStatus.OK)
+        .json(
+          ApiResponse(HttpStatus.OK, "Closest centers list returned", result),
+        );
+    } catch (err: any) {
+      log.error(err.message);
+
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
+  },
 );

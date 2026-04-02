@@ -7,7 +7,7 @@ const CenterSchema = new Schema(
     address: { type: String },
     password: { type: String },
     gps: {
-      type: { type: String, enum: ["Point"] },
+      type: { type: String, enum: ["Point"], default: "Point" },
       coordinates: { type: [Number] },
     },
     contactPerson: { type: String },
@@ -27,7 +27,9 @@ const CenterSchema = new Schema(
     verified: { type: Boolean, default: false },
     status: { type: String, enum: ["active", "suspended"], default: "active" },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
+
+CenterSchema.index({ gps: "2dsphere" });
 
 export const CenterModel = model("Centers", CenterSchema);

@@ -30,7 +30,9 @@ export const CollectorController = Router();
  *           schema:
  *             type: object
  *             properties:
- *               name:
+ *               firstName:
+ *                 type: string
+ *               lastName:
  *                 type: string
  *               address:
  *                 type: string

@@ -8,6 +8,10 @@ import { HttpError } from "../../common/utils/HttpError";
 import { addLog } from "../activity_logs/Logs.service";
 import { passwordServices } from "../../common/utils/password";
 import { NotificationsModel } from "../notifications/notifications.model";
+import { DropsModel } from "../drops/drops.model";
+import { calculateCO2Saved } from "../../common/utils/co2saved";
+import { EmailService } from "../../common/email/email.service";
+import { otpServices } from "../../common/utils/otp/otp";
 
 const log = new Logger("CollectorsService");
 
@@ -113,10 +117,34 @@ const deleteAccount = async (collectorId: string) => {
   return { message: "Account deleted successfully" };
 };
 
+const getDashboardStats = async (user_id: string) => {
+  log.info("Getting collector stats");
+
+  const drops = await DropsModel.find({ collector_id: user_id });
+
+  const totalPlastics = drops.reduce(
+    (sum, drop) => sum + (drop.amount || 0),
+    0,
+  );
+  const co2Saved = calculateCO2Saved(totalPlastics);
+  const verifiedSubmissions = drops.filter(
+    (drop) => drop.status === "verified",
+  ).length;
+  const totalSubmissions = drops.length;
+
+  return {
+    co2Saved,
+    verifiedSubmissions,
+    totalSubmissions,
+    achievement: "Coming Soon",
+  };
+};
+
 export const CollectorsService = {
   register,
   login,
   getProfile,
   updateProfile,
   deleteAccount,
+  getDashboardStats,
 };
