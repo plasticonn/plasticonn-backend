@@ -5,7 +5,7 @@ import { config } from "../../config";
 export const verifyToken = (
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) => {
   try {
     const token = req.cookies?.token;

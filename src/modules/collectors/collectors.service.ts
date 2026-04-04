@@ -128,7 +128,7 @@ const getDashboardStats = async (user_id: string) => {
   );
   const co2Saved = calculateCO2Saved(totalPlastics);
   const verifiedSubmissions = drops.filter(
-    (drop) => drop.status === "verified",
+    (drop) => drop.status === "verified" || drop.status === "accepted",
   ).length;
   const totalSubmissions = drops.length;
 

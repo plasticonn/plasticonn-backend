@@ -7,6 +7,8 @@ import { config } from "../../config";
 import jwt from "jsonwebtoken";
 import { generateCenterId } from "../../common/utils/generateCode";
 import { addLog } from "../activity_logs/Logs.service";
+import { DropsModel } from "../drops/drops.model";
+import mongoose from "mongoose";
 
 const log = new Logger("AdminService");
 
@@ -121,9 +123,7 @@ const deleteAccount = async (centerId: string) => {
 const getCenters = async () => {
   log.info("Getting all centers");
 
-  const centers = await CenterModel.find({ verified: true }).select(
-    "-password",
-  );
+  const centers = await CenterModel.find().select("-password");
 
   if (centers.length <= 0) throw new HttpError(404, "No centers found");
 
@@ -151,6 +151,85 @@ const getClosestCenters = async (lat: number, lng: number, limit = 5) => {
   return { centers };
 };
 
+const getCenterStats = async (center_id: string) => {
+  log.info("get center stats");
+
+  const now = new Date();
+
+  const todayStart = new Date(
+    Date.UTC(
+      now.getUTCFullYear(),
+      now.getUTCMonth(),
+      now.getUTCDate(),
+      0,
+      0,
+      0,
+    ),
+  );
+
+  const todayEnd = new Date(
+    Date.UTC(
+      now.getUTCFullYear(),
+      now.getUTCMonth(),
+      now.getUTCDate(),
+      23,
+      59,
+      59,
+      999,
+    ),
+  );
+
+  const [verifiedDrops, pendingDrops, todayDrops, plasticsResult] =
+    await Promise.all([
+      // Verified drops
+      DropsModel.countDocuments({
+        center_id,
+        status: { $in: ["accepted", "verified"] },
+      }),
+
+      // Pending drops
+      DropsModel.countDocuments({
+        center_id,
+        status: "pending",
+      }),
+
+      // Today's drops
+      DropsModel.countDocuments({
+        center_id,
+        createdAt: {
+          $gte: todayStart,
+          $lte: todayEnd,
+        },
+      }),
+
+      // Total plastics collected
+      DropsModel.aggregate([
+        { $match: { center_id: new mongoose.Types.ObjectId(center_id) } },
+        {
+          $group: {
+            _id: null,
+            total: { $sum: "$amount" },
+          },
+        },
+      ]),
+    ]);
+
+  const totalPlastics = plasticsResult[0]?.total || 0;
+
+  const CO2_PER_KG = 1.5; // kg of CO2 saved per kg of plastic recycled
+  const AVG_PLASTIC_WEIGHT_KG = 0.01; // average weight of one plastic item (10g)
+
+  const weightKg = totalPlastics * AVG_PLASTIC_WEIGHT_KG;
+  const totalCO2Saved = weightKg * CO2_PER_KG;
+
+  return {
+    verifiedDrops,
+    pendingDrops,
+    todayDrops,
+    totalCO2Saved,
+  };
+};
+
 export const CenterService = {
   register,
   login,
@@ -159,4 +238,5 @@ export const CenterService = {
   deleteAccount,
   getCenters,
   getClosestCenters,
+  getCenterStats,
 };

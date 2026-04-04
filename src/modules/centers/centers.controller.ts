@@ -44,6 +44,10 @@ export const CenterController = Router();
  *                 type: string
  *               contactPerson:
  *                 type: string
+ *               centerType:
+ *                 type: string
+ *               formal:
+ *                 type: boolean
  *               materialsAccepted:
  *                 type: array
  *                 items:
@@ -109,6 +113,15 @@ CenterController.post("/login", async (req, res) => {
       req.body.centerId,
       req.body.password,
     );
+
+    res.clearCookie("token");
+
+    res.cookie("token", result.token, {
+      httpOnly: true,
+      secure: false, // true in prod
+      sameSite: "lax",
+    });
+
     return res
       .status(HttpStatus.CREATED)
       .json(ApiResponse(HttpStatus.CREATED, "Login successful", result));
@@ -124,25 +137,32 @@ CenterController.post("/login", async (req, res) => {
 
 /**
  * @swagger
- * /api/center/profile:
+ * /api/center/profile/{id}:
  *   get:
  *     summary: Gets center profile
  *     tags: [Center]
  *     security:
  *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID of the center to return
  *     responses:
  *       200:
  *         description: Profile retrieved successfully
  */
 CenterController.get(
-  "/profile",
+  "/profile/:id",
   verifyToken,
-  checkRole(["center", "collector"]),
+  checkRole(["center"]),
   async (req, res) => {
-    const user_id = (req as any).user.sub;
+    const { id } = req.params;
 
     try {
-      const result = await CenterService.getProfile(user_id);
+      const result = await CenterService.getProfile(id);
 
       return res
         .status(HttpStatus.OK)
@@ -351,6 +371,44 @@ CenterController.get(
         .json(
           ApiResponse(HttpStatus.OK, "Closest centers list returned", result),
         );
+    } catch (err: any) {
+      log.error(err.message);
+
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
+  },
+);
+
+/**
+ * @swagger
+ * /api/center/dashboard:
+ *   get:
+ *     summary: Gets center stats
+ *     tags: [Center]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Return center stats successfully
+ */
+CenterController.get(
+  "/dashboard",
+  verifyToken,
+  checkRole(["center"]),
+  async (req, res) => {
+    const user_id = (req as any).user.sub;
+
+    try {
+      const result = await CenterService.getCenterStats(user_id);
+      return res
+        .status(HttpStatus.OK)
+        .json(ApiResponse(HttpStatus.OK, "Center stats returned", result));
     } catch (err: any) {
       log.error(err.message);
 

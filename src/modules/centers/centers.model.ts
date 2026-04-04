@@ -4,6 +4,7 @@ const CenterSchema = new Schema(
   {
     centerId: { type: String, required: true, unique: true },
     name: { type: String },
+    role: { type: String, default: "center" },
     address: { type: String },
     password: { type: String },
     gps: {
@@ -16,14 +17,11 @@ const CenterSchema = new Schema(
     materialsAccepted: [String],
     capacity: { type: String },
     //operatingHours: { type: String },
-    type: {
+    centerType: {
       type: String,
-      enum: [
-        "Informal Collection Center",
-        "Formal Collection",
-        "Recycling center",
-      ],
+      enum: ["collection", "recycling"],
     },
+    formal: { type: Boolean, default: false },
     verified: { type: Boolean, default: false },
     status: { type: String, enum: ["active", "suspended"], default: "active" },
   },
