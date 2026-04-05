@@ -66,6 +66,15 @@ export const CenterController = Router();
 CenterController.post("/register", async (req, res) => {
   try {
     const result = await CenterService.register(req.body);
+
+    res.clearCookie("token");
+
+    res.cookie("token", result.token, {
+      httpOnly: true,
+      secure: false, // true in prod
+      sameSite: "lax",
+    });
+
     return res
       .status(HttpStatus.CREATED)
       .json(

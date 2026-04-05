@@ -51,13 +51,12 @@ const readNotification = async (notification_id: string) => {
 const readAllNotifications = async (user_id: string) => {
   log.info("Mark all as read");
 
-  const notification = await NotificationsModel.findOneAndUpdate(
+  const result = await NotificationsModel.updateMany(
     { user_id },
-    { read: true },
-    { new: true },
+    { $set: { read: true } },
   );
 
-  return { notification };
+  return { result };
 };
 
 export const NotificationsService = {

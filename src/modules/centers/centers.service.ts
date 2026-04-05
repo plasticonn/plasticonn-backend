@@ -35,13 +35,19 @@ const register = async (payload: any) => {
     },
   });
 
+  const token = jwt.sign(
+    { sub: payload.email, role: Roles.CENTER },
+    config.jwtSecret,
+    { expiresIn: "7d" },
+  );
+
   await addLog({
     type: "User registration",
     admin: null,
     action: `A new center ${payload.email} just registered`,
   });
 
-  return { center };
+  return { center, token };
 };
 
 const login = async (centerId: string, password: string) => {

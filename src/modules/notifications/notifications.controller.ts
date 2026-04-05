@@ -114,7 +114,7 @@ NotificationController.put(
 NotificationController.put(
   "/read",
   verifyToken,
-  checkRole(["collector"]),
+  checkRole(["collector", "center"]),
   async (req, res) => {
     const user_id = (req as any).user.sub;
 
