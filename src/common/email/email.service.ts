@@ -31,6 +31,7 @@ export class EmailService {
 
       log.info(`Email sent to ${to}`);
     } catch (err: any) {
+      console.log(err);
       log.error(err.message);
       throw err;
     }

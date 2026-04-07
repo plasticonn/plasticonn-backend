@@ -12,6 +12,7 @@ import { DropsModel } from "../drops/drops.model";
 import { calculateCO2Saved } from "../../common/utils/co2saved";
 import { EmailService } from "../../common/email/email.service";
 import { otpServices } from "../../common/utils/otp/otp";
+import { changePasswordTemplate } from "../../common/email/templates";
 
 const log = new Logger("CollectorsService");
 
@@ -140,6 +141,59 @@ const getDashboardStats = async (user_id: string) => {
   };
 };
 
+const updatePassword = async (collector_id: string, payload: any) => {
+  log.info("Change password");
+
+  const collector = await CollectorsModel.findById(collector_id);
+
+  if (!collector) throw new HttpError(404, "Collector not found");
+
+  const match = await passwordServices.verifyPassword(
+    payload.curPassword,
+    String(collector.password),
+  );
+
+  if (!match) throw new HttpError(422, "Invalid password");
+
+  const otp = otpServices.generateOtp();
+
+  await otpServices.storeOtp(String(collector.email), otp);
+
+  await EmailService.sendEmail({
+    to: String(collector.email),
+    subject: "Password Change Confirmation",
+    html: changePasswordTemplate({
+      name: String(collector.firstName),
+      otp: otp,
+    }),
+  });
+};
+
+const verifyPasswordUpdate = async (collector_id: string, payload: any) => {
+  log.info("Verify password change");
+
+  const collector = await CollectorsModel.findById(collector_id);
+
+  if (!collector) throw new HttpError(404, "Collector not found");
+
+  const verify = await otpServices.verifyOtp(
+    String(collector.email),
+    payload.otp,
+  );
+
+  if (verify.error) {
+    throw new HttpError(400, verify.error);
+  }
+
+  const password = await passwordServices.hashPassword(payload.newPassword);
+
+  collector.password = password;
+
+  await collector.save();
+
+  return { collector };
+};
+
 export const CollectorsService = {
   register,
   login,
@@ -147,4 +201,6 @@ export const CollectorsService = {
   updateProfile,
   deleteAccount,
   getDashboardStats,
+  updatePassword,
+  verifyPasswordUpdate,
 };

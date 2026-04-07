@@ -1,0 +1,33 @@
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-04-07T16:11:16.413Z"}
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-04-07T16:15:47.854Z"}
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-04-07T16:24:52.766Z"}
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-04-07T16:25:33.597Z"}
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-04-07T16:31:10.123Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-07T16:43:08.780Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-07T16:43:08.808Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-07T16:43:08.809Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-07T16:44:04.608Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-07T16:44:04.645Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-07T16:44:04.651Z"}
+{"context":"Mongoose","level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","timestamp":"2026-04-07T16:45:22.735Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-07T16:46:00.918Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-07T16:46:00.953Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-07T16:46:00.953Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-07T16:46:15.949Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-07T16:46:16.612Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-07T16:46:23.920Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-07T16:46:24.254Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-07T16:46:34.676Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-07T16:46:35.142Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-07T16:46:40.354Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-07T16:46:47.830Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-07T16:46:47.844Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-07T16:46:48.269Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-07T16:46:49.835Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-07T16:46:53.658Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-07T16:46:53.664Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-07T16:46:54.199Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-07T16:47:05.733Z"}
+{"context":"AdminService","level":"info","message":"Change password","timestamp":"2026-04-07T16:47:31.533Z"}
+{"context":"EmailService","level":"error","message":"Unauthorized","timestamp":"2026-04-07T16:47:33.115Z"}
+{"context":"AdminController","level":"error","message":"Unauthorized","timestamp":"2026-04-07T16:47:33.116Z"}
