@@ -163,7 +163,6 @@ const updatePassword = async (collector_id: string, payload: any) => {
     to: String(collector.email),
     subject: "Password Change Confirmation",
     html: changePasswordTemplate({
-      name: String(collector.firstName),
       otp: otp,
     }),
   });

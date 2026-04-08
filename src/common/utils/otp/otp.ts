@@ -25,6 +25,12 @@ const verifyOtp = async (email: string, otp_code: string) => {
     otp_code,
   });
 
+  console.log(otpEntry);
+
+  if (otpEntry === null) {
+    return { error: "Invalid OTP" };
+  }
+
   if (otpEntry?.used) {
     return { error: "OTP expired" };
   }

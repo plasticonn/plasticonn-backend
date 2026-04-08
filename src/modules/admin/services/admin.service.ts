@@ -112,7 +112,7 @@ const updatePassword = async (adminId: string, payload: any) => {
   await EmailService.sendEmail({
     to: String(admin.email),
     subject: "Password Change Confirmation",
-    html: changePasswordTemplate({ name: String(admin.name), otp: otp }),
+    html: changePasswordTemplate({ otp: otp }),
   });
 };
 

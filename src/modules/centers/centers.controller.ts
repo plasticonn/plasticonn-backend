@@ -431,3 +431,107 @@ CenterController.get(
     }
   },
 );
+
+/**
+ * @swagger
+ * /api/center/update-password:
+ *   post:
+ *     summary: Update center password
+ *     tags: [Admin]
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               curPassword:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Successfully initiated password update
+ */
+CenterController.post(
+  "/update-password",
+  verifyToken,
+  checkRole(["center"]),
+  async (req, res) => {
+    const user_id = (req as any).user.sub;
+
+    const payload = req.body;
+    try {
+      const result = await CenterService.updatePassword(user_id, payload);
+      return res
+        .status(HttpStatus.OK)
+        .json(
+          ApiResponse(
+            HttpStatus.OK,
+            "Password update initiated. Check mail for OTP.",
+            result,
+          ),
+        );
+    } catch (err: any) {
+      log.error(err.message);
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
+  },
+);
+
+/**
+ * @swagger
+ * /api/center/verify-password-update:
+ *   put:
+ *     summary: Verify password update
+ *     tags: [Center]
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               newPassword:
+ *                 type: string
+ *               otp:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Successfully initiated password update
+ */
+CenterController.put(
+  "/verify-password-update",
+  verifyToken,
+  checkRole(["center"]),
+  async (req, res) => {
+    const user_id = (req as any).user.sub;
+
+    const payload = req.body;
+    try {
+      const result = await CenterService.verifyPasswordUpdate(user_id, payload);
+      return res
+        .status(HttpStatus.OK)
+        .json(
+          ApiResponse(HttpStatus.OK, "Password updated successfully.", result),
+        );
+    } catch (err: any) {
+      log.error(err.message);
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
+  },
+);

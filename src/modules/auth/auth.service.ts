@@ -8,6 +8,7 @@ import { CollectorsModel } from "../collectors/collectors.model";
 import { findUserByEmail } from "../../common/utils/user-resolver";
 import { Logger } from "../../common/logger/logger";
 import { CenterModel } from "../centers/centers.model";
+import { changePasswordTemplate } from "../../common/email/templates";
 
 const log = new Logger("AuthService");
 
@@ -24,20 +25,16 @@ const forgotPassword = async (email: string) => {
   await EmailService.sendEmail({
     to: email,
     subject: "Password Recovery",
-    html: `
-      <p>Your OTP is:</p>
-      <h2>${otp}</h2>
-      <p>This code expires in 10 minutes.</p>
-    `,
+    html: changePasswordTemplate({ otp }),
   });
 
   return "If the email exists, an OTP has been sent";
 };
 
 const confirmPasswordReset = async (email: string, otp_code: string) => {
-  const isValid = await otpServices.verifyOtp(email, otp_code);
+  const result = await otpServices.verifyOtp(email, otp_code);
 
-  if (!isValid) {
+  if (result.error) {
     throw new HttpError(400, "Invalid or expired OTP");
   }
 

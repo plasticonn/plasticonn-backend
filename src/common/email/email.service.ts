@@ -1,12 +1,9 @@
-import SibApiV3Sdk from "sib-api-v3-sdk";
+import { Resend } from "resend";
 import { Logger } from "../logger/logger";
 
 const log = new Logger("EmailService");
 
-const client = SibApiV3Sdk.ApiClient.instance;
-client.authentications["api-key"].apiKey = process.env.BREVO_API_KEY;
-
-const transactionalApi = new SibApiV3Sdk.TransactionalEmailsApi();
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export class EmailService {
   static async sendEmail({
@@ -19,19 +16,17 @@ export class EmailService {
     html: string;
   }) {
     try {
-      await transactionalApi.sendTransacEmail({
-        sender: {
-          email: process.env.BREVO_SENDER_EMAIL!,
-          name: process.env.BREVO_SENDER_NAME!,
-        },
-        to: [{ email: to }],
+      const response = await resend.emails.send({
+        from: `${process.env.SENDER_NAME} <${process.env.SENDER_EMAIL}>`,
+        to,
         subject,
-        htmlContent: html,
+        html,
       });
 
       log.info(`Email sent to ${to}`);
+      return response;
     } catch (err: any) {
-      console.log(err);
+      console.error(err);
       log.error(err.message);
       throw err;
     }
@@ -47,17 +42,19 @@ export class EmailService {
     message: string;
   }) {
     try {
-      await transactionalApi.sendTransacEmail({
-        sender: {
-          email: process.env.BREVO_SENDER_EMAIL!,
-          name: process.env.BREVO_SENDER_NAME!,
-        },
-        to: to.map((email) => ({ email })),
+      const response = await resend.emails.send({
+        from: `${process.env.SENDER_NAME} <${process.env.SENDER_EMAIL}>`,
+        to,
         subject,
-        htmlContent: message,
+        html: message,
       });
+
+      log.info(`Bulk email sent to ${to.length} recipients`);
+      return response;
     } catch (err: any) {
-      console.error("Brevo send error:", err.response?.text || err.message);
+      console.error("Resend send error:", err.message);
+      log.error(err.message);
+      throw err;
     }
   }
 }

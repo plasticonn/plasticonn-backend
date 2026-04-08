@@ -9,6 +9,9 @@ import { generateCenterId } from "../../common/utils/generateCode";
 import { addLog } from "../activity_logs/Logs.service";
 import { DropsModel } from "../drops/drops.model";
 import mongoose from "mongoose";
+import { EmailService } from "../../common/email/email.service";
+import { changePasswordTemplate } from "../../common/email/templates";
+import { otpServices } from "../../common/utils/otp/otp";
 
 const log = new Logger("AdminService");
 
@@ -236,6 +239,58 @@ const getCenterStats = async (center_id: string) => {
   };
 };
 
+const updatePassword = async (center_id: string, payload: any) => {
+  log.info("Change password");
+
+  const center = await CenterModel.findById(center_id);
+
+  if (!center) throw new HttpError(404, "Center not found");
+
+  const match = await passwordServices.verifyPassword(
+    payload.curPassword,
+    String(center.password),
+  );
+
+  if (!match) throw new HttpError(422, "Invalid password");
+
+  const otp = otpServices.generateOtp();
+
+  await otpServices.storeOtp(String(center.contactEmail), otp);
+
+  await EmailService.sendEmail({
+    to: String(center.contactEmail),
+    subject: "Password Change Confirmation",
+    html: changePasswordTemplate({
+      otp: otp,
+    }),
+  });
+};
+
+const verifyPasswordUpdate = async (center_id: string, payload: any) => {
+  log.info("Verify password change");
+
+  const center = await CenterModel.findById(center_id);
+
+  if (!center) throw new HttpError(404, "Center not found");
+
+  const verify = await otpServices.verifyOtp(
+    String(center.contactEmail),
+    payload.otp,
+  );
+
+  if (verify.error) {
+    throw new HttpError(400, verify.error);
+  }
+
+  const password = await passwordServices.hashPassword(payload.newPassword);
+
+  center.password = password;
+
+  await center.save();
+
+  return { center };
+};
+
 export const CenterService = {
   register,
   login,
@@ -245,4 +300,6 @@ export const CenterService = {
   getCenters,
   getClosestCenters,
   getCenterStats,
+  updatePassword,
+  verifyPasswordUpdate,
 };
