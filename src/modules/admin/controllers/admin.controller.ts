@@ -44,8 +44,8 @@ AdminController.post("/login", async (req, res) => {
 
     res.cookie("token", result.token, {
       httpOnly: true,
-      secure: true, // true in prod
-      sameSite: "none",
+      secure: true, // true/false in prod/dev
+      sameSite: "none", // lax for localhost
     });
 
     return res
