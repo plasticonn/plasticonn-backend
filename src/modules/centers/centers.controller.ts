@@ -71,8 +71,8 @@ CenterController.post("/register", async (req, res) => {
 
     res.cookie("token", result.token, {
       httpOnly: true,
-      secure: false, // true in prod
-      sameSite: "lax",
+      secure: true, // true in prod
+      sameSite: "none",
     });
 
     return res
@@ -127,8 +127,8 @@ CenterController.post("/login", async (req, res) => {
 
     res.cookie("token", result.token, {
       httpOnly: true,
-      secure: false, // true in prod
-      sameSite: "lax",
+      secure: true, // true in prod
+      sameSite: "none",
     });
 
     return res

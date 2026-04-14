@@ -44,8 +44,8 @@ AdminController.post("/login", async (req, res) => {
 
     res.cookie("token", result.token, {
       httpOnly: true,
-      secure: false, // true in prod
-      sameSite: "lax",
+      secure: true, // true in prod
+      sameSite: "none",
     });
 
     return res
@@ -96,7 +96,7 @@ AdminController.get(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -147,7 +147,7 @@ AdminController.put(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -187,8 +187,8 @@ AdminController.post(
           ApiResponse(
             HttpStatus.OK,
             "Password update initiated. Check mail for OTP.",
-            result
-          )
+            result,
+          ),
         );
     } catch (err: any) {
       log.error(err.message);
@@ -200,7 +200,7 @@ AdminController.post(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -239,7 +239,7 @@ AdminController.put(
       return res
         .status(HttpStatus.OK)
         .json(
-          ApiResponse(HttpStatus.OK, "Password updated successfully.", result)
+          ApiResponse(HttpStatus.OK, "Password updated successfully.", result),
         );
     } catch (err: any) {
       log.error(err.message);
@@ -251,5 +251,5 @@ AdminController.put(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
