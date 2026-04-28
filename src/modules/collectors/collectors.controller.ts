@@ -6,6 +6,7 @@ import { Logger } from "../../common/logger/logger";
 import { verifyToken } from "../../common/middleware/auth.middleware";
 import { checkRole } from "../../common/middleware/role.middleware";
 import { HttpError } from "../../common/utils/HttpError";
+import { upload } from "../../common/middleware/upload.middleware";
 
 /**
  * @swagger
@@ -243,7 +244,7 @@ CollectorController.delete(
 
 /**
  * @swagger
- * /api/center/dashboard:
+ * /api/collector/dashboard:
  *   get:
  *     summary: Gets collector stats
  *     tags: [Collector]
@@ -375,6 +376,107 @@ CollectorController.put(
         );
     } catch (err: any) {
       log.error(err.message);
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
+  },
+);
+
+/**
+ * @swagger
+ * /api/collector/picture:
+ *   patch:
+ *     summary: Update collector profile picture
+ *     tags: [collector]
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         multipart/form-data:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               image:
+ *                 type: string
+ *                 format: binary
+ *
+ *     responses:
+ *       200:
+ *         description: Successfully updated collector picture
+ */
+CollectorController.patch(
+  "/picture",
+  verifyToken,
+  checkRole(["collector"]),
+  upload.single("image"),
+  async (req, res) => {
+    try {
+      const user_id = (req as any).user.sub;
+
+      if (!req.file) {
+        throw new HttpError(400, "Image file is required");
+      }
+
+      const updated = await CollectorsService.updateProfilePicture(
+        user_id,
+        req.file,
+      );
+
+      return res
+        .status(200)
+        .json(
+          ApiResponse(200, "collector picture updated successfully", updated),
+        );
+    } catch (err: any) {
+      log.error(err.message);
+
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
+  },
+);
+
+/**
+ * @swagger
+ * /api/collector/picture:
+ *   delete:
+ *     summary: Delete collector picture
+ *     tags: [collector]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Successfully deleted collector picture
+ */
+CollectorController.delete(
+  "/picture",
+  verifyToken,
+  checkRole(["collector"]),
+  async (req, res) => {
+    try {
+      const user_id = (req as any).user.sub;
+
+      const updated = await CollectorsService.removeProfilePicture(user_id);
+
+      return res
+        .status(200)
+        .json(
+          ApiResponse(200, "Profile picture removed successfully", updated),
+        );
+    } catch (err: any) {
+      log.error(err.message);
+
       if (err instanceof HttpError) {
         return res
           .status(err.status)

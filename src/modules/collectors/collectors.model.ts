@@ -8,7 +8,10 @@ const CollectorsSchema = new Schema(
     phone: { type: String },
     email: { type: String },
     password: { type: String },
-
+    image: {
+      url: { type: String },
+      public_id: { type: String },
+    },
     role: { type: String, default: "collector" },
     status: { type: String, default: "active", enum: ["active", "suspended"] },
   },

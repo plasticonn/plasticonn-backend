@@ -13,6 +13,10 @@ import { calculateCO2Saved } from "../../common/utils/co2saved";
 import { EmailService } from "../../common/email/email.service";
 import { otpServices } from "../../common/utils/otp/otp";
 import { changePasswordTemplate } from "../../common/email/templates";
+import {
+  uploadToCloudinary,
+  deleteFromCloudinary,
+} from "../../common/utils/cloudinary";
 
 const log = new Logger("CollectorsService");
 
@@ -193,6 +197,50 @@ const verifyPasswordUpdate = async (collector_id: string, payload: any) => {
   return { collector };
 };
 
+const updateProfilePicture = async (
+  centerId: string,
+  file: Express.Multer.File,
+) => {
+  if (!file) throw new HttpError(400, "Image is required");
+
+  const uploaded: any = await uploadToCloudinary(file);
+
+  const center = await CollectorsModel.findByIdAndUpdate(
+    centerId,
+    {
+      image: {
+        url: uploaded.secure_url,
+        public_id: uploaded.public_id,
+      },
+    },
+    { new: true },
+  );
+
+  return center;
+};
+
+const removeProfilePicture = async (collectorId: string) => {
+  const collector = await CollectorsModel.findById(collectorId);
+
+  if (!collector) {
+    throw new HttpError(404, "collector not found");
+  }
+
+  // If no image, nothing to delete
+  if (!collector.image || !collector.image.public_id) {
+    return collector;
+  }
+
+  // Delete from Cloudinary
+  await deleteFromCloudinary(collector.image.public_id);
+
+  // Remove from DB
+  collector.image = null;
+  await collector.save();
+
+  return collector;
+};
+
 export const CollectorsService = {
   register,
   login,
@@ -202,4 +250,6 @@ export const CollectorsService = {
   getDashboardStats,
   updatePassword,
   verifyPasswordUpdate,
+  updateProfilePicture,
+  removeProfilePicture,
 };
