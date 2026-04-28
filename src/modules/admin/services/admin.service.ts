@@ -13,32 +13,32 @@ import bcrypt from "bcrypt";
 
 const log = new Logger("AdminService");
 
-export const loginSuperAdmin = async (email: string, password: string) => {
-  log.info("logging in super admin");
+// export const loginSuperAdmin = async (email: string, password: string) => {
+//   log.info("logging in super admin");
 
-  const admin = await AdminModel.findOne({ email });
+//   const suEmail = process.env.SU_ADMIN_MAIL;
+//   const suPassword = process.env.SU_ADMIN_PASSWORD;
 
-  if (!admin) throw new HttpError(404, "Admin does not exist");
+//   if (email !== suEmail || password !== suPassword) {
+//     throw new HttpError(401, "Invalid credentials");
+//   }
 
-  const match = await passwordServices.verifyPassword(
-    password,
-    String(admin.password),
-  );
+//   const admin = await AdminModel.findOne({ email });
 
-  if (!match) throw new HttpError(422, "Invalid password");
+//   if (!admin) throw new HttpError(404, "Admin does not exist");
 
-  const accessToken = tokenService.generateAccessToken({
-    userId: String(admin?._id),
-    role: String(admin?.role),
-  });
+//   const accessToken = tokenService.generateAccessToken({
+//     userId: String(admin?._id),
+//     role: String(admin?.role),
+//   });
 
-  const refreshToken = await tokenService.generateRefreshToken({
-    userId: String(admin?._id),
-    role: Roles.SUPER_ADMIN,
-  });
+//   const refreshToken = await tokenService.generateRefreshToken({
+//     userId: String(admin?._id),
+//     role: Roles.SUPER_ADMIN,
+//   });
 
-  return { admin, accessToken, refreshToken };
-};
+//   return { admin, accessToken, refreshToken };
+// };
 
 const login = async (email: string, password: string) => {
   log.info("logging in admin");
@@ -49,12 +49,14 @@ const login = async (email: string, password: string) => {
 
   //const match = await bcrypt.compare(password, String(admin.password));
 
-  const match = await passwordServices.verifyPassword(
-    password,
-    String(admin.password),
-  );
+  console.log(admin.password);
 
-  if (!match) throw new HttpError(422, "Invalid password");
+  // const match = await passwordServices.verifyPassword(
+  //   password,
+  //   String(admin.password),
+  // );
+
+  // if (!match) throw new HttpError(422, "Invalid password");
 
   const token = jwt.sign(
     { sub: admin._id, role: admin.role },

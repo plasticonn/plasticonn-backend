@@ -23,8 +23,6 @@ export const AdminManagementController = Router();
  *   post:
  *     summary: Add an admin
  *     tags: [Admin Management]
- *     security:
- *       - bearerAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -40,6 +38,8 @@ export const AdminManagementController = Router();
  *                 type: string
  *               password:
  *                 type: string
+ *               role:
+ *                 type: string
  *
  *     responses:
  *       200:
@@ -48,6 +48,7 @@ export const AdminManagementController = Router();
 AdminManagementController.post("/add", async (req, res) => {
   try {
     const result = await adminServices.addAdmin(req.body);
+
     return res
       .status(HttpStatus.CREATED)
       .json(ApiResponse(HttpStatus.CREATED, "Admin added", result));
@@ -104,7 +105,7 @@ AdminManagementController.get(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -141,7 +142,7 @@ AdminManagementController.get(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -195,7 +196,7 @@ AdminManagementController.put(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -252,7 +253,7 @@ AdminManagementController.put(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -297,5 +298,5 @@ AdminManagementController.delete(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );

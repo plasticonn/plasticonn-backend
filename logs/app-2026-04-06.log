@@ -1,8 +1,0 @@
-{"context":"AdminService","level":"info","message":"Fetching center profile","timestamp":"2026-04-06T07:55:13.060Z"}
-{"context":"CenterController","level":"error","message":"Center not found","timestamp":"2026-04-06T07:55:15.344Z"}
-{"context":"AdminService","level":"info","message":"Fetching center profile","timestamp":"2026-04-06T07:55:15.463Z"}
-{"context":"CenterController","level":"error","message":"Center not found","timestamp":"2026-04-06T07:55:15.726Z"}
-{"context":"AdminService","level":"info","message":"Fetching center profile","timestamp":"2026-04-06T09:14:27.380Z"}
-{"context":"CenterController","level":"error","message":"Center not found","timestamp":"2026-04-06T09:14:29.330Z"}
-{"context":"AdminService","level":"info","message":"Fetching center profile","timestamp":"2026-04-06T09:14:29.362Z"}
-{"context":"CenterController","level":"error","message":"Center not found","timestamp":"2026-04-06T09:14:29.619Z"}

@@ -1,0 +1,126 @@
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-27T07:38:40.115Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-27T07:38:40.327Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-27T07:38:40.330Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-04-27T07:40:33.477Z"}
+{"context":"CollectorController","level":"error","message":"Collector does not exist","timestamp":"2026-04-27T07:40:33.696Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-04-27T07:43:28.043Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-27T07:43:30.548Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-27T07:43:30.754Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-27T07:43:31.778Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-27T07:43:31.812Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-27T07:43:31.844Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-27T07:43:31.857Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-27T07:43:31.997Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-27T07:43:33.554Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-27T07:43:34.735Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T07:43:36.270Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-27T07:43:36.336Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-27T07:43:36.341Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T07:43:36.497Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-27T07:43:36.626Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T07:43:36.722Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T07:43:36.932Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-27T07:53:49.034Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-27T07:53:49.448Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-27T07:53:50.213Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-27T07:53:50.229Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-27T07:53:50.237Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-27T07:53:50.243Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-27T07:53:50.505Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-27T07:53:50.515Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-27T07:53:50.522Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-27T07:53:50.526Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-27T07:53:50.533Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-27T07:53:51.016Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T07:53:55.048Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T07:53:55.267Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T07:53:55.486Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T07:53:55.700Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-27T08:04:31.069Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-27T08:04:31.358Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-27T08:04:31.575Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-27T08:04:31.591Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-27T08:04:31.601Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-27T08:04:31.606Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-27T08:04:31.963Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-27T08:04:31.973Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-27T08:04:34.510Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-27T08:04:34.795Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-27T08:04:34.800Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:04:35.792Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:04:36.008Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-27T08:04:36.078Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:04:36.229Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:04:36.439Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-27T08:33:11.090Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-27T08:33:11.312Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-27T08:33:11.773Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-27T08:33:11.785Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-27T08:33:11.860Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-27T08:33:11.890Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-27T08:33:12.912Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-27T08:33:13.145Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-27T08:33:13.745Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-27T08:33:13.756Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-27T08:33:14.100Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-27T08:33:14.337Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:33:16.669Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:33:16.974Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:33:17.231Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:33:17.453Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-27T08:40:30.650Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-27T08:40:30.869Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-27T08:40:30.967Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-27T08:40:30.974Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-27T08:40:31.012Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:40:31.021Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-27T08:40:31.075Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-27T08:40:31.207Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-27T08:40:31.212Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-27T08:40:31.297Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:40:31.315Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:40:31.544Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:40:31.774Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:40:32.021Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:40:32.246Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:40:32.471Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-27T08:40:32.735Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-27T08:40:32.746Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:40:32.751Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-27T08:40:32.984Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-27T08:48:59.662Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-27T08:48:59.910Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-27T08:49:00.224Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-27T08:49:00.230Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-27T08:49:00.236Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:49:00.241Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-27T08:49:00.247Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-27T08:49:00.527Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-27T08:49:00.558Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-27T08:49:00.573Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:49:00.578Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-27T08:49:00.665Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-27T08:49:00.904Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-27T08:49:00.921Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:49:01.187Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:49:01.705Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:49:04.887Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:49:05.123Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:49:05.353Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T08:49:05.582Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-27T10:20:58.646Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-27T10:21:00.260Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-27T10:21:01.217Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-27T10:21:01.223Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-27T10:21:01.234Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-27T10:21:01.246Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-27T10:21:01.442Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-27T10:21:01.662Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T10:21:01.809Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-27T10:21:01.813Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T10:21:02.110Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-27T10:21:02.334Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T10:21:02.562Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-27T10:21:02.819Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T10:21:02.825Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-27T10:21:02.830Z"}

@@ -1,0 +1,324 @@
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T07:19:14.259Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T07:19:16.146Z"}
+{"context":"CollectorsService","level":"info","message":"Registering collector","timestamp":"2026-04-15T07:20:27.921Z"}
+{"context":"Logs service","level":"info","message":"Adding a new log","timestamp":"2026-04-15T07:20:28.596Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T07:20:32.111Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T07:20:32.131Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T07:20:32.142Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T07:20:32.149Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T07:20:33.501Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T07:20:34.106Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T07:20:35.045Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T07:20:35.053Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T07:20:36.587Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T07:20:37.563Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T07:20:37.815Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T07:20:38.050Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-04-15T07:41:32.418Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T07:41:57.515Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T07:42:08.814Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T07:42:09.195Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-04-15T07:42:47.017Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T07:42:50.455Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T07:42:50.463Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T07:42:50.470Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T07:42:50.475Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T07:42:50.745Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-15T07:42:51.099Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T07:42:51.108Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T07:42:51.112Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T07:42:51.115Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-15T07:42:51.356Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T07:42:55.390Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T07:42:55.640Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T07:42:55.895Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T07:42:56.199Z"}
+{"context":"CollectorsService","level":"info","message":"Registering collector","timestamp":"2026-04-15T07:44:22.644Z"}
+{"context":"Logs service","level":"info","message":"Adding a new log","timestamp":"2026-04-15T07:44:23.454Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T07:44:26.843Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T07:44:26.849Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T07:44:26.854Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T07:44:26.859Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-15T07:44:27.201Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T07:44:27.214Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T07:44:27.221Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T07:44:27.226Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T07:44:27.229Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-15T07:44:27.771Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T07:44:31.839Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T07:44:32.090Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T07:44:32.334Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T07:44:32.574Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T07:45:11.605Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T07:45:11.916Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T07:45:12.382Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T07:45:12.436Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T07:45:12.488Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T07:45:12.504Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T07:45:12.680Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-15T07:45:12.956Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T07:45:12.966Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T07:45:12.976Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T07:45:13.001Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-15T07:45:13.538Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T07:45:17.122Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T07:45:17.351Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T07:45:17.571Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T07:45:17.787Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T07:57:51.598Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T07:57:51.637Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T07:57:51.638Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-04-15T08:05:29.611Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T08:05:33.355Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T08:05:33.369Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T08:05:33.373Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T08:05:33.379Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-15T08:05:33.717Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T08:05:33.736Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T08:05:33.740Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T08:05:33.744Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T08:05:33.756Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-15T08:05:34.261Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:05:38.383Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:05:38.649Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:05:38.886Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:05:39.128Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T08:08:23.802Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T08:08:24.062Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T08:08:24.528Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T08:08:24.539Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T08:08:24.544Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T08:08:24.592Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T08:08:24.913Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T08:08:24.933Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T08:08:24.941Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-15T08:08:25.050Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T08:08:25.056Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-15T08:08:25.274Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:08:29.152Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:08:29.391Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:08:29.627Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:08:29.862Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T08:13:04.514Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T08:13:04.546Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T08:13:04.547Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T08:15:10.500Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T08:15:10.532Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T08:15:10.533Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T08:15:31.992Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T08:15:32.031Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T08:15:32.033Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T08:17:51.547Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T08:17:51.577Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T08:17:51.578Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T08:18:20.786Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T08:18:20.801Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T08:18:20.802Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T08:33:16.456Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T08:33:17.317Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T08:33:17.355Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T08:33:17.647Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:33:17.679Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T08:33:17.686Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T08:33:17.694Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T08:33:17.829Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-15T08:33:18.194Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T08:33:18.226Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:33:18.235Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T08:33:18.242Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-15T08:33:18.519Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:33:18.525Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:33:18.850Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:33:21.744Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:33:21.968Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:33:22.294Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:33:22.543Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T08:33:33.333Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T08:33:33.913Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T08:33:33.919Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T08:33:33.924Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:33:33.944Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T08:33:33.959Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T08:33:34.116Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T08:33:34.183Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-15T08:33:34.189Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T08:33:34.204Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T08:33:34.209Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:33:34.217Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-04-15T08:33:34.421Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:33:34.459Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:33:34.776Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:33:35.126Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:33:36.994Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:33:38.458Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:33:39.021Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-04-15T08:33:58.846Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T08:34:02.420Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T08:34:03.216Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T08:34:03.671Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T08:34:03.720Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T08:34:03.756Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T08:34:03.771Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T08:34:04.050Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T08:34:04.055Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T08:34:04.072Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T08:34:04.924Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T08:34:07.625Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T08:34:09.019Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T08:34:09.446Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T08:34:09.455Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T08:34:09.461Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T08:34:09.535Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:34:09.720Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T08:34:11.024Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T08:34:11.030Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T08:34:11.035Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T08:34:11.227Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:34:13.573Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:34:13.775Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:34:13.994Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T08:34:16.704Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-15T08:34:16.972Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T08:34:17.267Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-15T08:34:19.230Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T08:34:20.653Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T08:34:20.658Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T08:34:20.664Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:34:20.890Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-15T08:34:20.908Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:34:21.132Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-15T08:34:21.138Z"}
+{"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-15T08:34:21.307Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:34:21.391Z"}
+{"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-15T08:34:21.619Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T11:41:29.745Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T11:41:29.796Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T11:41:29.797Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T11:42:44.862Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T11:42:44.929Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T11:42:44.931Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T11:48:40.670Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T11:48:42.534Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T11:48:49.361Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T11:48:49.583Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T11:48:56.464Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T11:48:56.683Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T11:49:04.843Z"}
+{"context":"AdminController","level":"error","message":"Admin does not exist","timestamp":"2026-04-15T11:49:05.064Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T11:56:31.380Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T11:56:31.458Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T11:56:31.461Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T11:57:12.624Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T11:57:12.682Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T11:57:12.684Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T11:59:00.007Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T11:59:00.070Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T11:59:00.082Z"}
+{"context":"adminManagement","level":"info","message":"Adding admin","timestamp":"2026-04-15T11:59:56.180Z"}
+{"context":"EmailService","level":"info","message":"Email sent to admin@plasticonn.com","timestamp":"2026-04-15T11:59:57.966Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:01:20.750Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T12:01:21.140Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:01:36.259Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T12:01:36.693Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:04:22.061Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:04:22.136Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:04:22.154Z"}
+{"context":"adminManagement","level":"info","message":"Adding admin","timestamp":"2026-04-15T12:04:54.429Z"}
+{"context":"EmailService","level":"info","message":"Email sent to admin@plasticonn.com","timestamp":"2026-04-15T12:04:55.901Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:05:02.827Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T12:05:03.225Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:07:45.460Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:07:45.495Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:07:45.501Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:08:05.406Z"}
+{"context":"AdminController","level":"error","message":"Admin does not exist","timestamp":"2026-04-15T12:08:06.589Z"}
+{"context":"adminManagement","level":"info","message":"Adding admin","timestamp":"2026-04-15T12:08:12.109Z"}
+{"context":"EmailService","level":"info","message":"Email sent to admin@plasticonn.com","timestamp":"2026-04-15T12:08:28.019Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:08:53.915Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T12:08:54.280Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:10:21.892Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T12:10:22.317Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:10:33.160Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T12:10:33.597Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:10:58.135Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T12:10:58.764Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:11:13.661Z"}
+{"context":"AdminController","level":"error","message":"Admin does not exist","timestamp":"2026-04-15T12:11:13.880Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:11:34.531Z"}
+{"context":"AdminController","level":"error","message":"Admin does not exist","timestamp":"2026-04-15T12:11:34.747Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:13:27.802Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:13:27.857Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:13:27.858Z"}
+{"context":"adminManagement","level":"info","message":"Adding admin","timestamp":"2026-04-15T12:13:49.967Z"}
+{"context":"EmailService","level":"info","message":"Email sent to admin@plasticonn.com","timestamp":"2026-04-15T12:13:52.223Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:15:14.976Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:15:15.016Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:15:15.020Z"}
+{"context":"adminManagement","level":"info","message":"Adding admin","timestamp":"2026-04-15T12:15:23.665Z"}
+{"context":"EmailService","level":"info","message":"Email sent to admin@plasticonn.com","timestamp":"2026-04-15T12:15:25.152Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:16:37.234Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:16:37.290Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:16:37.291Z"}
+{"context":"adminManagement","level":"info","message":"Adding admin","timestamp":"2026-04-15T12:16:54.125Z"}
+{"context":"EmailService","level":"info","message":"Email sent to admin@plasticonn.com","timestamp":"2026-04-15T12:16:56.816Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:17:29.756Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:17:29.806Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:17:29.807Z"}
+{"context":"adminManagement","level":"info","message":"Adding admin","timestamp":"2026-04-15T12:19:35.723Z"}
+{"context":"EmailService","level":"info","message":"Email sent to admin@plasticonn.com","timestamp":"2026-04-15T12:19:37.151Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:19:56.174Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T12:19:56.607Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:23:01.338Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:23:01.394Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:23:01.396Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:24:15.279Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T12:24:15.713Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:26:29.841Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:26:29.876Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:26:29.878Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:26:51.249Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:26:51.301Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:26:51.302Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:27:07.579Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T12:27:08.024Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:27:54.913Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:27:54.983Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:27:54.985Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:28:02.578Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T12:28:03.035Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:29:39.357Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:29:39.386Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:29:39.387Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:29:44.800Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T12:29:45.275Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:29:54.398Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:29:54.461Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:29:54.470Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:30:07.816Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T12:30:08.256Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:30:29.413Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:30:29.440Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:30:29.440Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:31:40.091Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:31:40.155Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:31:40.157Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:31:48.936Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T12:31:49.400Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:32:40.805Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:32:40.866Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:32:40.867Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:32:46.565Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T12:32:46.997Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:33:16.371Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:33:16.402Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:33:16.403Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T12:34:09.840Z"}
+{"context":"AdminController","level":"error","message":"Invalid password","timestamp":"2026-04-15T12:34:10.252Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:40:41.840Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:40:41.893Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:40:41.894Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T12:40:57.153Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T12:40:57.230Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:40:57.231Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T16:29:47.802Z"}
+{"context":"AdminController","level":"error","message":"Admin does not exist","timestamp":"2026-04-15T16:29:49.255Z"}

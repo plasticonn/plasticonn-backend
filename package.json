@@ -4,7 +4,7 @@
   "description": "Backend repository for  Plasticonn",
   "scripts": {
     "build": "tsc --project tsconfig.prod.json",
-    "start:dev": "nodemon tsconfig.dev.json",
+    "start:dev": "nodemon",
     "start:prod": "ts-node dist/server.js",
     "test": "jest",
     "test:watch": "jest --watch"

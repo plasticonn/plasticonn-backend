@@ -49,6 +49,47 @@ AuthController.post("/forget-password", async (req: Request, res: Response) => {
 
 /**
  * @swagger
+ * /api/auth/logout:
+ *   post:
+ *     summary: Logout user
+ *     tags: [Auth]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Logout successful
+ */
+AuthController.post(
+  "/logout",
+  verifyToken,
+  checkRole(["admin", "super_admin", "center", "collector"]),
+  async (req: Request, res: Response) => {
+    try {
+      res.clearCookie("token", {
+        httpOnly: true,
+        secure: true,
+        sameSite: "none",
+      });
+
+      return res
+        .status(HttpStatus.OK)
+        .json(ApiResponse(HttpStatus.OK, "Logout successfull"));
+    } catch (err: any) {
+      log.error(err.message);
+
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
+  },
+);
+
+/**
+ * @swagger
  * /api/auth/confirm-password-reset:
  *   post:
  *     summary: Confirms password reset operation via OTP
