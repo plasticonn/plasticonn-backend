@@ -322,3 +322,6 @@
 {"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T12:40:57.231Z"}
 {"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-15T16:29:47.802Z"}
 {"context":"AdminController","level":"error","message":"Admin does not exist","timestamp":"2026-04-15T16:29:49.255Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-15T16:52:02.820Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-15T16:52:02.850Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-15T16:52:02.851Z"}

@@ -6,6 +6,7 @@ import { ApiResponse } from "../../common/responses/api-response";
 import { HttpError } from "../../common/utils/HttpError";
 import { verifyToken } from "../../common/middleware/auth.middleware";
 import { checkRole } from "../../common/middleware/role.middleware";
+import { upload } from "../../common/middleware/upload.middleware";
 
 /**
  * @swagger
@@ -21,12 +22,12 @@ export const CenterController = Router();
  * @swagger
  * /api/center/register:
  *   post:
- *     summary: Register a center (i.e recylcing or collection)
+ *     summary: Register a center (i.e recycling or collection)
  *     tags: [Center]
  *     requestBody:
  *       required: true
  *       content:
- *         application/json:
+ *         multipart/form-data:
  *           schema:
  *             type: object
  *             properties:
@@ -58,20 +59,23 @@ export const CenterController = Router();
  *                 type: string
  *               password:
  *                 type: string
+ *               image:
+ *                 type: string
+ *                 format: binary
  *
  *     responses:
- *       200:
+ *       201:
  *         description: Successfully registered
  */
-CenterController.post("/register", async (req, res) => {
+CenterController.post("/register", upload.single("image"), async (req, res) => {
   try {
-    const result = await CenterService.register(req.body);
+    const result = await CenterService.register(req.body, req.file);
 
     res.clearCookie("token");
 
     res.cookie("token", result.token, {
       httpOnly: true,
-      secure: true, // true in prod
+      secure: true,
       sameSite: "none",
     });
 
@@ -86,6 +90,7 @@ CenterController.post("/register", async (req, res) => {
       );
   } catch (err: any) {
     log.error(err.message);
+
     if (err instanceof HttpError) {
       return res.status(err.status).json(ApiResponse(err.status, err.message));
     }

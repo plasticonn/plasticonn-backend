@@ -124,3 +124,6 @@
 {"context":"AdminService","level":"info","message":"Getting all centers","timestamp":"2026-04-27T10:21:02.819Z"}
 {"context":"AdminService","level":"info","message":"Getting closest centers","timestamp":"2026-04-27T10:21:02.825Z"}
 {"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-27T10:21:02.830Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-27T15:23:42.099Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-27T15:23:42.129Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-27T15:23:42.131Z"}

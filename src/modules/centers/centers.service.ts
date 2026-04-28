@@ -12,26 +12,43 @@ import mongoose from "mongoose";
 import { EmailService } from "../../common/email/email.service";
 import { changePasswordTemplate } from "../../common/email/templates";
 import { otpServices } from "../../common/utils/otp/otp";
+import { uploadToCloudinary } from "../../common/utils/cloudinary";
 
-const log = new Logger("AdminService");
+const log = new Logger("CenterService");
 
-const register = async (payload: any) => {
+const register = async (payload: any, file?: Express.Multer.File) => {
   log.info("Registering center");
 
-  const centerExists = await CenterModel.findOne({ name: payload.name });
+  const parsedPayload = {
+    ...payload,
+    lng: Number(payload.lng),
+    lat: Number(payload.lat),
+    formal: payload.formal === "true",
+    materialsAccepted: Array.isArray(payload.materialsAccepted)
+      ? payload.materialsAccepted
+      : JSON.parse(payload.materialsAccepted || "[]"),
+  };
 
+  const centerExists = await CenterModel.findOne({ name: payload.name });
   if (centerExists) throw new HttpError(409, "Center already exists");
 
   const centerId = generateCenterId();
-
   const hashed = await passwordServices.hashPassword(payload.password);
 
-  const { lat, lng, password, ...rest } = payload;
+  let imageUrl = null;
+
+  if (file) {
+    const uploaded: any = await uploadToCloudinary(file);
+    imageUrl = uploaded.secure_url;
+  }
+
+  const { lat, lng, password, ...rest } = parsedPayload;
 
   const center = await CenterModel.create({
     ...rest,
     centerId,
     password: hashed,
+    image: imageUrl,
     gps: {
       type: "Point",
       coordinates: [lng, lat],
