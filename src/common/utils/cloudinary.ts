@@ -20,3 +20,7 @@ export const uploadToCloudinary = (file: Express.Multer.File) => {
     streamifier.createReadStream(file.buffer).pipe(stream);
   });
 };
+
+export const deleteFromCloudinary = async (publicId: string) => {
+  return await cloudinary.uploader.destroy(publicId);
+};

@@ -540,3 +540,102 @@ CenterController.put(
     }
   },
 );
+
+/**
+ * @swagger
+ * /api/center/picture:
+ *   patch:
+ *     summary: Update center profile picture
+ *     tags: [Center]
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         multipart/form-data:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               image:
+ *                 type: string
+ *                 format: binary
+ *
+ *     responses:
+ *       200:
+ *         description: Successfully updated center picture
+ */
+CenterController.patch(
+  "/picture",
+  verifyToken,
+  checkRole(["center"]),
+  upload.single("image"),
+  async (req, res) => {
+    try {
+      const user_id = (req as any).user.sub;
+
+      if (!req.file) {
+        throw new HttpError(400, "Image file is required");
+      }
+
+      const updated = await CenterService.updateProfilePicture(
+        user_id,
+        req.file,
+      );
+
+      return res
+        .status(200)
+        .json(ApiResponse(200, "Center picture updated successfully", updated));
+    } catch (err: any) {
+      log.error(err.message);
+
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
+  },
+);
+
+/**
+ * @swagger
+ * /api/center/picture:
+ *   delete:
+ *     summary: Delete center picture
+ *     tags: [Center]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Successfully deleted center picture
+ */
+CenterController.delete(
+  "/picture",
+  verifyToken,
+  checkRole(["center"]),
+  async (req, res) => {
+    try {
+      const user_id = (req as any).user.sub;
+
+      const updated = await CenterService.removeProfilePicture(user_id);
+
+      return res
+        .status(200)
+        .json(
+          ApiResponse(200, "Profile picture removed successfully", updated),
+        );
+    } catch (err: any) {
+      log.error(err.message);
+
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
+    }
+  },
+);

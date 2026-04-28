@@ -21,7 +21,10 @@ const CenterSchema = new Schema(
       type: String,
       enum: ["collection", "recycling"],
     },
-    image: { type: String },
+    image: {
+      url: { type: String },
+      public_id: { type: String },
+    },
     formal: { type: Boolean, default: false },
     verified: { type: Boolean, default: false },
     status: { type: String, enum: ["active", "suspended"], default: "active" },

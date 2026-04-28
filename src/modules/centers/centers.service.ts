@@ -12,7 +12,10 @@ import mongoose from "mongoose";
 import { EmailService } from "../../common/email/email.service";
 import { changePasswordTemplate } from "../../common/email/templates";
 import { otpServices } from "../../common/utils/otp/otp";
-import { uploadToCloudinary } from "../../common/utils/cloudinary";
+import {
+  deleteFromCloudinary,
+  uploadToCloudinary,
+} from "../../common/utils/cloudinary";
 
 const log = new Logger("CenterService");
 
@@ -35,11 +38,15 @@ const register = async (payload: any, file?: Express.Multer.File) => {
   const centerId = generateCenterId();
   const hashed = await passwordServices.hashPassword(payload.password);
 
-  let imageUrl = null;
+  let image: { url: string; public_id: string } | null = null;
 
   if (file) {
     const uploaded: any = await uploadToCloudinary(file);
-    imageUrl = uploaded.secure_url;
+
+    image = {
+      url: uploaded.secure_url,
+      public_id: uploaded.public_id,
+    };
   }
 
   const { lat, lng, password, ...rest } = parsedPayload;
@@ -48,7 +55,7 @@ const register = async (payload: any, file?: Express.Multer.File) => {
     ...rest,
     centerId,
     password: hashed,
-    image: imageUrl,
+    image,
     gps: {
       type: "Point",
       coordinates: [lng, lat],
@@ -308,6 +315,50 @@ const verifyPasswordUpdate = async (center_id: string, payload: any) => {
   return { center };
 };
 
+const updateProfilePicture = async (
+  centerId: string,
+  file: Express.Multer.File,
+) => {
+  if (!file) throw new HttpError(400, "Image is required");
+
+  const uploaded: any = await uploadToCloudinary(file);
+
+  const center = await CenterModel.findByIdAndUpdate(
+    centerId,
+    {
+      image: {
+        url: uploaded.secure_url,
+        public_id: uploaded.public_id,
+      },
+    },
+    { new: true },
+  );
+
+  return center;
+};
+
+const removeProfilePicture = async (centerId: string) => {
+  const center = await CenterModel.findById(centerId);
+
+  if (!center) {
+    throw new HttpError(404, "Center not found");
+  }
+
+  // If no image, nothing to delete
+  if (!center.image || !center.image.public_id) {
+    return center;
+  }
+
+  // Delete from Cloudinary
+  await deleteFromCloudinary(center.image.public_id);
+
+  // Remove from DB
+  center.image = null;
+  await center.save();
+
+  return center;
+};
+
 export const CenterService = {
   register,
   login,
@@ -319,4 +370,6 @@ export const CenterService = {
   getCenterStats,
   updatePassword,
   verifyPasswordUpdate,
+  updateProfilePicture,
+  removeProfilePicture,
 };
