@@ -41,8 +41,8 @@ const getDropList = async (user_id: string) => {
   const drops = await DropsModel.find({
     $or: [{ collector_id: user_id }, { center_id: user_id }],
   })
-    .populate("collector_id", "name")
-    .populate("center_id", "name");
+    .populate("collector_id", "firstName image")
+    .populate("center_id", "name image");
 
   if (drops.length === 0) {
     throw new HttpError(404, "No drops found");
