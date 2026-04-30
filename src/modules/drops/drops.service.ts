@@ -3,21 +3,45 @@ import { Logger } from "../../common/logger/logger";
 import { HttpError } from "../../common/utils/HttpError";
 import { NotificationsService } from "../notifications/notifications.service";
 import { generateDropId } from "../../common/utils/generateCode";
+import { uploadToCloudinary } from "../../common/utils/cloudinary";
 
 const log = new Logger("DropsService");
 
-const addDrop = async (user_id: string, payload: any) => {
+const addDrop = async (
+  user_id: string,
+  payload: any,
+  file?: Express.Multer.File,
+) => {
   log.info("Adding a drop offs");
 
+  const parsedPayload = {
+    ...payload,
+    types: Array.isArray(payload.types)
+      ? payload.types
+      : JSON.parse(payload.types || "[]"),
+  };
+
   const dropId = generateDropId();
+
+  let image: { url: string; public_id: string } | null = null;
+
+  if (file) {
+    const uploaded: any = await uploadToCloudinary(file);
+
+    image = {
+      url: uploaded.secure_url,
+      public_id: uploaded.public_id,
+    };
+  }
 
   const drop = await DropsModel.create({
     drop_id: dropId,
     collector_id: user_id,
-    ...payload,
+    ...parsedPayload,
+    image,
     location: {
       type: "Point",
-      coordinates: [payload.location.lng, payload.location.lat],
+      coordinates: [Number(payload.lng), Number(payload.lat)],
     },
   });
 

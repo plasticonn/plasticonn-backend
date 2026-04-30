@@ -9,6 +9,10 @@ const DropsSchema = new Schema(
     amount: { type: Number },
     types: { type: [String] },
     condition: { type: String },
+    image: {
+      url: { type: String },
+      public_id: { type: String },
+    },
     location: {
       type: { type: String, enum: ["Point"] },
       coordinates: { type: [Number] },

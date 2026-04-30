@@ -1,0 +1,201 @@
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T08:39:29.533Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T08:39:29.566Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T08:39:29.567Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T08:41:04.308Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T08:41:04.478Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T08:41:04.616Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T08:43:36.474Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T08:43:36.515Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T08:43:36.516Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T08:44:14.476Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T08:44:14.519Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T08:44:14.525Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T08:45:39.770Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T08:45:39.800Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T08:45:39.801Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T08:47:04.463Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T08:47:04.493Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T08:47:04.494Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T08:48:14.585Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T08:48:14.611Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T08:48:14.613Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T08:49:18.658Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T08:49:18.686Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T08:49:18.687Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T08:49:29.350Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T08:49:29.827Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T08:49:30.360Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T08:49:30.384Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T08:49:30.396Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T08:49:30.856Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T08:49:31.745Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T08:49:38.048Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-04-30T08:50:03.920Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-30T08:50:08.515Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-30T08:50:10.436Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T08:50:11.100Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T08:50:11.113Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T08:50:11.120Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-30T08:50:11.127Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T08:50:12.283Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-30T08:50:12.935Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T08:50:14.447Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T08:50:15.629Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T08:50:16.130Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T08:50:17.878Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T08:50:17.952Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T08:50:20.836Z"}
+{"context":"DropsService","level":"info","message":"Adding a drop offs","timestamp":"2026-04-30T08:50:52.321Z"}
+{"context":"NotificationService","level":"info","message":"Sending a notification","timestamp":"2026-04-30T08:50:58.349Z"}
+{"context":"NotificationService","level":"info","message":"Sending a notification","timestamp":"2026-04-30T08:50:58.705Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T08:57:06.441Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T08:57:06.467Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T08:57:06.468Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-30T08:57:17.238Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-30T08:57:18.577Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T08:57:18.818Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-30T08:57:18.840Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T08:57:18.863Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T08:57:18.893Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T08:57:19.008Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T08:57:19.582Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T08:57:20.776Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T08:57:23.235Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T08:57:23.668Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T08:57:23.979Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-30T08:57:24.984Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T08:57:28.719Z"}
+{"context":"DropsService","level":"info","message":"Adding a drop offs","timestamp":"2026-04-30T08:57:51.913Z"}
+{"context":"DropControllers","level":"error","message":"Drops validation failed: image: Cast to string failed for value \"{\n  url: 'https://res.cloudinary.com/debacodes/image/upload/v1777539478/plasticonn/cqkvgquo0ibjwhtdkutj.jpg',\n  public_id: 'plasticonn/cqkvgquo0ibjwhtdkutj'\n}\" (type Object) at path \"image\"","timestamp":"2026-04-30T08:57:57.714Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T08:58:51.845Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T08:58:51.886Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T08:58:51.893Z"}
+{"context":"DropsService","level":"info","message":"Adding a drop offs","timestamp":"2026-04-30T08:58:56.586Z"}
+{"context":"NotificationService","level":"info","message":"Sending a notification","timestamp":"2026-04-30T08:59:00.434Z"}
+{"context":"NotificationService","level":"info","message":"Sending a notification","timestamp":"2026-04-30T08:59:00.673Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-30T09:02:51.271Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-30T09:02:51.669Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:02:52.030Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-30T09:02:52.053Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T09:02:52.068Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:02:52.084Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:02:52.670Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-30T09:02:53.237Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T09:02:56.318Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:02:56.643Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T09:02:59.285Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T09:02:59.720Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T09:03:02.388Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T09:03:02.841Z"}
+{"context":"CenterService","level":"info","message":"Logging in center","timestamp":"2026-04-30T09:04:55.087Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:04:58.626Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:04:59.169Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:04:59.528Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:04:59.538Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:04:59.557Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:05:00.050Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:05:09.944Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:05:19.522Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:20:34.552Z"}
+{"context":"NotificationService","level":"info","message":"Sending a notification","timestamp":"2026-04-30T09:22:56.029Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:22:58.259Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:23:07.776Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:23:07.989Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:23:08.271Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:23:08.295Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:23:08.318Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:23:08.763Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:23:08.776Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:23:09.062Z"}
+{"context":"NotificationService","level":"info","message":"Mark all as read","timestamp":"2026-04-30T09:23:38.689Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:23:46.281Z"}
+{"context":"NotificationService","level":"info","message":"Mark all as read","timestamp":"2026-04-30T09:23:46.396Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:23:46.856Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:23:55.071Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:23:55.526Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:23:55.853Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:23:55.870Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:23:55.894Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:23:57.899Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:23:57.905Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:23:57.938Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:27:17.552Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:27:18.236Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:27:18.528Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:27:18.678Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:27:18.798Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:27:19.155Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:27:19.164Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:27:19.762Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:28:03.218Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:28:05.285Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:28:05.877Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:28:05.896Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:28:05.920Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:28:06.419Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:28:06.423Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:28:06.747Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:32:30.386Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:32:31.556Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:32:31.860Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:32:31.875Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:32:31.904Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:32:32.196Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:32:32.199Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:32:32.503Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:33:03.221Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:33:03.488Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:33:03.772Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:33:03.786Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:33:03.821Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:33:04.037Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:33:04.086Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:33:04.476Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:33:36.298Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:33:38.139Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:33:38.787Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:33:38.794Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:33:38.829Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:33:39.157Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:33:39.162Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:33:39.462Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:34:13.104Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:34:13.430Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:34:13.874Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:34:13.937Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:34:13.988Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:34:14.660Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:34:14.668Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:34:15.062Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:34:37.422Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:34:37.835Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:34:38.319Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:34:38.333Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:34:38.344Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:34:39.838Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:34:40.262Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:34:42.719Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:39:27.240Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:39:27.469Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:39:27.919Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:39:27.949Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:39:27.984Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:39:28.459Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:39:28.749Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:39:33.024Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:40:51.649Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:40:51.877Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:40:52.214Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:40:52.226Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:40:52.242Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:40:52.628Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:40:52.635Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:40:55.395Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:41:01.791Z"}
+{"context":"CenterService","level":"info","message":"Fetching center profile","timestamp":"2026-04-30T09:41:02.594Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:41:03.113Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:41:03.170Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:41:03.184Z"}
+{"context":"CenterService","level":"info","message":"get center stats","timestamp":"2026-04-30T09:41:03.605Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T09:41:03.629Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T09:41:07.379Z"}

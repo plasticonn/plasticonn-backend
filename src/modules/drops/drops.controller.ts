@@ -7,6 +7,7 @@ import { verifyToken } from "../../common/middleware/auth.middleware";
 import { checkRole } from "../../common/middleware/role.middleware";
 import { HttpError } from "../../common/utils/HttpError";
 import { NotificationsService } from "../notifications/notifications.service";
+import { upload } from "../../common/middleware/upload.middleware";
 
 /**
  * @swagger
@@ -29,7 +30,7 @@ export const DropController = Router();
  *     requestBody:
  *       required: true
  *       content:
- *         application/json:
+ *         multipart/form-data:
  *           schema:
  *             type: object
  *             properties:
@@ -41,8 +42,13 @@ export const DropController = Router();
  *                 type: number
  *               condition:
  *                 type: string
- *               location:
+ *               lng:
+ *                 type: number
+ *               lat:
+ *                 type: number
+ *               image:
  *                 type: string
+ *                 format: binary
  *     responses:
  *       200:
  *         description: Drop off successful
@@ -51,11 +57,12 @@ DropController.post(
   "/add",
   verifyToken,
   checkRole(["collector"]),
+  upload.single("image"),
   async (req, res) => {
     try {
       const user_id = (req as any).user.sub;
 
-      const result = await DropsService.addDrop(user_id, req.body);
+      const result = await DropsService.addDrop(user_id, req.body, req.file);
 
       const payload = {
         title: "Confirmation Notification",
