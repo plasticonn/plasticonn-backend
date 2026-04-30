@@ -62,42 +62,60 @@ export const CenterController = Router();
  *               image:
  *                 type: string
  *                 format: binary
+ *               document:
+ *                 type: string
+ *                 format: binary
  *
  *     responses:
  *       201:
  *         description: Successfully registered
  */
-CenterController.post("/register", upload.single("image"), async (req, res) => {
-  try {
-    const result = await CenterService.register(req.body, req.file);
-
-    res.clearCookie("token");
-
-    res.cookie("token", result.token, {
-      httpOnly: true,
-      secure: true,
-      sameSite: "none",
-    });
-
-    return res
-      .status(HttpStatus.CREATED)
-      .json(
-        ApiResponse(
-          HttpStatus.CREATED,
-          "Center registered successfully",
-          result,
-        ),
+CenterController.post(
+  "/register",
+  upload.fields([
+    { name: "image", maxCount: 1 },
+    { name: "documents", maxCount: 5 },
+  ]),
+  async (req, res) => {
+    try {
+      const result = await CenterService.register(
+        req.body,
+        req.files as {
+          image?: Express.Multer.File[];
+          documents?: Express.Multer.File[];
+        },
       );
-  } catch (err: any) {
-    log.error(err.message);
 
-    if (err instanceof HttpError) {
-      return res.status(err.status).json(ApiResponse(err.status, err.message));
+      res.clearCookie("token");
+
+      res.cookie("token", result.token, {
+        httpOnly: true,
+        secure: true,
+        sameSite: "none",
+      });
+
+      return res
+        .status(HttpStatus.CREATED)
+        .json(
+          ApiResponse(
+            HttpStatus.CREATED,
+            "Center registered successfully",
+            result,
+          ),
+        );
+    } catch (err: any) {
+      log.error(err.message);
+
+      if (err instanceof HttpError) {
+        return res
+          .status(err.status)
+          .json(ApiResponse(err.status, err.message));
+      }
+
+      return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-
-    return res.status(500).json(ApiResponse(500, "Internal server error"));
-  }
-});
+  },
+);
 
 /**
  * @swagger

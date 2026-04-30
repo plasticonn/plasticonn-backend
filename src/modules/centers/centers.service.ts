@@ -19,7 +19,13 @@ import {
 
 const log = new Logger("CenterService");
 
-const register = async (payload: any, file?: Express.Multer.File) => {
+const register = async (
+  payload: any,
+  files?: {
+    image?: Express.Multer.File[];
+    documents?: Express.Multer.File[];
+  },
+) => {
   log.info("Registering center");
 
   const parsedPayload = {
@@ -39,9 +45,24 @@ const register = async (payload: any, file?: Express.Multer.File) => {
   const hashed = await passwordServices.hashPassword(payload.password);
 
   let image: { url: string; public_id: string } | null = null;
+  let documents: { url: string; public_id: string }[] = [];
 
-  if (file) {
-    const uploaded: any = await uploadToCloudinary(file);
+  if (files?.documents?.length) {
+    const uploads = await Promise.all(
+      files.documents.map(async (doc) => {
+        const uploaded: any = await uploadToCloudinary(doc);
+        return {
+          url: uploaded.secure_url,
+          public_id: uploaded.public_id,
+        };
+      }),
+    );
+
+    documents = uploads;
+  }
+
+  if (files?.image?.[0]) {
+    const uploaded: any = await uploadToCloudinary(files.image[0]);
 
     image = {
       url: uploaded.secure_url,
@@ -56,6 +77,7 @@ const register = async (payload: any, file?: Express.Multer.File) => {
     centerId,
     password: hashed,
     image,
+    documents,
     gps: {
       type: "Point",
       coordinates: [lng, lat],

@@ -25,6 +25,12 @@ const CenterSchema = new Schema(
       url: { type: String },
       public_id: { type: String },
     },
+    documents: [
+      {
+        url: String,
+        public_id: String,
+      },
+    ],
     formal: { type: Boolean, default: false },
     verified: { type: Boolean, default: false },
     status: { type: String, enum: ["active", "suspended"], default: "active" },

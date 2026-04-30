@@ -20,7 +20,7 @@ import {
 
 const log = new Logger("CollectorsService");
 
-export const register = async (payload: any) => {
+export const register = async (payload: any, file: Express.Multer.File) => {
   log.info("Registering collector");
 
   const collector = await CollectorsModel.findOne({ email: payload.email });
@@ -29,8 +29,20 @@ export const register = async (payload: any) => {
 
   const hashed = await passwordServices.hashPassword(payload.password);
 
+  let image: { url: string; public_id: string } | null = null;
+
+  if (file) {
+    const uploaded: any = await uploadToCloudinary(file);
+
+    image = {
+      url: uploaded.secure_url,
+      public_id: uploaded.public_id,
+    };
+  }
+
   const user = await CollectorsModel.create({
     ...payload,
+    image,
     password: hashed,
   });
 

@@ -27,7 +27,7 @@ export const CollectorController = Router();
  *     requestBody:
  *       required: true
  *       content:
- *         application/json:
+ *         multipart/form-data:
  *           schema:
  *             type: object
  *             properties:
@@ -47,19 +47,27 @@ export const CollectorController = Router();
  *       200:
  *         description: Successfully registered
  */
-CollectorController.post("/register", async (req, res) => {
-  try {
-    const result = await CollectorsService.register(req.body);
-    return res
-      .status(HttpStatus.CREATED)
-      .json(ApiResponse(HttpStatus.CREATED, "User registered", result));
-  } catch (err: any) {
-    log.error(err.message);
-    return res
-      .status(HttpStatus.BAD_REQUEST)
-      .json(ApiResponse(HttpStatus.BAD_REQUEST, err.message));
-  }
-});
+CollectorController.post(
+  "/register",
+  upload.single("image"),
+  async (req, res) => {
+    try {
+      if (!req.file) {
+        throw new HttpError(400, "Image file is required");
+      }
+
+      const result = await CollectorsService.register(req.body, req.file);
+      return res
+        .status(HttpStatus.CREATED)
+        .json(ApiResponse(HttpStatus.CREATED, "User registered", result));
+    } catch (err: any) {
+      log.error(err.message);
+      return res
+        .status(HttpStatus.BAD_REQUEST)
+        .json(ApiResponse(HttpStatus.BAD_REQUEST, err.message));
+    }
+  },
+);
 
 /**
  * @swagger
