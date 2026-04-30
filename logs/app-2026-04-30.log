@@ -367,3 +367,136 @@
 {"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T10:33:22.173Z"}
 {"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T10:33:22.396Z"}
 {"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T10:33:22.617Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T10:34:23.090Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T10:34:23.116Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T10:34:23.118Z"}
+{"context":"CollectorsService","level":"info","message":"Deleting collector","timestamp":"2026-04-30T10:34:28.295Z"}
+{"context":"Logs service","level":"info","message":"Adding a new log","timestamp":"2026-04-30T10:34:29.001Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-04-30T16:32:21.961Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T16:32:29.677Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T16:32:29.692Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T16:32:30.156Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T16:32:35.261Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T16:45:08.158Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T16:45:09.628Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T16:45:57.246Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T16:46:04.960Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T16:46:13.669Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T16:46:14.116Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T16:57:31.537Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T17:00:56.384Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T17:01:00.425Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T17:02:26.917Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T17:02:28.907Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T17:11:30.758Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T17:11:33.954Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T17:19:46.703Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T17:19:47.045Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T17:22:22.257Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T17:22:22.716Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T17:23:30.678Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T17:23:31.004Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T17:26:54.503Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T17:26:56.758Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T17:31:27.755Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T17:31:47.764Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T17:39:20.457Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T17:39:25.187Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T17:45:14.938Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T17:45:14.972Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T17:45:14.972Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T17:46:16.896Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T17:46:18.484Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T17:47:47.862Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T17:47:49.235Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T17:55:55.474Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T17:55:56.485Z"}
+{"context":"CenterManagement","level":"info","message":"Updating center status","timestamp":"2026-04-30T18:03:15.678Z"}
+{"context":"Logs service","level":"info","message":"Adding a new log","timestamp":"2026-04-30T18:03:16.135Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T18:03:48.225Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T18:03:50.290Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T18:22:06.239Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T18:22:06.248Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T18:22:15.574Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T18:22:26.241Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T18:29:15.695Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T18:29:15.726Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T18:29:15.727Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T18:29:43.923Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T18:29:43.935Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T18:29:44.401Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T18:29:50.541Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T18:38:13.381Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T18:38:13.400Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T18:38:13.401Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T18:38:19.917Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-04-30T18:38:20.417Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T18:38:22.769Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T18:38:26.813Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T18:38:28.848Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T18:38:28.860Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T18:38:29.399Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T18:38:37.737Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T18:40:05.768Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T18:40:05.797Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T18:40:05.798Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T18:40:46.559Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T18:40:46.572Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T18:40:47.018Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T18:40:54.414Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T18:43:55.376Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T18:43:55.410Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T18:43:55.411Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T18:44:27.085Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T18:44:27.100Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T18:44:28.923Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T18:44:44.012Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T18:48:35.263Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T18:48:35.305Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T18:48:35.306Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T18:48:43.278Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T18:48:43.304Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T18:48:43.774Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T18:48:53.059Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T18:51:32.734Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T18:51:32.787Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T18:51:32.788Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T18:51:54.283Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T18:51:54.300Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T18:51:54.780Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T18:51:58.463Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T18:52:27.560Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T18:52:27.586Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T18:52:27.587Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T18:57:21.428Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T18:57:21.455Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T18:57:21.456Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T18:58:53.701Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T18:58:53.729Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T18:58:53.732Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T18:59:30.856Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T18:59:30.906Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T18:59:30.913Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T19:01:26.510Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T19:01:26.548Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T19:01:26.549Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T19:01:57.603Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T19:01:57.633Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T19:01:57.634Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T19:03:26.588Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T19:03:26.614Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T19:03:26.614Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T19:03:36.251Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T19:03:36.268Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T19:03:36.755Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T19:03:53.479Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T19:04:34.750Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T19:04:34.768Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T19:04:34.768Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T19:04:55.620Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T19:04:55.637Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T19:04:55.638Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T19:05:03.772Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T19:05:03.807Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T19:05:04.254Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T19:05:11.219Z"}

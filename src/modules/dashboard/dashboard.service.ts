@@ -17,24 +17,40 @@ export const getDashboardStats = async () => {
     return (num / den) * 100;
   };
 
+  /* ================= HELPERS ================= */
+
+  const sumPlastics = async (match: any) => {
+    const res = await DropsModel.aggregate([
+      { $match: match },
+      {
+        $group: {
+          _id: null,
+          total: { $sum: "$amount" },
+        },
+      },
+    ]);
+
+    return res[0]?.total || 0;
+  };
+
   /* ================= COUNTS ================= */
 
   const [
     totalUsers,
     totalCenters,
-    totalDropOffs,
 
     thisMonthUsers,
     thisMonthCenters,
-    thisMonthDropOffs,
 
     lastMonthUsers,
     lastMonthCenters,
+
+    totalDropOffs,
+    thisMonthDropOffs,
     lastMonthDropOffs,
   ] = await Promise.all([
     CollectorsModel.countDocuments(),
     CenterModel.countDocuments({ status: "active", verified: true }),
-    DropsModel.countDocuments({ status: "verified" }),
 
     CollectorsModel.countDocuments({
       createdAt: { $gte: startOfThisMonth },
@@ -42,10 +58,6 @@ export const getDashboardStats = async () => {
     CenterModel.countDocuments({
       status: "active",
       verified: true,
-      createdAt: { $gte: startOfThisMonth },
-    }),
-    DropsModel.countDocuments({
-      status: "verified",
       createdAt: { $gte: startOfThisMonth },
     }),
 
@@ -63,8 +75,17 @@ export const getDashboardStats = async () => {
         $lt: startOfThisMonth,
       },
     }),
-    DropsModel.countDocuments({
-      status: "verified",
+
+    // 🔥 plastics totals instead of counts
+    sumPlastics({ status: "accepted" }),
+
+    sumPlastics({
+      status: "accepted",
+      createdAt: { $gte: startOfThisMonth },
+    }),
+
+    sumPlastics({
+      status: "accepted",
       createdAt: {
         $gte: startOfLastMonth,
         $lt: startOfThisMonth,
@@ -77,16 +98,19 @@ export const getDashboardStats = async () => {
   const currentPercentageGrowth = {
     users: safePercentage(thisMonthUsers, totalUsers - thisMonthUsers),
     centers: safePercentage(thisMonthCenters, totalCenters - thisMonthCenters),
+
+    // now based on plastics volume
     dropOffs: safePercentage(
       thisMonthDropOffs,
-      totalDropOffs - thisMonthDropOffs
+      totalDropOffs - thisMonthDropOffs,
     ),
+
     overall: safePercentage(
       thisMonthUsers + thisMonthCenters + thisMonthDropOffs,
       totalUsers +
         totalCenters +
         totalDropOffs -
-        (thisMonthUsers + thisMonthCenters + thisMonthDropOffs)
+        (thisMonthUsers + thisMonthCenters + thisMonthDropOffs),
     ),
   };
 
@@ -96,25 +120,31 @@ export const getDashboardStats = async () => {
     users: safePercentage(thisMonthUsers - lastMonthUsers, lastMonthUsers),
     centers: safePercentage(
       thisMonthCenters - lastMonthCenters,
-      lastMonthCenters
+      lastMonthCenters,
     ),
+
+    // now based on plastics volume
     dropOffs: safePercentage(
       thisMonthDropOffs - lastMonthDropOffs,
-      lastMonthDropOffs
+      lastMonthDropOffs,
     ),
+
     overall: safePercentage(
       thisMonthUsers +
         thisMonthCenters +
         thisMonthDropOffs -
         (lastMonthUsers + lastMonthCenters + lastMonthDropOffs),
-      lastMonthUsers + lastMonthCenters + lastMonthDropOffs
+      lastMonthUsers + lastMonthCenters + lastMonthDropOffs,
     ),
   };
 
   return {
     users: totalUsers,
     centers: totalCenters,
+
+    // now total plastics, not document count
     dropOffs: totalDropOffs,
+
     overall: Number(currentPercentageGrowth.overall.toFixed(1)),
 
     growth: {

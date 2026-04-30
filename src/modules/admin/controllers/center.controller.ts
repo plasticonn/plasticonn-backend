@@ -72,7 +72,7 @@ CenterManagementController.post(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -115,7 +115,7 @@ CenterManagementController.get(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -165,7 +165,7 @@ CenterManagementController.put(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -220,7 +220,7 @@ CenterManagementController.put(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -264,7 +264,7 @@ CenterManagementController.put(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -307,7 +307,7 @@ CenterManagementController.delete(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
 
 /**
@@ -344,5 +344,5 @@ CenterManagementController.get(
 
       return res.status(500).json(ApiResponse(500, "Internal server error"));
     }
-  }
+  },
 );
