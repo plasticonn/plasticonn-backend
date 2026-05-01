@@ -39,6 +39,8 @@ const options = {
     "./src/modules/activity_logs/*.controller.ts",
     "./src/modules/notifications/*.controller.ts",
     "./src/modules/website/*.controller.ts",
+    "./src/modules/gallery/*.controller.ts",
+    "./src/modules/partners/*.controller.ts",
   ],
 };
 

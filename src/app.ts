@@ -18,6 +18,8 @@ import { AdminEmailController } from "./modules/admin/controllers/admin-email.co
 import { AdminDownloadController } from "./modules/admin/controllers/download-report.controller";
 import { NotificationController } from "./modules/notifications/notifications.controller";
 import { WebsiteController } from "./modules/website/website.controller";
+import { GalleryController } from "./modules/gallery/gallery.controller";
+import { PartnerController } from "./modules/partners/partners.controller";
 
 export const createApp = () => {
   const app = express();
@@ -56,6 +58,8 @@ export const createApp = () => {
   app.use("/api/admin", AdminDownloadController);
   app.use("/api/notification", NotificationController);
   app.use("/api/website", WebsiteController);
+  app.use("/api/gallery", GalleryController);
+  app.use("/api/partner", PartnerController);
   app.get("/health", (req, res) => res.json({ status: "ok" }));
 
   return app;

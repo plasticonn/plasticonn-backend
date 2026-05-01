@@ -500,3 +500,68 @@
 {"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T19:05:03.807Z"}
 {"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T19:05:04.254Z"}
 {"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T19:05:11.219Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-04-30T19:10:02.975Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-04-30T19:10:03.014Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-04-30T19:10:03.015Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T19:10:22.329Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T19:10:22.346Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-04-30T19:10:22.679Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-04-30T19:10:24.526Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:17:10.312Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:17:13.767Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:18:20.473Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:18:24.198Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:19:02.662Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:19:07.508Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:22:06.472Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:22:11.298Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:24:19.535Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:24:22.026Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:24:40.474Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:24:42.441Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:25:04.578Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:25:06.693Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:32:48.055Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:32:52.473Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:36:11.738Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:36:13.007Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:45:23.091Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T19:45:28.360Z"}
+{"context":"CenterManagement","level":"info","message":"Deleting center","timestamp":"2026-04-30T20:00:45.868Z"}
+{"context":"Logs service","level":"info","message":"Adding a new log","timestamp":"2026-04-30T20:00:46.344Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T20:00:48.999Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T20:05:30.848Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T20:05:32.977Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-04-30T20:07:13.557Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-30T20:07:16.329Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-30T20:07:16.774Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-30T20:07:17.081Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T20:07:17.104Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T20:07:17.114Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T20:07:17.125Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T20:07:17.602Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T20:07:21.320Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T20:07:24.104Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T20:07:24.687Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T20:07:27.777Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-30T20:07:37.038Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T20:07:37.042Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T20:07:37.050Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-30T20:09:55.859Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-04-30T20:09:56.317Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T20:09:56.550Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-30T20:09:56.563Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T20:09:56.583Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T20:09:56.595Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T20:09:56.602Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-04-30T20:09:58.009Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-04-30T20:09:58.296Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-04-30T20:09:58.789Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-04-30T20:10:01.689Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T20:10:04.473Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T20:10:06.713Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T20:10:08.081Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T20:10:08.297Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T20:10:09.153Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T20:10:09.392Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-04-30T20:10:09.770Z"}
