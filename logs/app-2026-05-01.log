@@ -211,3 +211,6 @@
 {"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-01T18:07:38.059Z"}
 {"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-01T18:07:38.059Z"}
 {"context":"GalleryController","level":"error","message":"No images provided","timestamp":"2026-05-01T18:16:49.227Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-05-01T18:28:12.579Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-01T18:28:12.605Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-01T18:28:12.606Z"}

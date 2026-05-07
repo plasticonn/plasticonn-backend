@@ -1,0 +1,37 @@
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-05-04T08:18:00.659Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-04T08:18:00.698Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-04T08:18:00.700Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-05-04T08:53:18.358Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-05-04T08:53:18.377Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-05-04T08:53:20.264Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-05-04T08:53:21.221Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-05-04T08:53:21.456Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-05-04T08:53:21.905Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-05-04T08:55:36.158Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-05-04T08:55:41.520Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-05-04T08:58:15.089Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-05-04T08:58:15.097Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-05-04T08:58:15.341Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-05-04T08:58:17.568Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-05-04T08:59:12.593Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-05-04T08:59:13.878Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-05-04T09:14:59.801Z"}
+{"context":"Logs service","level":"info","message":"Getting list of logs","timestamp":"2026-05-04T09:15:00.765Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-05-04T09:15:44.195Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-05-04T09:15:44.277Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-05-04T09:15:44.661Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-05-04T09:15:44.680Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-05-04T09:15:45.825Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-05-04T09:15:46.262Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-05-04T09:15:49.655Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-05-04T09:15:51.317Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-05-04T09:18:11.412Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-05-04T09:18:12.513Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-05-04T09:19:35.679Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-05-04T09:19:36.408Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-05-04T09:19:44.245Z"}
+{"context":"CollectorManagement","level":"info","message":"Getting all collectors","timestamp":"2026-05-04T09:19:44.637Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-05-04T09:22:13.483Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-05-04T09:22:14.339Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-05-04T09:24:30.915Z"}
+{"context":"adminManagement","level":"info","message":"Getting all admin","timestamp":"2026-05-04T09:24:31.358Z"}
