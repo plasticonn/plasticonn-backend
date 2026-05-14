@@ -16,7 +16,8 @@ const CenterSchema = new Schema(
     contactEmail: { type: String },
     materialsAccepted: [String],
     capacity: { type: String },
-    //operatingHours: { type: String },
+    operatingHours: { type: String },
+    price: { type: String },
     centerType: {
       type: String,
       enum: ["collection", "recycling"],

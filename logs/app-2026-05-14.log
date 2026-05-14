@@ -118,3 +118,10 @@
 {"context":"CenterManagement","level":"info","message":"Updating center status","timestamp":"2026-05-14T10:18:05.398Z"}
 {"context":"Logs service","level":"info","message":"Adding a new log","timestamp":"2026-05-14T10:18:05.644Z"}
 {"context":"CenterManagementController","level":"error","message":"Centers validation failed: formal: Cast to Boolean failed for value \"{ formal: 'true' }\" (type Object) at path \"formal\" because of \"CastError\"","timestamp":"2026-05-14T10:18:05.884Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-05-14T10:20:24.493Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-14T10:20:24.533Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-14T10:20:24.535Z"}
+{"context":"CenterManagement","level":"info","message":"Updating center status","timestamp":"2026-05-14T10:20:31.847Z"}
+{"context":"Logs service","level":"info","message":"Adding a new log","timestamp":"2026-05-14T10:20:32.115Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-05-14T10:20:42.340Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-05-14T10:20:43.428Z"}
