@@ -20,6 +20,7 @@ import { NotificationController } from "./modules/notifications/notifications.co
 import { WebsiteController } from "./modules/website/website.controller";
 import { GalleryController } from "./modules/gallery/gallery.controller";
 import { PartnerController } from "./modules/partners/partners.controller";
+import { BlogController } from "./modules/blogs/blog.controller";
 
 export const createApp = () => {
   const app = express();
@@ -60,6 +61,7 @@ export const createApp = () => {
   app.use("/api/website", WebsiteController);
   app.use("/api/gallery", GalleryController);
   app.use("/api/partner", PartnerController);
+  app.use("/api/blog", BlogController);
   app.get("/health", (req, res) => res.json({ status: "ok" }));
 
   return app;

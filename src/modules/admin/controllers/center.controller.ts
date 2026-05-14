@@ -248,9 +248,9 @@ CenterManagementController.put(
   checkRole(["admin", "super_admin"]),
   async (req, res) => {
     const { id } = req.params;
-    const status = req.body;
+    const formal = req.body;
     try {
-      const result = await CenterManagement.verifyCenter(id);
+      const result = await CenterManagement.verifyCenter(id, formal);
       return res
         .status(HttpStatus.OK)
         .json(ApiResponse(HttpStatus.OK, "Center verified", result));

@@ -138,14 +138,14 @@ const updateStatus = async (centerId: string, status: string) => {
   return { center };
 };
 
-const verifyCenter = async (centerId: string) => {
+const verifyCenter = async (centerId: string, formal: boolean) => {
   log.info("Updating center status");
 
   const center = await CenterModel.findById(centerId);
 
   if (!center) throw new HttpError(404, "Center not found");
 
-  Object.assign(center, { verified: true });
+  Object.assign(center, { verified: true, formal: Boolean(formal) });
 
   await addLog({
     type: "Center Verified",
