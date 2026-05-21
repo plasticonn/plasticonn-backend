@@ -30,7 +30,7 @@ export const LeaderboardController = Router();
 LeaderboardController.get("/", async (req, res) => {
   try {
     const data = await LeaderboardService.getTopCollectors();
-    res.json(ApiResponse(200, "Leaderboard fetched", data));
+    res.json(ApiResponse(200, "Leaderboard fetch", data));
   } catch (err: any) {
     log.error(err.message);
 
