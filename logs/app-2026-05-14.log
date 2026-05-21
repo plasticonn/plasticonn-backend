@@ -125,3 +125,8 @@
 {"context":"Logs service","level":"info","message":"Adding a new log","timestamp":"2026-05-14T10:20:32.115Z"}
 {"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-05-14T10:20:42.340Z"}
 {"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-05-14T10:20:43.428Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-05-14T10:39:41.296Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-14T10:39:41.324Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-14T10:39:41.325Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-05-14T11:43:48.021Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-05-14T11:43:49.666Z"}

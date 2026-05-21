@@ -143,17 +143,44 @@ const getDashboardStats = async (user_id: string) => {
     (sum, drop) => sum + (drop.amount || 0),
     0,
   );
+
   const co2Saved = calculateCO2Saved(totalPlastics);
+
   const verifiedSubmissions = drops.filter(
     (drop) => drop.status === "verified" || drop.status === "accepted",
   ).length;
+
   const totalSubmissions = drops.length;
+
+  const leaderboard = await DropsModel.aggregate([
+    {
+      $match: {
+        status: { $in: ["accepted", "verified"] },
+      },
+    },
+    {
+      $group: {
+        _id: "$collector_id",
+        totalPlastics: { $sum: "$amount" },
+      },
+    },
+    {
+      $sort: { totalPlastics: -1 },
+    },
+  ]);
+
+  const rankIndex = leaderboard.findIndex(
+    (item) => item._id.toString() === user_id,
+  );
+
+  const rank = rankIndex === -1 ? null : rankIndex + 1;
 
   return {
     co2Saved,
     verifiedSubmissions,
     totalSubmissions,
-    achievement: "Coming Soon",
+    totalPlastics,
+    rank,
   };
 };
 

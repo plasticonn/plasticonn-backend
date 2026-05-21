@@ -21,6 +21,7 @@ import { WebsiteController } from "./modules/website/website.controller";
 import { GalleryController } from "./modules/gallery/gallery.controller";
 import { PartnerController } from "./modules/partners/partners.controller";
 import { BlogController } from "./modules/blogs/blog.controller";
+import { LeaderboardController } from "./modules/leaderboard/leaderboard.controller";
 
 export const createApp = () => {
   const app = express();
@@ -62,6 +63,7 @@ export const createApp = () => {
   app.use("/api/gallery", GalleryController);
   app.use("/api/partner", PartnerController);
   app.use("/api/blog", BlogController);
+  app.use("/api/leaderboard", LeaderboardController);
   app.get("/health", (req, res) => res.json({ status: "ok" }));
 
   return app;

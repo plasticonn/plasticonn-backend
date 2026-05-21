@@ -42,6 +42,7 @@ const options = {
     "./src/modules/gallery/*.controller.ts",
     "./src/modules/partners/*.controller.ts",
     "./src/modules/blogs/*.controller.ts",
+    "./src/modules/leaderboard/*.controller.ts",
   ],
 };
 
