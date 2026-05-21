@@ -17,6 +17,7 @@ import {
   uploadToCloudinary,
   deleteFromCloudinary,
 } from "../../common/utils/cloudinary";
+import mongoose from "mongoose";
 
 const log = new Logger("CollectorsService");
 
@@ -152,7 +153,7 @@ const getDashboardStats = async (user_id: string) => {
 
   const totalSubmissions = drops.length;
 
-  const leaderboard = await DropsModel.aggregate([
+  const rankResult = await DropsModel.aggregate([
     {
       $match: {
         status: { $in: ["accepted", "verified"] },
@@ -165,15 +166,21 @@ const getDashboardStats = async (user_id: string) => {
       },
     },
     {
-      $sort: { totalPlastics: -1 },
+      $setWindowFields: {
+        sortBy: { totalPlastics: -1 },
+        output: {
+          rank: { $rank: {} },
+        },
+      },
+    },
+    {
+      $match: {
+        _id: new mongoose.Types.ObjectId(user_id),
+      },
     },
   ]);
 
-  const rankIndex = leaderboard.findIndex(
-    (item) => item._id.toString() === user_id,
-  );
-
-  const rank = rankIndex === -1 ? null : rankIndex + 1;
+  const rank = rankResult.length ? rankResult[0].rank : null;
 
   return {
     co2Saved,
