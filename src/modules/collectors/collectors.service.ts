@@ -138,7 +138,9 @@ const deleteAccount = async (collectorId: string) => {
 const getDashboardStats = async (user_id: string) => {
   log.info("Getting collector stats");
 
-  const drops = await DropsModel.find({ collector_id: user_id });
+  const objectId = new mongoose.Types.ObjectId(user_id); // ✅ cast once, reuse
+
+  const drops = await DropsModel.find({ collector_id: objectId }); // ✅ was plain string
 
   const totalPlastics = drops.reduce(
     (sum, drop) => sum + (drop.amount || 0),
@@ -148,7 +150,7 @@ const getDashboardStats = async (user_id: string) => {
   const co2Saved = calculateCO2Saved(totalPlastics);
 
   const verifiedSubmissions = drops.filter(
-    (drop) => drop.status === "verified" || drop.status === "accepted",
+    (drop) => drop.status === "accepted", // ✅ match your actual statuses
   ).length;
 
   const totalSubmissions = drops.length;
@@ -156,7 +158,7 @@ const getDashboardStats = async (user_id: string) => {
   const rankResult = await DropsModel.aggregate([
     {
       $match: {
-        status: { $in: ["accepted", "verified"] },
+        status: "accepted", // ✅ match your actual statuses
       },
     },
     {
@@ -175,7 +177,7 @@ const getDashboardStats = async (user_id: string) => {
     },
     {
       $match: {
-        _id: new mongoose.Types.ObjectId(user_id),
+        _id: objectId, // ✅ already an ObjectId, no need to re-cast
       },
     },
   ]);
