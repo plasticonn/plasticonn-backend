@@ -8,36 +8,27 @@ const getTopCollectors = async () => {
   log.info("Getting top collectors leaderboard");
 
   const leaderboard = await DropsModel.aggregate([
-    // only accepted drops
     {
       $match: {
         status: "accepted",
       },
     },
-
-    // group by collector and sum plastics
     {
       $group: {
-        _id: "$collector",
+        _id: "$collector_id",
         totalPlastics: {
           $sum: "$amount",
         },
       },
     },
-
-    // highest first
     {
       $sort: {
         totalPlastics: -1,
       },
     },
-
-    // top 20
     {
       $limit: 20,
     },
-
-    // join collector data
     {
       $lookup: {
         from: "collectors",
@@ -46,29 +37,20 @@ const getTopCollectors = async () => {
         as: "collector",
       },
     },
-
-    // flatten collector array
     {
       $unwind: "$collector",
     },
-
-    // shape response
     {
       $project: {
         _id: 1,
-
         totalPlastics: 1,
-
         name: "$collector.name",
-
         image: "$collector.image",
-
         email: "$collector.email",
       },
     },
   ]);
 
-  // add ranking
   const rankedLeaderboard = leaderboard.map((collector, index) => ({
     rank: index + 1,
     ...collector,
@@ -84,16 +66,14 @@ const getCollectorRank = async (collectorId: string) => {
         status: "accepted",
       },
     },
-
     {
       $group: {
-        _id: "$collector",
+        _id: "$collector_id",
         totalPlastics: {
           $sum: "$amount",
         },
       },
     },
-
     {
       $setWindowFields: {
         sortBy: {
@@ -106,7 +86,6 @@ const getCollectorRank = async (collectorId: string) => {
         },
       },
     },
-
     {
       $match: {
         _id: new mongoose.Types.ObjectId(collectorId),
