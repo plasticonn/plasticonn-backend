@@ -45,7 +45,9 @@ const getTopCollectors = async () => {
         _id: 1,
         totalPlastics: 1,
         //collector: "$collector",
-        name: "$collector.name",
+        name: {
+          $concat: ["$collector.firstName", " ", "$collector.lastName"],
+        },
         image: {
           $ifNull: ["$collector.image.url", null],
         },
