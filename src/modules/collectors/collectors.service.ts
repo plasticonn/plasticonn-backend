@@ -136,35 +136,37 @@ const deleteAccount = async (collectorId: string) => {
 };
 
 const getDashboardStats = async (user_id: string) => {
-  log.info("Getting collector stats");
+  const objectId = new mongoose.Types.ObjectId(user_id);
 
-  const objectId = new mongoose.Types.ObjectId(user_id); // ✅ cast once, reuse
+  const drops = await DropsModel.find({
+    collector_id: objectId,
+  });
 
-  const drops = await DropsModel.find({ collector_id: objectId }); // ✅ was plain string
+  const acceptedDrops = drops.filter((drop) => drop.status === "accepted");
 
-  const totalPlastics = drops.reduce(
+  const totalPlastics = acceptedDrops.reduce(
     (sum, drop) => sum + (drop.amount || 0),
     0,
   );
 
-  const co2Saved = calculateCO2Saved(totalPlastics);
-
-  const verifiedSubmissions = drops.filter(
-    (drop) => drop.status === "accepted", // ✅ match your actual statuses
-  ).length;
+  const verifiedSubmissions = acceptedDrops.length;
 
   const totalSubmissions = drops.length;
+
+  const co2Saved = calculateCO2Saved(totalPlastics);
 
   const rankResult = await DropsModel.aggregate([
     {
       $match: {
-        status: "accepted", // ✅ match your actual statuses
+        status: "accepted",
       },
     },
     {
       $group: {
         _id: "$collector_id",
-        totalPlastics: { $sum: "$amount" },
+        totalPlastics: {
+          $sum: "$amount",
+        },
       },
     },
     {
@@ -177,7 +179,7 @@ const getDashboardStats = async (user_id: string) => {
     },
     {
       $match: {
-        _id: objectId, // ✅ already an ObjectId, no need to re-cast
+        _id: objectId,
       },
     },
   ]);
@@ -192,7 +194,6 @@ const getDashboardStats = async (user_id: string) => {
     rank,
   };
 };
-
 const updatePassword = async (collector_id: string, payload: any) => {
   log.info("Change password");
 

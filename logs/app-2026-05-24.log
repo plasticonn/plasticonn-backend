@@ -1,0 +1,32 @@
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-05-24T08:11:17.154Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-24T08:11:17.169Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-24T08:11:17.169Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-05-24T08:11:29.931Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-24T08:11:29.977Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-24T08:11:29.986Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-05-24T08:12:33.734Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-05-24T08:12:35.561Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-05-24T08:12:36.946Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-05-24T08:12:37.014Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-05-24T08:12:37.116Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-05-24T08:12:37.137Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-05-24T08:12:37.460Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-05-24T08:12:38.719Z"}
+{"context":"CollectorsService","level":"info","message":"Getting collector stats","timestamp":"2026-05-24T08:12:39.324Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-05-24T08:12:40.037Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-05-24T08:12:44.574Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-05-24T08:12:44.811Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-05-24T08:12:45.101Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-05-24T08:12:45.427Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-05-24T08:15:40.099Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-24T08:15:40.134Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-24T08:15:40.135Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-05-24T08:21:22.113Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-24T08:21:22.133Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-24T08:21:22.133Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-05-24T08:21:38.123Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-24T08:21:38.141Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-24T08:21:38.142Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-05-24T08:22:09.661Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-24T08:22:09.694Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-24T08:22:09.695Z"}
