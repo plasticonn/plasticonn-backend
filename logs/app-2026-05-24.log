@@ -36,3 +36,6 @@
 {"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-05-24T09:11:53.944Z"}
 {"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-24T09:11:53.959Z"}
 {"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-24T09:11:53.960Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-05-24T09:16:06.581Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-24T09:16:06.612Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-24T09:16:06.614Z"}
