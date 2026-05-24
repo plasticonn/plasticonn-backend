@@ -45,7 +45,13 @@ const getTopCollectors = async () => {
         _id: 1,
         totalPlastics: 1,
         name: "$collector.name",
-        image: "$collector.image",
+        image: {
+          $cond: [
+            { $isObject: "$collector.image" },
+            "$collector.image.url",
+            "$collector.image",
+          ],
+        },
         email: "$collector.email",
       },
     },
