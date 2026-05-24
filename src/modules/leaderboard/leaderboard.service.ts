@@ -44,12 +44,12 @@ const getTopCollectors = async () => {
       $project: {
         _id: 1,
         totalPlastics: 1,
-        collector: "$collector",
-        // name: "$collector.name",
-        // image: {
-        //   $ifNull: ["$collector.image.url", null],
-        // },
-        // email: "$collector.email",
+        //collector: "$collector",
+        name: "$collector.name",
+        image: {
+          $ifNull: ["$collector.image.url", null],
+        },
+        email: "$collector.email",
       },
     },
   ]);
