@@ -13,21 +13,15 @@ export const websiteData = async () => {
     totalRecyclingCenters,
     allDrops,
     monthlyTrend,
+    plasticTypesRaw, // 👈 new
   ] = await Promise.all([
-    // Hero
     CollectorsModel.countDocuments({ status: "active" }),
-
     CenterModel.countDocuments({ centerType: "collection", status: "active" }),
-
     CenterModel.countDocuments({ centerType: "recycling", status: "active" }),
-
-    // All drops (used across multiple sections)
     DropsModel.find(
       {},
       { amount: 1, status: 1, collector_id: 1, center_id: 1, createdAt: 1 },
     ).lean(),
-
-    // Monthly trend for current year
     DropsModel.aggregate([
       {
         $match: {
@@ -44,6 +38,17 @@ export const websiteData = async () => {
         },
       },
       { $sort: { _id: 1 } },
+    ]),
+
+    DropsModel.aggregate([
+      { $unwind: "$types" },
+      {
+        $group: {
+          _id: "$types",
+          totalAmount: { $sum: "$amount" },
+        },
+      },
+      { $sort: { totalAmount: -1 } },
     ]),
   ]);
 
@@ -113,6 +118,31 @@ export const websiteData = async () => {
     amount: trendMap.get(i + 1) ?? 0,
   }));
 
+  const PLASTIC_COLORS = [
+    "#0088FE",
+    "#00C49F",
+    "#FFBB28",
+    "#FF8042",
+    "#A855F7",
+    "#EF4444",
+    "#14B8A6",
+    "#F97316",
+  ];
+
+  const totalPlasticTypeAmount = plasticTypesRaw.reduce(
+    (sum, t) => sum + (t.totalAmount ?? 0),
+    0,
+  );
+
+  const plasticTypesDistribution = plasticTypesRaw.map((t, i) => ({
+    label: t._id as string,
+    value:
+      totalPlasticTypeAmount > 0
+        ? Math.round((t.totalAmount / totalPlasticTypeAmount) * 100)
+        : 0,
+    color: PLASTIC_COLORS[i % PLASTIC_COLORS.length],
+  }));
+
   return {
     hero: {
       activeCollectors,
@@ -127,6 +157,7 @@ export const websiteData = async () => {
       activeParticipants,
       co2EmissionsSaved: co2Saved,
       monthlyCollectionTrend,
+      plasticTypesDistribution,
     },
     solution: {
       plasticsRecycled: totalRecycled,
