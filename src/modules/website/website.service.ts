@@ -106,14 +106,8 @@ export const websiteData = async () => {
     "Nov",
     "Dec",
   ];
-  const AVG_PLASTIC_WEIGHT_KG = 0.025;
+  const trendMap = new Map(monthlyTrend.map((m) => [m._id, m.totalAmount]));
 
-  const trendMap = new Map(
-    monthlyTrend.map((m) => [
-      m._id,
-      Number((m.totalAmount * AVG_PLASTIC_WEIGHT_KG).toFixed(2)),
-    ]),
-  );
   const monthlyCollectionTrend = MONTH_NAMES.map((month, i) => ({
     month,
     amount: trendMap.get(i + 1) ?? 0,
