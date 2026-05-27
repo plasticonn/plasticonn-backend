@@ -80,6 +80,7 @@ BlogController.post("/", upload.single("image"), async (req, res) => {
       .json(ApiResponse(201, "Blog added", blog));
   } catch (err: any) {
     log.error(err.message);
+    console.log(err);
 
     if (err instanceof HttpError) {
       return res.status(err.status).json(ApiResponse(err.status, err.message));

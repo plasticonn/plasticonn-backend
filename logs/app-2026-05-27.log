@@ -1,0 +1,16 @@
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-05-27T18:08:47.127Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-27T18:08:47.158Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-27T18:08:47.162Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-05-27T18:14:19.270Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-05-27T18:14:19.822Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-05-27T18:39:59.435Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-27T18:39:59.523Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-27T18:39:59.532Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-05-27T18:40:37.378Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-27T18:40:37.398Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-27T18:40:37.398Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-05-27T18:44:54.332Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-05-27T18:44:58.299Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-05-27T18:44:58.323Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-05-27T18:44:58.526Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-05-27T18:44:59.963Z"}
