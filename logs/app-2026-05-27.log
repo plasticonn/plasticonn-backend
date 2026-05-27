@@ -14,3 +14,6 @@
 {"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-05-27T18:44:58.323Z"}
 {"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-05-27T18:44:58.526Z"}
 {"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-05-27T18:44:59.963Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-05-27T18:51:17.077Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:3000 in development environment","timestamp":"2026-05-27T18:51:17.256Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:3000/api-docs","timestamp":"2026-05-27T18:51:17.260Z"}
