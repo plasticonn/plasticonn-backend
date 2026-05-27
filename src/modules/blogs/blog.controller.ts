@@ -110,6 +110,7 @@ BlogController.post("/", upload.single("image"), async (req, res) => {
  *         description: Successfully removed blog
  */
 BlogController.delete("/:id", async (req, res) => {
+  console.log(req.params.id);
   try {
     const result = await BlogService.removeBlog(req.params.id);
 
