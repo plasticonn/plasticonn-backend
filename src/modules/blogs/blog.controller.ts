@@ -43,6 +43,21 @@ BlogController.get("/", async (req, res) => {
   }
 });
 
+BlogController.get("/:id", async (req, res) => {
+  try {
+    const data = await BlogService.getBlog(req.params.id);
+    return res
+      .status(HttpStatus.OK)
+      .json(ApiResponse(200, "Blog fetched", data));
+  } catch (err: any) {
+    log.error(err.message);
+    if (err instanceof HttpError) {
+      return res.status(err.status).json(ApiResponse(err.status, err.message));
+    }
+    return res.status(500).json(ApiResponse(500, "Internal server error"));
+  }
+});
+
 /**
  * @swagger
  * /api/blog:
