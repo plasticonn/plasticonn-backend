@@ -19,11 +19,16 @@ interface CenterCsvRow {
   Latitude: string | number;
   Longitude: string | number;
   Contact_Person?: string;
-  Phone?: string;
-  Email?: string;
+  Contact_Phone?: string;
+  Contact_Email?: string;
   Accepted_Plastic_Types?: string;
   Date_Added?: string;
   Image_URL?: string;
+  Center_Type?: string;
+  Capacity?: string;
+  Operating_Hours?: string;
+  Price?: string;
+  Formal?: string;
 }
 
 const generatePassword = () => {
@@ -43,6 +48,7 @@ export const bulkAddCenters = async (file: Express.Multer.File) => {
     try {
       if (!row.Latitude || !row.Longitude) {
         skipped++;
+        console.error("Skipped row (missing coordinates):", row.Center_Name);
         continue;
       }
 
@@ -57,16 +63,21 @@ export const bulkAddCenters = async (file: Express.Multer.File) => {
         },
 
         contactPerson: row.Contact_Person,
-        contactPhone: row.Phone,
-        contactEmail: row.Email,
+        contactPhone: row.Contact_Phone,
+        contactEmail: row.Contact_Email,
 
-        materialsAccepted: row.Accepted_Plastic_Types?.split(",").map(
-          (m: string) => m.trim(),
-        ),
+        materialsAccepted: row.Accepted_Plastic_Types
+          ? row.Accepted_Plastic_Types.split(",").map((m: string) => m.trim())
+          : [],
+
+        centerType: row.Center_Type || undefined,
+        capacity: row.Capacity || undefined,
+        operatingHours: row.Operating_Hours || undefined,
+        price: row.Price || undefined,
+        formal: row.Formal?.toLowerCase() === "true",
 
         verified: true,
-
-        type: row.Type,
+        status: "active" as const,
 
         password: await passwordServices.hashPassword(generatePassword()),
       };
@@ -74,9 +85,8 @@ export const bulkAddCenters = async (file: Express.Multer.File) => {
       const doc = await CenterModel.create(center);
       inserted.push(doc);
     } catch (err) {
-      console.log(err);
       skipped++;
-      console.error("Skipped row:", row.Center_Name);
+      console.error("Skipped row:", row.Center_Name, err);
     }
   }
 
