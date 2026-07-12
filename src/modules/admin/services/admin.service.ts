@@ -43,20 +43,39 @@ const log = new Logger("AdminService");
 const login = async (email: string, password: string) => {
   log.info("logging in admin");
 
+  // Super Admin login
+  if (email === config.SU_ADMIN_MAIL && password === config.SU_ADMIN_PASSWORD) {
+    const superAdmin = {
+      _id: "super-admin",
+      email: config.SU_ADMIN_MAIL,
+      role: "super_admin",
+    };
+
+    const token = jwt.sign(
+      { sub: superAdmin._id, role: superAdmin.role },
+      config.jwtSecret,
+      {
+        expiresIn: "7d",
+      },
+    );
+
+    return {
+      admin: superAdmin,
+      token,
+    };
+  }
+
+  // Normal admin login
   const admin = await AdminModel.findOne({ email }).select("+password");
 
   if (!admin) throw new HttpError(404, "Admin does not exist");
 
-  //const match = await bcrypt.compare(password, String(admin.password));
+  const match = await passwordServices.verifyPassword(
+    password,
+    String(admin.password),
+  );
 
-  console.log(admin.password);
-
-  // const match = await passwordServices.verifyPassword(
-  //   password,
-  //   String(admin.password),
-  // );
-
-  // if (!match) throw new HttpError(422, "Invalid password");
+  if (!match) throw new HttpError(422, "Invalid password");
 
   const token = jwt.sign(
     { sub: admin._id, role: admin.role },

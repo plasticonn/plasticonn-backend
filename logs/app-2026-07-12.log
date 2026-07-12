@@ -45,3 +45,35 @@
 {"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:4000/api-docs","timestamp":"2026-07-12T17:58:04.074Z"}
 {"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-07-12T17:58:16.532Z"}
 {"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-07-12T17:58:49.029Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-07-12T18:02:21.888Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:4000 in development environment","timestamp":"2026-07-12T18:02:21.930Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:4000/api-docs","timestamp":"2026-07-12T18:02:21.931Z"}
+{"context":"CollectorsService","level":"info","message":"logging in collector","timestamp":"2026-07-12T18:02:46.119Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-07-12T18:02:48.933Z"}
+{"context":"CollectorsService","level":"info","message":"Fetching collector profile","timestamp":"2026-07-12T18:02:49.183Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-07-12T18:02:51.125Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-07-12T18:02:51.151Z"}
+{"context":"leaderboard service","level":"info","message":"Getting top collectors leaderboard","timestamp":"2026-07-12T18:02:51.205Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-07-12T18:02:51.435Z"}
+{"context":"NotificationService","level":"info","message":"get list of notifications for user","timestamp":"2026-07-12T18:02:51.571Z"}
+{"context":"CenterService","level":"info","message":"Getting all centers","timestamp":"2026-07-12T18:02:51.590Z"}
+{"context":"leaderboard service","level":"info","message":"Getting top collectors leaderboard","timestamp":"2026-07-12T18:02:51.631Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-07-12T18:02:53.920Z"}
+{"context":"DropsService","level":"info","message":"get list of drop offs","timestamp":"2026-07-12T18:02:53.933Z"}
+{"context":"DropControllers","level":"error","message":"No drops found","timestamp":"2026-07-12T18:02:54.225Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-07-12T18:02:58.854Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-07-12T18:02:59.166Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-07-12T18:02:59.452Z"}
+{"context":"CenterService","level":"info","message":"Getting closest centers","timestamp":"2026-07-12T18:02:59.682Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-07-12T18:03:56.842Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-07-12T18:04:01.960Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-07-12T18:04:02.168Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard graph stats","timestamp":"2026-07-12T18:04:02.386Z"}
+{"context":"Dashboard service","level":"info","message":"Getting dashboard stats","timestamp":"2026-07-12T18:04:05.001Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-07-12T18:04:28.007Z"}
+{"context":"AdminController","level":"error","message":"Admin does not exist","timestamp":"2026-07-12T18:04:28.371Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-07-12T18:10:46.645Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:4000 in development environment","timestamp":"2026-07-12T18:10:46.686Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:4000/api-docs","timestamp":"2026-07-12T18:10:46.687Z"}
+{"context":"AdminService","level":"info","message":"logging in admin","timestamp":"2026-07-12T18:10:59.480Z"}
+{"context":"AdminController","level":"error","message":"Admin does not exist","timestamp":"2026-07-12T18:10:59.786Z"}
