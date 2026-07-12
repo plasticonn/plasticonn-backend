@@ -68,5 +68,9 @@ export const createApp = () => {
   app.use("/api/leaderboard", LeaderboardController);
   app.get("/health", (req, res) => res.json({ status: "ok" }));
 
+  app.get("/", (req, res) => {
+    res.send("THIS IS MY APP");
+  });
+
   return app;
 };
