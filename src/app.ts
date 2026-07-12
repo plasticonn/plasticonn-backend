@@ -41,7 +41,6 @@ export const createApp = () => {
       credentials: true,
     }),
   );
-  app.use(cors());
 
   // Swagger UI
   setupSwagger(app);
