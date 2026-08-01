@@ -79,6 +79,7 @@ AdminController.get(
   checkRole(["admin", "super_admin"]),
   async (req, res) => {
     const user_id = (req as any).user.sub;
+    console.log(user_id);
 
     try {
       const result = await AdminService.getProfile(user_id);
