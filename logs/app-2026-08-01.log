@@ -39,3 +39,6 @@
 {"context":"AdminController","level":"error","message":"Cast to ObjectId failed for value \"super-admin\" (type string) at path \"_id\" for model \"Admins\"","timestamp":"2026-08-01T09:53:18.119Z"}
 {"context":"AdminService","level":"info","message":"Fetching admin profile","timestamp":"2026-08-01T09:53:18.128Z"}
 {"context":"AdminController","level":"error","message":"Cast to ObjectId failed for value \"super-admin\" (type string) at path \"_id\" for model \"Admins\"","timestamp":"2026-08-01T09:53:18.136Z"}
+{"context":"Mongoose","level":"info","message":"MongoDB connected","timestamp":"2026-08-01T09:54:03.845Z"}
+{"context":"Bootstrap","level":"info","message":"Server running on http://localhost:4000 in development environment","timestamp":"2026-08-01T09:54:03.974Z"}
+{"context":"Bootstrap","level":"info","message":"Swagger docs available at http://localhost:4000/api-docs","timestamp":"2026-08-01T09:54:04.090Z"}

@@ -79,10 +79,18 @@ AdminController.get(
   checkRole(["admin", "super_admin"]),
   async (req, res) => {
     const user_id = (req as any).user.sub;
-    console.log(user_id);
 
     try {
-      const result = await AdminService.getProfile(user_id);
+      const result =
+        user_id === "super-admin"
+          ? {
+              id: user_id,
+              name: "Plasticonn",
+              email: "admin@plasticonn.com",
+              phone_number: "+000000000",
+              // ...other profile fields as needed
+            }
+          : await AdminService.getProfile(user_id);
 
       return res
         .status(HttpStatus.OK)
