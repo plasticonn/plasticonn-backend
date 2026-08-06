@@ -367,12 +367,13 @@ const removeProfilePicture = async (centerId: string) => {
   }
 
   // If no image, nothing to delete
-  if (!center.image || !center.image.public_id) {
+  if (!center.image) {
     return center;
   }
 
   // Delete from Cloudinary
-  await deleteFromCloudinary(center.image.public_id);
+  center.image.public_id &&
+    (await deleteFromCloudinary(center.image.public_id));
 
   // Remove from DB
   center.image = null;
