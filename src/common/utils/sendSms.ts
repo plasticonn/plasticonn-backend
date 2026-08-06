@@ -34,8 +34,9 @@ Please log in and change your password.`;
       {
         api_key: process.env.TERMII_API_KEY,
         to: formattedPhone,
-        from: "TERMII", //PLASTICONN
+        from: "CO-FLARE", //PLASTICONN
         type: "plain",
+        sms: message,
         channel: "generic",
       },
       {
