@@ -27,14 +27,19 @@ export const sendCenterCredentials = async ({
           to: email,
           subject: "Your Plasticonn Center Login Details",
           html: centerCredentialsTemplate({
-            name: centerName || "Center Name",
+            name: String(centerName),
             centerId,
             password,
           }),
         })
       : Promise.reject(new Error("No email provided")),
     phone
-      ? sendCenterCredentialsSMS({ phone, centerId, password })
+      ? sendCenterCredentialsSMS({
+          phone,
+          centerId,
+          password,
+          centerName: String(centerName),
+        })
       : Promise.reject(new Error("No phone provided")),
   ]);
 

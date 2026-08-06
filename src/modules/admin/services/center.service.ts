@@ -33,7 +33,7 @@ interface CenterCsvRow {
 }
 
 const generatePassword = () => {
-  return Math.random().toString(36).slice(-8);
+  return Math.random().toString(36).slice(-6);
 };
 
 export const bulkAddCenters = async (file: Express.Multer.File) => {
@@ -102,6 +102,7 @@ export const bulkAddCenters = async (file: Express.Multer.File) => {
           password: plainPassword,
           email: row.Contact_Email,
           phone: row.Contact_Phone,
+          centerName: row.Center_Name,
         });
       } catch (credErr) {
         credentialFailures++;

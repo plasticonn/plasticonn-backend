@@ -17,7 +17,7 @@ export class EmailService {
   }) {
     try {
       const response = await resend.emails.send({
-        from: `${process.env.SENDER_NAME} <${process.env.SENDER_EMAIL}>`,
+        from: `${process.env.SENDER_EMAIL}`,
         to,
         subject,
         html,

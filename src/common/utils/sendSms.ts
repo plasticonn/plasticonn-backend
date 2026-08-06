@@ -4,12 +4,14 @@ interface CenterCredentialsPayload {
   phone: string;
   centerId: string;
   password: string;
+  centerName: string;
 }
 
 export const sendCenterCredentialsSMS = async ({
   phone,
   centerId,
   password,
+  centerName,
 }: CenterCredentialsPayload) => {
   try {
     const cleaned = phone.replace(/\D/g, "");
@@ -20,7 +22,7 @@ export const sendCenterCredentialsSMS = async ({
         ? `+${cleaned}`
         : cleaned;
 
-    const message = `Welcome to Plasticonn
+    const message = `Welcome to Plasticonn, ${centerName}
 
 Your center has been registered.
 
