@@ -23,8 +23,8 @@ const CenterSchema = new Schema(
       enum: ["collection", "recycling"],
     },
     image: {
-      url: { type: String },
-      public_id: { type: String },
+      url: { type: String || null },
+      public_id: { type: String || null },
     },
     documents: [
       {

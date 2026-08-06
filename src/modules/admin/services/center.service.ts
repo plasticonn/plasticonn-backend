@@ -79,10 +79,16 @@ export const bulkAddCenters = async (file: Express.Multer.File) => {
         verified: true,
         status: "active" as const,
 
+        image: {
+          url: row.Image_URL || null,
+          public_id: null,
+        },
+
         password: await passwordServices.hashPassword(generatePassword()),
       };
 
       const doc = await CenterModel.create(center);
+
       inserted.push(doc);
     } catch (err) {
       skipped++;
