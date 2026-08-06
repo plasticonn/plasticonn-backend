@@ -7,6 +7,7 @@ import { parse } from "csv-parse/sync";
 import { generateCenterId } from "../../../common/utils/generateCode";
 import { geocodeAddress } from "../../../common/utils/geocode";
 import { addLog } from "../../activity_logs/Logs.service";
+import { sendCenterCredentials } from "../../../common/utils/sendCenterCredentials";
 
 const log = new Logger("CenterManagement");
 
@@ -43,6 +44,7 @@ export const bulkAddCenters = async (file: Express.Multer.File) => {
 
   const inserted = [];
   let skipped = 0;
+  let credentialFailures = 0;
 
   for (const row of records) {
     try {
@@ -51,6 +53,8 @@ export const bulkAddCenters = async (file: Express.Multer.File) => {
         console.error("Skipped row (missing coordinates):", row.Center_Name);
         continue;
       }
+
+      const plainPassword = generatePassword();
 
       const center = {
         centerId: generateCenterId(),
@@ -84,12 +88,25 @@ export const bulkAddCenters = async (file: Express.Multer.File) => {
           public_id: null,
         },
 
-        password: await passwordServices.hashPassword(generatePassword()),
+        password: await passwordServices.hashPassword(plainPassword),
       };
 
       const doc = await CenterModel.create(center);
 
       inserted.push(doc);
+
+      // Send login credentials — failure here doesn't roll back the insert
+      try {
+        await sendCenterCredentials({
+          centerId: center.centerId,
+          password: plainPassword,
+          email: row.Contact_Email,
+          phone: row.Contact_Phone,
+        });
+      } catch (credErr) {
+        credentialFailures++;
+        console.error("Failed to send credentials:", row.Center_Name, credErr);
+      }
     } catch (err) {
       skipped++;
       console.error("Skipped row:", row.Center_Name, err);
@@ -106,6 +123,7 @@ export const bulkAddCenters = async (file: Express.Multer.File) => {
     totalRows: records.length,
     inserted: inserted.length,
     skipped,
+    credentialFailures,
   };
 };
 

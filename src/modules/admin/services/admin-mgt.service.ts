@@ -15,7 +15,7 @@ const addAdmin = async (payload: any) => {
 
   if (adminExists) throw new HttpError(409, "Admin already added");
 
-  //const password = passwordServices.generatePassword(6);
+  const password = passwordServices.generatePassword(6);
 
   console.log(payload.password);
 
@@ -23,17 +23,17 @@ const addAdmin = async (payload: any) => {
 
   const admin = await AdminModel.create({
     ...payload,
-    //password: hashed,
+    password: hashed,
   });
 
-  // await EmailService.sendEmail({
-  //   to: payload.email,
-  //   subject: "Admin Invite",
-  //   html: adminInviteTemplate({
-  //     name: payload.name,
-  //     password: password,
-  //   }),
-  // });
+  await EmailService.sendEmail({
+    to: payload.email,
+    subject: "Admin Invite",
+    html: adminInviteTemplate({
+      name: payload.name,
+      password: password,
+    }),
+  });
 
   return { admin };
 };

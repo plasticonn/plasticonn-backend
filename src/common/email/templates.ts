@@ -138,3 +138,25 @@ export const accountDeletionTemplate = (data: {
 
     <p>If this was not you, contact support immediately.</p>
   `);
+
+export const centerCredentialsTemplate = (data: {
+  name: string;
+  centerId: string;
+  password: string;
+}) =>
+  baseTemplate(`
+    <h2 style="color:#005C3D;">Welcome, ${data.name}</h2>
+
+    <p>Your center has been registered on <strong>Plasticonn</strong>.</p>
+
+    <p>Here are your login details:</p>
+
+    <div style="background:#f4f4f7;padding:10px;border-radius:6px;margin:10px 0;">
+      <p style="margin:0;"><strong>Center ID:</strong> ${data.centerId}</p>
+      <p style="margin:8px 0 0;"><strong>Password:</strong> ${data.password}</p>
+    </div>
+
+    <p style="margin-top:15px;">
+      Please log in and change your password immediately.
+    </p>
+  `);
