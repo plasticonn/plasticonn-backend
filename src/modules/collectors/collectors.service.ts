@@ -45,7 +45,7 @@ export const register = async (payload: any, file: Express.Multer.File) => {
 
   const user = await CollectorsModel.create({
     ...payload,
-    email: payload.contactEmail.toLowercase(),
+    email: payload.contactEmail.toLowerCase(),
     image,
     password: hashed,
   });
