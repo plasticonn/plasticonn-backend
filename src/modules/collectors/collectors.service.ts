@@ -24,7 +24,9 @@ const log = new Logger("CollectorsService");
 export const register = async (payload: any, file: Express.Multer.File) => {
   log.info("Registering collector");
 
-  const collector = await CollectorsModel.findOne({ email: payload.email });
+  const collector = await CollectorsModel.findOne({
+    email: payload.email.toLowerCase(),
+  });
 
   if (collector) throw new HttpError(409, "Collector already exists");
 
@@ -43,6 +45,7 @@ export const register = async (payload: any, file: Express.Multer.File) => {
 
   const user = await CollectorsModel.create({
     ...payload,
+    email: payload.contactEmail.toLowercase(),
     image,
     password: hashed,
   });
@@ -67,7 +70,7 @@ export const register = async (payload: any, file: Express.Multer.File) => {
 export const login = async (email: string, password: string) => {
   log.info("logging in collector");
 
-  const user = await CollectorsModel.findOne({ email });
+  const user = await CollectorsModel.findOne({ email: email.toLowerCase() });
 
   if (!user) throw new HttpError(404, "Collector does not exist");
 

@@ -13,7 +13,7 @@ import { changePasswordTemplate } from "../../common/email/templates";
 const log = new Logger("AuthService");
 
 const forgotPassword = async (email: string) => {
-  const resolved = await findUserByEmail(email);
+  const resolved = await findUserByEmail(email.toLowerCase());
 
   if (!resolved) {
     return "If the email exists, an OTP has been sent";

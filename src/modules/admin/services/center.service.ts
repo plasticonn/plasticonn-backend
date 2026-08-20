@@ -68,7 +68,7 @@ export const bulkAddCenters = async (file: Express.Multer.File) => {
 
         contactPerson: row.Contact_Person,
         contactPhone: row.Contact_Phone,
-        contactEmail: row.Contact_Email,
+        contactEmail: row.Contact_Email?.toLowerCase(),
 
         materialsAccepted: row.Accepted_Plastic_Types
           ? row.Accepted_Plastic_Types.split(",").map((m: string) => m.trim())

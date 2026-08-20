@@ -30,6 +30,7 @@ const register = async (
 
   const parsedPayload = {
     ...payload,
+    email: payload.email.toLowerCase(),
     lng: Number(payload.lng),
     lat: Number(payload.lat),
     formal: payload.formal === "true",
