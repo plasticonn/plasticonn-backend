@@ -138,6 +138,10 @@ const getProfile = async (centerId: string) => {
 
   if (!center) throw new HttpError(404, "Center not found");
 
+  if (center.status === "suspended") {
+    throw new HttpError(401, "Account suspended.");
+  }
+
   return { center };
 };
 

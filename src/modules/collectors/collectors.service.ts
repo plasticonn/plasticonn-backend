@@ -102,6 +102,10 @@ const getProfile = async (collectorId: string) => {
 
   if (!collector) throw new HttpError(404, "Collector not found");
 
+  if (collector.status === "suspended") {
+    throw new HttpError(401, "Account suspended.");
+  }
+
   return { collector };
 };
 
