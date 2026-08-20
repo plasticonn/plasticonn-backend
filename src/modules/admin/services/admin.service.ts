@@ -66,7 +66,9 @@ const login = async (email: string, password: string) => {
   }
 
   // Normal admin login
-  const admin = await AdminModel.findOne({ email }).select("+password");
+  const admin = await AdminModel.findOne({ email: email.toLowerCase() }).select(
+    "+password",
+  );
 
   if (!admin) throw new HttpError(404, "Admin does not exist");
 

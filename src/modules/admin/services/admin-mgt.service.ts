@@ -11,7 +11,9 @@ const log = new Logger("adminManagement");
 const addAdmin = async (payload: any) => {
   log.info("Adding admin");
 
-  const adminExists = await AdminModel.findOne({ email: payload.email });
+  const adminExists = await AdminModel.findOne({
+    email: payload.email.toLowerCase(),
+  });
 
   if (adminExists) throw new HttpError(409, "Admin already added");
 
@@ -23,6 +25,7 @@ const addAdmin = async (payload: any) => {
 
   const admin = await AdminModel.create({
     ...payload,
+    email: payload.email.toLowerCase(),
     password: hashed,
   });
 
