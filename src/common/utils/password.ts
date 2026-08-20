@@ -13,6 +13,7 @@ const generatePassword = (length: number): string => {
 };
 
 const hashPassword = async (pin: string): Promise<string> => {
+  console.log(pin);
   try {
     const hashedPassword = await argon2.hash(pin);
     return hashedPassword;
@@ -24,7 +25,7 @@ const hashPassword = async (pin: string): Promise<string> => {
 
 const verifyPassword = async (
   pin: string,
-  hashedPin: string
+  hashedPin: string,
 ): Promise<boolean> => {
   try {
     return await argon2.verify(hashedPin, pin);

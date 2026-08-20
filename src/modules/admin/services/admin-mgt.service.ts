@@ -19,9 +19,7 @@ const addAdmin = async (payload: any) => {
 
   const password = passwordServices.generatePassword(6);
 
-  console.log(payload.password);
-
-  const hashed = await passwordServices.hashPassword(payload.password);
+  const hashed = await passwordServices.hashPassword(password);
 
   const admin = await AdminModel.create({
     ...payload,
