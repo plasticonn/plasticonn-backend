@@ -73,6 +73,9 @@ export const login = async (email: string, password: string) => {
 
   //const match = await bcrypt.compare(password, String(user.password));
 
+  if (user.status === "suspended")
+    throw new HttpError(400, "Account suspended");
+
   const match = await passwordServices.verifyPassword(
     password,
     String(user.password),
